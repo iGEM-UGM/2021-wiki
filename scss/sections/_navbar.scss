@@ -1,0 +1,32 @@
+@use '../custom' as *;
+@use '../components/typography' as *;
+
+.menu {
+    background: $white;
+
+    a.nav-link{
+        font-family: 'Montserrat Medium';
+
+        &.active{
+            font-family: 'Montserrat Bold';
+            color: $primary !important;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+
+            height: 3.5px;
+            width: 0%;
+            margin: 0;
+            
+            background: $secondary;
+
+            transition:0.5s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+    }
+}

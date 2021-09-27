@@ -1,0 +1,24 @@
+{
+  "name": "2021-wiki",
+  "version": "0.1.0",
+  "description": "iGEM UGM 2021 Project Wiki",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "iGEM",
+    "Wiki"
+  ],
+  "author": "Ahmad Zidan",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.3.5",
+    "bootstrap": "^5.1.1",
+    "postcss-cli": "^9.0.0"
+  }
+}
