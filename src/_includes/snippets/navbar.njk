@@ -20,11 +20,11 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
             </li>
             {% for menu in dataNavbar %}
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="projectNavbarDropdown" role="button" aria-expanded="false">{{ menu.name }}</a>
+              <a class="nav-link mx-2" href="#" id="projectNavbarDropdown" role="button" aria-expanded="false">{{ menu.name }}</a>
               <ul class="dropdown-menu" aria-labelledby="projectNavbarDropdown">
                 {% for submenu in menu.submenu %}
                 <li><a class="dropdown-item" href="{{ submenu.href }}">{{ submenu.name }}</a></li>

@@ -11416,6 +11416,7 @@ textarea.form-control-lg {
 }
 .menu a.dropdown-item {
   font-family: "Montserrat Medium";
+  font-size: 0.875rem;
   color: #6c757d;
 }
 .menu a.dropdown-item:hover {
