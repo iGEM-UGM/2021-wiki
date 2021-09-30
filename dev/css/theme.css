@@ -11367,19 +11367,19 @@ textarea.form-control-lg {
 }
 @font-face {
   font-family: "Montserrat Regular";
-  src: url("https://2021.igem.org/wiki/images/8/81/T--UGM_Indonesia--Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("https://2021.igem.org/wiki/images/8/81/T--UGM_Indonesia--Montserrat-Regular.ttf") format("truetype");
+  src: url("../font/T--UGM_Indonesia--Montserrat-Regular.ttf") format("truetype"), url("https://2021.igem.org/wiki/images/8/81/T--UGM_Indonesia--Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat Medium";
-  src: url("https://2021.igem.org/wiki/images/0/06/T--UGM_Indonesia--Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("https://2021.igem.org/wiki/images/0/06/T--UGM_Indonesia--Montserrat-Medium.ttf") format("truetype");
+  src: url("../font/T--UGM_Indonesia--Montserrat-Medium.ttf") format("truetype"), url("https://2021.igem.org/wiki/images/0/06/T--UGM_Indonesia--Montserrat-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat Bold";
-  src: url("https://2021.igem.org/wiki/images/1/1b/T--UGM_Indonesia--Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("https://2021.igem.org/wiki/images/1/1b/T--UGM_Indonesia--Montserrat-Bold.ttf") format("truetype");
+  src: url("../font/T--UGM_Indonesia--Montserrat-Bold.ttf") format("truetype"), url("https://2021.igem.org/wiki/images/1/1b/T--UGM_Indonesia--Montserrat-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
