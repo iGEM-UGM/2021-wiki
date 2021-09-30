@@ -2,9 +2,21 @@
   "name": "2021-wiki",
   "version": "0.1.0",
   "description": "iGEM UGM 2021 Project Wiki",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "compile:sass" : "sass --watch scss:assets/css"
+    "build:minify": "npm run clean && npm run clean-prod  && npx eleventy && gulp sass && gulp minify-css && gulp dist-assets && gulp prod-copy && gulp inject-min-css && gulp purgecss && gulp minify-html",
+    "build": "npm run clean && npm run clean-prod  && npx eleventy && gulp sass && gulp dist-assets && gulp prod-copy && gulp purgecss",
+    "build-dev": "eleventy && gulp dist-assets && gulp sass",
+    "11ty": "eleventy && gulp inject-css",
+    "sync": "gulp browser-sync",
+    "watch-dev": "npm run build-dev && npm run sync",
+    "postinstall": "gulp copy-assets",
+    "scss": "node-sass --output-style compressed -o dev/css/ src/scss/theme.scss",
+    "watch:all": "onchange 'src/' -- npm run build-dev",
+    "serve": "eleventy --serve",
+    "watch": "npm run clean && npm run build-dev && run-p sync watch:all",
+    "clean": "rm -rf dev/*",
+    "clean-prod": "rm -rf public/*"
   },
   "keywords": [
     "iGEM",
@@ -13,12 +25,32 @@
   "author": "Ahmad Zidan",
   "license": "ISC",
   "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "react-is": "^17.0.2",
     "sass": "^1.42.1"
   },
   "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "autoprefixer": "^10.3.5",
     "bootstrap": "^5.1.1",
-    "postcss-cli": "^9.0.0"
+    "bootstrap-icons": "^1.5.0",
+    "clean-css": "^5.2.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "npm-watch": "^0.11.0",
+    "postcss-cli": "^9.0.0",
+    "watch": "^1.0.2"
   }
 }

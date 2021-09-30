@@ -1,0 +1,60 @@
+@use '../custom' as *;
+@use '../components/typography' as *;
+
+.menu {
+    background: $white;
+    filter: drop-shadow(0 0 30px rgba(0,0,0,0.2));
+
+    a.nav-link, a.dropdown-item{
+        font-family: 'Montserrat Medium';
+
+        &.active{
+            font-family: 'Montserrat Bold';
+            color: $primary !important;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+
+            height: 3.5px;
+            width: 0%;
+            margin: 0;
+            
+            background: $secondary;
+
+            transition:0.4s;
+
+            &:focus{
+                width: 100%;
+            }
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+    }
+
+    a.dropdown-item{
+        font-family: 'Montserrat Medium';
+        color: $gray-600;
+
+        &:hover{
+            color: $black;
+        }
+
+        &:active{
+            color: $white;
+        }
+    }
+
+    .dropdown:hover {
+        a.nav-link{
+            color: $black;
+        }
+
+        .dropdown-menu{
+            display: block;
+        }
+    }
+}
