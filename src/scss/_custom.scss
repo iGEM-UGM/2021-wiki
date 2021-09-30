@@ -26,4 +26,11 @@ $black:    #000;
 $primary:       $purple;
 $secondary:     $yellow;
 
+// These are the defaults, but you can override any values
+$font-family-sans-serif:    "Montserrat Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:         Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:     Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:          $font-family-sans-serif !default;
+
+
 @import "assets/bootstrap/bootstrap.scss";

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+
+  <head>
+  {% include 'snippets/head.njk' %}
+  </head>
+
+  <body>
+    {% include 'snippets/navbar.njk' %}
+
+    <main>
+      {% include 'snippets/hero.njk' %}
+      <section id="content" class="content">
+        <div class="container">
+          {{ content | safe }}
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+        {% include 'snippets/footer.njk' %}
+    </footer>
+
+  </body>
+
+</html>

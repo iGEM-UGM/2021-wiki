@@ -1,0 +1,16 @@
+<style>
+    .hero {
+        background-image: url("{{ heroImage }}");
+    }
+</style>
+
+<section id="hero" class="hero">
+    <div class="container min-vh-100">
+        <div class="row min-vh-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-1">
+                {{ title }}
+            </h1>
+            <button type="button" class="btn btn-light scroll-content-button shadow" onclick="scrollContent()">Scroll to Content</button>
+        </div>
+    </div>
+</section>

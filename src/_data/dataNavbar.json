@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Project",
+    "submenu": [
+      { "name": "Description", "href": "#" },
+      { "name": "Design", "href": "#" },
+      { "name": "Engineering", "href": "#" },
+      { "name": "Implementation", "href": "#" },
+      { "name": "Safety", "href": "#" },
+      { "name": "Contribution", "href": "#" },
+      { "name": "Poster", "href": "#" }
+    ]
+  },
+  {
+    "name": "Wet Lab",
+    "submenu": [
+      { "name": "Logbook", "href": "#" },
+      { "name": "Parts", "href": "#" },
+      { "name": "Experiments", "href": "#" },
+      { "name": "Results", "href": "#" }
+    ]
+  },
+  {
+    "name": "Dry Lab",
+    "submenu": [
+      { "name": "Logbook", "href": "#" },
+      { "name": "Model", "href": "#" },
+      { "name": "Bioreactor", "href": "#" },
+      { "name": "Measurements", "href": "#" }
+    ]
+  },
+  {
+    "name": "Human Practice",
+    "submenu": [
+      { "name": "Integrated Human Practices", "href": "#" },
+      { "name": "Education and Communication", "href": "#" }
+    ]
+  },
+  {
+    "name": "Team",
+    "submenu": [
+      { "name": "Members", "href": "#" },
+      { "name": "Attributions", "href": "#" },
+      { "name": "Collaborations", "href": "#" },
+      { "name": "Partnership", "href": "#" }
+    ]
+  },
+  {
+    "name": "Awards",
+    "submenu": [
+      { "name": "Awards", "href": "#" },
+      { "name": "Medals", "href": "#" }
+    ]
+  }
+]

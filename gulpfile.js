@@ -123,7 +123,7 @@ gulp.task("copy-assets", function (done) {
   // Copy all JS files
   var stream = gulp
     .src(paths.node + "/bootstrap/dist/js/**/*.*")
-    .pipe(gulp.dest(paths.dev + "/js"));
+    .pipe(gulp.dest(paths.dev + "assets/js"));
 
   // Copy all Bootstrap SCSS files
   gulp

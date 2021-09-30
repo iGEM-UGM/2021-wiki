@@ -1,0 +1,18 @@
+@use '../custom' as *;
+
+@mixin font($font-family, $font-path, $font-file) {
+    @font-face {
+      font-family: $font-family;
+    //   src: url($font-file+'.eot');
+      src:  url('../font/'+$font-file+'.ttf') format('truetype'),
+            url($font-path+$font-file+'.ttf') format('truetype');
+        //    url($font-file+'.svg#'+$font-family) format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
