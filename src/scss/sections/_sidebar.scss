@@ -1,0 +1,7 @@
+@use '../custom' as *;
+@use '../components/typography' as *;
+@use '../components/mixins' as *;
+
+#sticky-sidebar .sticky-offset {
+    top: 100px;
+}

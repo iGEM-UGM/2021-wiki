@@ -12,18 +12,21 @@
     box-shadow: inset 0 0 0 4000px rgba($primary, 0.7);
 }
 
-.display-1 {
+.hero-typography {
     width: fit-content;
     display: block;
     color: $white;
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
     border-bottom: 10px solid $secondary;
+
+    font-family: "Montserrat Bold";
 }
 
 .scroll-content-button {
     display: block;
     margin-top: 1rem;
     width: fit-content;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
 
     font-family: "Montserrat Regular";
 }

@@ -1,0 +1,33 @@
+@use '../custom' as *;
+@use '../components/typography' as *;
+@use '../components/mixins' as *;
+
+.content .display-4 {
+    font-family: "Montserrat Bold";
+}
+
+.content p, .content li {
+    font-family: "Montserrat Regular";
+    text-align: left;
+}
+
+.content .content-references li { 
+    word-break: break-all;
+}
+
+
+
+.content blockquote {
+    font-family: "Montserrat Light";
+    width: 60%;
+    align-self: center;
+
+    @include media-breakpoint-down(lg) {
+        width: 75%;
+    }
+}
+
+.content figure figcaption {
+    font-family: "Montserrat Regular";
+    align-self: center;
+}

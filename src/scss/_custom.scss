@@ -23,8 +23,8 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
-$primary:       $purple;
-$secondary:     $yellow;
+$primary:       #4A148C; // $purple
+$secondary:     #F4AF2E; // $yellow
 
 // These are the defaults, but you can override any values
 $font-family-sans-serif:    "Montserrat Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

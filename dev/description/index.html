@@ -16,10 +16,10 @@
   </head>
 
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top menu">
+        <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top menu">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="https://2021.igem.org/wiki/images/5/55/T--UGM_Indonesia--project_logo.png" height="55px"/>
+          <img src="https://2021.igem.org/wiki/images/5/55/T--UGM_Indonesia--project_logo.png" height="50px"/>
         </a>
         <button
           class="navbar-toggler"
@@ -144,17 +144,121 @@
 <section id="hero" class="hero">
     <div class="container min-vh-100">
         <div class="row min-vh-100 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="display-1">
+            <h1 class="display-1 hero-typography">
                 Description
             </h1>
-            <button type="button" class="btn btn-light scroll-content-button shadow" onclick="scrollContent()">Scroll to Content</button>
+            <a class="btn btn-light scroll-content-button" href="#content">Scroll to Content</a>
         </div>
     </div>
 </section>
-      <section id="content" class="content">
+      <section id="content" class="content pt-5">
         <div class="container">
-          
-abcdef
+          <div class="row">
+            <div class="col-3 pr-1 d-none d-lg-block" id="sticky-sidebar">
+    <ol class="list-group sticky-top sticky-offset">
+        
+            <li>
+                <a href="#abstract">Abstract</a>
+            </li>
+        
+            <li>
+                <a href="#background">Background</a>
+            </li>
+        
+            <li>
+                <a href="#approach">Approach</a>
+            </li>
+        
+            <li>
+                <a href="#idea">How does this idea come to us?</a>
+            </li>
+        
+            <li>
+                <a href="#references">References</a>
+            </li>
+        
+    </ol>
+</div>
+<div class="col-12 col-lg-9">
+    <div id="abstract">
+        <h4 class="display-4 text-primary mt-4 mb-2">
+            Abstract
+        </h4>
+        <p class="lh-lg">
+            A gold bioleaching process involves cyanide compounds whose waste can result in various harms in our environments. Several treatments using physical and chemical concepts possess some disadvantages. Coming with those problems, a cyanide-regulating system developed through the Auviola project was designed to produce and subsequently degrade the cyanide. This system utilized an engineered Chromobacterium violaceum whose profile of proteins facilitate cyanide production and degradation in the gold bioleaching process. The kinetic models and genomic scale models were demonstrated in order to show the optimization of cyanide production and degradation. Lastly, several implementations for human practices were planned to bring achievable and beneficial impacts for the gold mining communities and also the students to know about synthetic biology.
+        </p>
+    </div>
+    <div id="background">
+        <h4 class="display-4 text-primary mt-4 mb-2">
+            Background
+        </h4>
+        <figure class="my-2 text-center">
+            <img src="/img/description-figure-1.png" class="figure-img img-fluid rounded" alt="Massive kills of fish caused by cyanide">
+            <figcaption class="figure-caption"><b>Figure 1.</b> Massive kills of fish caused by cyanide (source: youtu.be/wlYgYsbJhps&t=405s).</figcaption>
+        </figure>
+        <p class="lh-lg">
+            Gold is one of the noble metals which becomes a major economic driver for many countries. Its production requires a gold extraction step to obtain the pure ones from its orebody, for instance a leaching process that aims to separate the gold from other traces. Cyanide is one of these leaching agents that is widely used owing to the effective gold separation.1 However, cyanide waste can result in various harms in our environments, such as the decline of water quality and subsequently cause massive kills of aquatic organisms. Moreover, it also may threaten our health once it exposes our communities.
+        </p>
+        <p class="lh-lg">
+            Up to 20% of the world’s gold comes from Artisanal and small-scale gold mining (ASGM), which is a gold mining community conducted by individuals or small enterprises with limited capital investment and production.2 ASGM becomes a big concern especially in Indonesia as it supports 1 million people’s livelihoods.3 Along with its high effectiveness, cyanide is widely utilized by ASGM as a leaching agent in the hydrometallurgical process.1
+        </p>
+        <p class="lh-lg">
+            However, a study showed that the soil and plants nearby the ASGM has cyanide concentration higher than World and Health Organization (WHO) standard, indicating either the presence of cyanide leakage or improper waste treatment within the practices.4 In addition, a demand of 90 days-treatment of cyanide waste may increase the risk of leakage occurrence.1 Moreover, the limited performance of resources involved in ASGM perplexes people to achieve a proper cyanide waste treatment.5 
+        </p>
+        <p class="lh-lg">
+            Other alternatives that may be utilized by ASGM communities; i.e. pyrometallurgy and biohydrometallurgy. Pyrometallurgy as an alternative gold extraction method is unsuitable for ASGM as it needs huge energy sources for the 600oC-heating process.6 Therefore, another approach for gold extraction is needed to achieve a proper implementation among ASGM.
+        </p>
+        <p class="lh-lg">
+            On the other hand, a biohydrometallurgy that involves organism in the gold extraction process becomes a promising alternative as it provides faster waste treatment due to the enzymatic process, resulting in a reduced risk of cyanide leakage. In addition, a bacterium Chromobacterium violaceum has been found to produce cyanide as well as degrade it, therefore may be developed into biohydrometallurgy to a simpler and more applicable leaching process as well as prevent improper waste treatment.7
+        </p>
+        <figure class="my-2 text-center">
+            <img src="/img/description-figure-2.png" class="figure-img img-fluid rounded" alt="Massive kills of fish caused by cyanide">
+            <figcaption class="figure-caption"><b>Figure 2.</b> Characteristics of <i>Chromobacterium violaceum</i>.</figcaption>
+        </figure>
+    </div>
+    <div id="approach">
+        <h4 class="display-4 text-primary mt-4 mb-2">
+            Approach
+        </h4>
+        <p class="lh-lg">
+            With the concepts of synthetic biology, we are developing Auviola–an engineered C. violaceum with an on-off system for cyanide regulation in the gold bioleaching process. Compared to the wild-type, the new C. violaceum is engineered to have more cyanide-regulating genes, resulting in a better gold dissolution and cyanide waste treatment. This engineered bacterium is designed to function in a bioreactor to create the bioleaching system on an industrial scale. Along with this genetic engineering, we hope that this project may help many ASGM communities to create the best yield of gold.
+        </p>
+        <blockquote class="fs-4 my-5 mx-auto text-center">
+            “This <b>Auviola</b> project engineers <i>C. violaceum</i> to have more cyanide-regulating genes, resulting in a better gold dissolution and cyanide waste treatment”
+        </blockquote>
+    </div>
+    <div id="idea">
+        <h4 class="display-4 text-primary mt-4 mb-2">
+            How does this idea come to us?
+        </h4>
+        <p class="lh-lg">
+            Indonesia is one of the biggest gold producing countries with more than one hundred tons production in 2020.8 Moreover, there are plenty of ASGM practices directly organized by more than 300,000 inhabitants in Indonesia to give additional incomes.9
+        </p>
+        <p class="lh-lg">
+            The use of gold is not limited to jewelry as it also possesses a lot of financial, electrical, and medicinal purposes. Despite this digital era, gold is still persistent to be used as an investment. Gold is also widely used as a memory chip and conductor for electronics. As for now, gold is broadly developed as diagnostic tools, photothermal therapy agents, drug carriers, and other medicinal uses. Therefore, the development for an environmentally friendly bioleaching model may aid to the improvement of those gold utilizations.
+        </p>
+        <p class="lh-lg">
+            According to plenty of gold producers, this Auviola project has the potential to be developed as a better system of bioleaching process, especially in the ASGM practices. Coming with the merits of gold, we wish that we will create a big impact in reducing cyanide leakage and improving proper cyanide waste treatment through utilizing Auviola within the communities.
+        </p>
+    </div>
+    <div id="references" class="content-references">
+        <h4 class="display-4 text-primary mt-4 mb-2">
+            References
+        </h4>
+        <ol>
+            <li class="lh-lg">Kementerian Lingkungan Hidup dan Kehutanan, 2020, Teknologi Pengolahan Emas pada Pertambangan Emas Skala Kecil di Indonesia, GOLD-ISMIA, Jakarta.</li>
+            <li class="lh-lg">PlanetGOLD, 2021, ASGM 101: A Primer on Mercury Use in Artisanal and Small-Scale Gold Mining [Online] https://www.planetgold.org/asgm-101 [accessed on September 25th, 2021 13:35 WIT].</li>
+            <li class="lh-lg">PlanetGOLD, 2021, Indonesia: Phasing out mercury, protecting livelihoods [Online] https://www.planetgold.org/indonesia [accessed on September 25th, 2021 13:37 WIT].</li>
+            <li class="lh-lg">Suhadi, Sueb, Muliya, B.K., Ashoffi, A.M., 2021, Pollution of mercury and cyanide soils and plants in surrounding in the Artisanal and Small-Scale Gold Mining (ASGM) at Sekotong District, West Lombok, West Nusa Tenggara, Biological Environment and Pollution, vol 1, no 1, pp 30-37.</li>
+            <li class="lh-lg">WHO, 2016, Artisanal and small-scale gold mining and health, WHO, Geneva.</li>
+            <li class="lh-lg">Ojeda, M.W., Perino, E., Ruiz, M.C., 2009, Gold extraction by chlorination using a pyrometallurgical process, Minerals Engineering, vol 22, pp 409-411.</li>
+            <li class="lh-lg">Batista, J.H. & da Silva Neto, J.F., 2017, Chromobacterium violaceum Pathogenicity: Updates and Insights from Genome Sequencing of Novel Chromobacterium Species, Frontiers in Microbiology, vol 8, pp 1-7.</li>
+            <li class="lh-lg">Goldhub, 2021, Gold mine production [Online] https://www.gold.org/goldhub/data/historical-mine-production [accessed on July 10th, 2021 19:42 WIT].</li>
+            <li class="lh-lg">Kementerian Lingkungan Hidup dan Kehutanan, 2020, ​Pertambangan emas skala kecil (PESK): Tantangan dalam akses pembiayaan [Online] http://sib3pop.menlhk.go.id/index.php/articles/view?slug=pertambangan-emas-skala-kecil-pesk-tantangan-dalam-akses-pembiayaan [accessed on August 7th, 2021 22:34 WIT].</li>
+        <ol>
+    </div>
+</div>
+          </div>
         </div>
       </section>
     </main>
