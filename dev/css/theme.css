@@ -11431,8 +11431,11 @@ textarea.form-control-lg {
   display: block;
 }
 
-#sticky-sidebar .sticky-offset {
+.sticky-sidebar .sticky-offset {
   top: 100px;
+}
+.sticky-sidebar .sticky-offset a {
+  font-family: "Montserrat Regular";
 }
 
 .hero {
@@ -11465,27 +11468,39 @@ textarea.form-control-lg {
   font-family: "Montserrat Bold";
 }
 
-.content p, .content li {
+section.content p, section.content li {
   font-family: "Montserrat Regular";
   text-align: left;
 }
 
-.content .content-references li {
+section.content .content-references li {
   word-break: break-all;
 }
 
-.content blockquote {
+section.content blockquote {
   font-family: "Montserrat Light";
   width: 60%;
   align-self: center;
 }
 @media (max-width: 991.98px) {
-  .content blockquote {
+  section.content blockquote {
     width: 75%;
   }
 }
 
-.content figure figcaption {
+section.content figure figcaption {
   font-family: "Montserrat Regular";
   align-self: center;
+}
+
+section.content section::before {
+  height: 80px;
+  content: "";
+  display: block;
+}
+
+section.content div.scrollspy {
+  position: relative;
+  height: auto;
+  overflow-y: scroll;
 }

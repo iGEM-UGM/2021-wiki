@@ -15,7 +15,7 @@
    <!-- endbuild -->
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="80">
         <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top menu">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -154,42 +154,32 @@
       <section id="content" class="content pt-5">
         <div class="container">
           <div class="row">
-            <div class="col-3 pr-1 d-none d-lg-block" id="sticky-sidebar">
-    <ol class="list-group sticky-top sticky-offset">
-        
-            <li>
-                <a href="#abstract">Abstract</a>
-            </li>
-        
-            <li>
-                <a href="#background">Background</a>
-            </li>
-        
-            <li>
-                <a href="#approach">Approach</a>
-            </li>
-        
-            <li>
-                <a href="#idea">How does this idea come to us?</a>
-            </li>
-        
-            <li>
-                <a href="#references">References</a>
-            </li>
-        
-    </ol>
-</div>
+            <nav id="sidebar" class="navbar navbar-light flex-column align-items-stretch col-3 p-1 d-none d-lg-block sticky-sidebar">
+    <nav class="nav nav-pills flex-column sticky-top sticky-offset">
+    
+        <a class="nav-link" href="#abstract">Abstract</a>
+    
+        <a class="nav-link" href="#background">Background</a>
+    
+        <a class="nav-link" href="#approach">Approach</a>
+    
+        <a class="nav-link" href="#idea">How does this idea come to us?</a>
+    
+        <a class="nav-link" href="#references">References</a>
+    
+    </nav>
+</nav>
 <div class="col-12 col-lg-9">
-    <div id="abstract">
-        <h4 class="display-4 text-primary mt-4 mb-2">
+    <section id="abstract">
+        <h4 class="display-4 text-primary mb-4">
             Abstract
         </h4>
         <p class="lh-lg">
             A gold bioleaching process involves cyanide compounds whose waste can result in various harms in our environments. Several treatments using physical and chemical concepts possess some disadvantages. Coming with those problems, a cyanide-regulating system developed through the Auviola project was designed to produce and subsequently degrade the cyanide. This system utilized an engineered Chromobacterium violaceum whose profile of proteins facilitate cyanide production and degradation in the gold bioleaching process. The kinetic models and genomic scale models were demonstrated in order to show the optimization of cyanide production and degradation. Lastly, several implementations for human practices were planned to bring achievable and beneficial impacts for the gold mining communities and also the students to know about synthetic biology.
         </p>
-    </div>
-    <div id="background">
-        <h4 class="display-4 text-primary mt-4 mb-2">
+    </section>
+    <section id="background">
+        <h4 class="display-4 text-primary mb-4">
             Background
         </h4>
         <figure class="my-2 text-center">
@@ -215,9 +205,9 @@
             <img src="/img/description-figure-2.png" class="figure-img img-fluid rounded" alt="Massive kills of fish caused by cyanide">
             <figcaption class="figure-caption"><b>Figure 2.</b> Characteristics of <i>Chromobacterium violaceum</i>.</figcaption>
         </figure>
-    </div>
-    <div id="approach">
-        <h4 class="display-4 text-primary mt-4 mb-2">
+    </section>
+    <section id="approach">
+        <h4 class="display-4 text-primary mb-4">
             Approach
         </h4>
         <p class="lh-lg">
@@ -226,9 +216,9 @@
         <blockquote class="fs-4 my-5 mx-auto text-center">
             “This <b>Auviola</b> project engineers <i>C. violaceum</i> to have more cyanide-regulating genes, resulting in a better gold dissolution and cyanide waste treatment”
         </blockquote>
-    </div>
-    <div id="idea">
-        <h4 class="display-4 text-primary mt-4 mb-2">
+    </section>
+    <section id="idea">
+        <h4 class="display-4 text-primary mb-4">
             How does this idea come to us?
         </h4>
         <p class="lh-lg">
@@ -240,9 +230,9 @@
         <p class="lh-lg">
             According to plenty of gold producers, this Auviola project has the potential to be developed as a better system of bioleaching process, especially in the ASGM practices. Coming with the merits of gold, we wish that we will create a big impact in reducing cyanide leakage and improving proper cyanide waste treatment through utilizing Auviola within the communities.
         </p>
-    </div>
-    <div id="references" class="content-references">
-        <h4 class="display-4 text-primary mt-4 mb-2">
+    </section>
+    <section id="references" class="content-references">
+        <h4 class="display-4 text-primary mb-4">
             References
         </h4>
         <ol>
@@ -256,7 +246,7 @@
             <li class="lh-lg">Goldhub, 2021, Gold mine production [Online] https://www.gold.org/goldhub/data/historical-mine-production [accessed on July 10th, 2021 19:42 WIT].</li>
             <li class="lh-lg">Kementerian Lingkungan Hidup dan Kehutanan, 2020, ​Pertambangan emas skala kecil (PESK): Tantangan dalam akses pembiayaan [Online] http://sib3pop.menlhk.go.id/index.php/articles/view?slug=pertambangan-emas-skala-kecil-pesk-tantangan-dalam-akses-pembiayaan [accessed on August 7th, 2021 22:34 WIT].</li>
         <ol>
-    </div>
+    </section>
 </div>
           </div>
         </div>

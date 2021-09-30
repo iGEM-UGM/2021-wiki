@@ -2,6 +2,10 @@
 @use '../components/typography' as *;
 @use '../components/mixins' as *;
 
-#sticky-sidebar .sticky-offset {
+.sticky-sidebar .sticky-offset {
     top: 100px;
+
+    a {
+        font-family: "Montserrat Regular";
+    }
 }
