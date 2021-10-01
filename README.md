@@ -1,7 +1,15 @@
 # 2021-wiki
 
+# Internal Documentation
+
+
+## Useful Regex
+
+\.(\d+(?:,\d+)*) -> .<sup>$1</sup>
+\[\d+\]
 
 ## Important links
+
 https://igem.org/2021_Judging_Form?id=4076
 https://2021.igem.org/Template:UGM_Indonesia/Style
 https://2021.igem.org/Template:UGM_Indonesia/BootstrapBundle

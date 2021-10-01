@@ -8,8 +8,7 @@
       { "name": "Implementation", "href": "https://2021.igem.org/Team:UGM_Indonesia/Implementation" },
       { "name": "Safety", "href": "https://2021.igem.org/Team:UGM_Indonesia/Safety" },
       { "name": "Contribution", "href": "https://2021.igem.org/Team:UGM_Indonesia/Contribution" },
-      { "name": "Notebook", "href": "https://2021.igem.org/Team:UGM_Indonesia/Notebook" },
-      { "name": "Poster", "href": "https://2021.igem.org/Team:UGM_Indonesia/Poster" }
+      { "name": "Notebook", "href": "https://2021.igem.org/Team:UGM_Indonesia/Notebook" }
     ]
   },
   {
@@ -31,8 +30,9 @@
   {
     "name": "Human Practices",
     "submenu": [
-      { "name": "Integrated Human Practices", "href": "https://2021.igem.org/Team:UGM_Indonesia/Human_Practices" },
-      { "name": "Education and Communication", "href": "https://2021.igem.org/Team:UGM_Indonesia/Communication" }
+      { "name": "Human Practices", "href": "https://2021.igem.org/Team:UGM_Indonesia/Human_Practices" },
+      { "name": "Education and Communication", "href": "https://2021.igem.org/Team:UGM_Indonesia/Communication" },
+      { "name": "Entrepreneurship", "href": "https://2021.igem.org/Team:UGM_Indonesia/Entrepreneurship" }
     ]
   },
   {
@@ -45,7 +45,7 @@
     ]
   },
   {
-    "name": "Awards",
+    "name": "Medals",
     "submenu": [
       { "name": "Awards", "href": "https://2021.igem.org/Team:UGM_Indonesia/Awards" },
       { "name": "Medals", "href": "https://2021.igem.org/Team:UGM_Indonesia/Medals" }

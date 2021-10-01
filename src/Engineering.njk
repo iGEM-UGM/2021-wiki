@@ -1,6 +1,325 @@
 ---
 layout: layouts/default.njk
 title: Engineering
+heroImage: /assets/img/hero-description.jpg
+dataSidebar: [
+    {"href" : "#hcn-production", "name" : "HCN Production"},
+    {"href" : "#hcn-degradation", "name" : "HCN Degradation"},
+    {"href" : "#l-arabinose-converter", "name" : "L-Arabinose Converter"},
+    {"href" : "#pyrite", "name" : "Pyrite Dissolution Bioreactor"},
+    {"href" : "#references", "name" : "References"}
+]
 ---
 
-Engineering
+<div class="col-12 col-lg-9">
+    <p>
+            Our main goal is to create a feasible on-off system of the cyanide production and degradation according to either the presence or absence of arabinose. This page displays three engineering cycles; i.e., cyanide production, cyanide degradation, and arabinose conversion. Afterwards, an engineering cycle about the Auviola on-off system is performed to associate the aforementioned three cycles. An engineering cycle about the bioreactor is also demonstrated as the implementation of our Auviola system.
+    </p>
+    <section id="hcn-production">
+        <h4 class="display-4 text-primary mb-4">
+            HCN Production
+        </h4>
+        <p>
+            These schemes below are our journey to increase and regulate cyanide production in C. violaceum based on the engineering approach to generate BBa_K4076000.
+        </p>
+        <div>
+            <h5>
+                Research & Imagine
+            </h5>
+            <div>
+                <h6>
+                    What are the properties of HCN production in C. violaceum?
+                </h6>
+                <p>
+                    The HCN synthase, or also known as glycine dehydrogenase, is an enzyme that facilitates the conversion of an amino acid glycine into cyanide.1 This enzyme is a heterotrimeric protein as encoded by a cluster of three genes called hcnABC operon. This enzyme belongs to the oxidoreductase class as it oxidizes the amine (CH-NH2) functional group into imine (C=NH) and consecutively cleaves the molecule into HCN and carbon dioxide (CO2).2
+                </p>
+            </div>
+            <div>
+                <h6>
+                    What are some concerns to be considered?
+                </h6>
+                <p>
+                    The resulted cyanide species were designed to dissolve the gold into the soluble coordination compound of [NaAu(CN)2] through the reaction below:
+                </p>
+                <p class="text-center">
+                    4Au + 8NaCN + O2 + 2H2O  4[NaAu(CN)2] + 4NaOH 1
+                </p>
+                <p>
+                    According to previous study, the gold leaching process requires HCN compounds with concentration of 600 mg/L.2 On the other hand, a wild-type of C. violaceum was previously studied to produce 0.71 - 16 micromoles/mL which nearly equals to 19 - 432 of HCN in 8 hours.3 Therefore, an optimization of produced HCN concentration should be conducted to achieve an effective gold leaching process.
+                </p>
+            </div>
+            <div>
+                <h6>
+                    What are the types of regulators tested in C. violaceum?
+                </h6>
+                <p>
+                    Two of several regulator genes have tested in C. violaceum are araC and tetR.4 The araC works dependably to arabinose level which acts as both an activator in the presence of arabinose and a repressor in the absence of arabinose.5 A PBAD is one of the inducible promoters presented in C. violaceum and regulated by the araC.6 On the other hand, tetR acts as a repressor and normally play a role in tetracycline resistance with PTET promoter.7,8
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Design
+            </h5>
+            <div>
+                <h6>
+                    How to create and design an arabinose regulated cyanide overproduction system?
+                </h6>
+                <p>
+                    The principle in this system is induction of overproduction of cyanide in the presence of arabinose using pBAD-AraC regulation. We used E. coli DH5-α, E. coli BL21, and C. violaceum ATCC 12472 as the chassis’ to test the system. At this stage, we utilized several standard parts already used by previous iGEM teams listed below:
+                </p>
+                <ol>
+                    <li>BBa_K808000 (AraC-pBAD)</li>
+                    <li>BBa_B0015 (double terminator)</li>
+                    <li>BBa_B0034m (strong RBS)</li>
+                </ol>
+                <p>
+                    We used AraC-pBAD from BBa_K808000 to regulate the hcnABC operon. We modified the hcnABC operon by adding RBS before each gene (hcnA, hcnB, hcnC) in the hcnABC operon and also double terminator B0015. The hcnB and hcnC genes have a high percentage of GC content so we faced some problems to synthesize it. Thus, we altered the hcnB gene sequence to reduce the GC content and to remove some illegal sites. We also altered some bases in hcnC gene to remove the illegal site. For a deeper understanding of the construction, you can visit the Auviola design page (linked to the design page). The recombinant plasmid transformed was verified through colony PCR and the part inserted was sequenced. To analyze the effect on cyanide produced, we used the picric acid method to determine the cyanide concentration. We also performed the growth rate measurement to know the effect of our plasmid expression on the cell growth.
+                </p>
+                <p>
+                    A kinetic modelling for demonstrating an overproduction of cyanide was performed using Tellurium’s approach in Python language. This modelling used some parameters obtained from literature study. In addition, a genome scale modelling was performed to maximize cyanide production flux in the C. violaceum metabolic pathway.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Build
+            </h5>
+            <div>
+                <p>
+                    After we went through the design phase, we started to conduct our project at the Biotechnology Laboratory of Inter University Center in Universitas Gadjah Mada. We ordered hcnA, hcnB, and hcnC sequences from Twist Bioscience. The sequences were referred to the genome of Chromobacterium violaceum ATCC 12472 (NCBI: GenBank: AE016825.1). In order to meet the BioBrick standard and synthesize requirement, we altered some of its sequences. The sequences have some alterations in hcnB and hcnC to reduce the GC content and remove the illegal sites. However,  Twist Bioscience reported a problem in synthesizing the hcnC gene, thus the hcnC synthesize failed. Thus, we isolated the hcnC gene using PCR from the genome of C. violaceum ATCC 12472 and removed an illegal site inside the sequence using overlap PCR (Phusion polymerase). The assembly of plasmid backbone (pSB1C3), AraC-pBAD (BBa_K808000), RBS (BBa_B0034m), hcnABC operon, and double terminator (BBa_B0015) were done using Gibson Assembly. 
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Test
+            </h5>
+            <div>
+                <p>
+                    On-going.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Improve
+            </h5>
+            <div>
+                <p>
+                    On-going.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="hcn-degradation">
+        <h4 class="display-4 text-primary mb-4">
+            HCN Degradation
+        </h4>
+        <p>
+            These schemes below are our journey to degrade cyanide as the remaining compounds in the gold cyanidation based on the engineering approach to generate BBa_K4076002
+        </p>
+        <div>
+            <h5>
+                Research & Imagine
+            </h5>
+            <div>
+                <h6>
+                    What are the properties of HCN degradation in C. violaceum?
+                </h6>
+                <p>
+                    Interestingly, C. violaceum possesses several cyanide-utilizing enzymes–β-cyanoalanine synthase, -cyano-α-aminobutyric acid synthase, and rhodanese.9 These enzymes are briefly explained below:
+                </p>
+                <ol>
+                    <li>
+                        <b>
+                            β-cyanoalanine synthase (β-CAS)
+                        </b>
+                        <p>
+                            This enzyme has been reported to facilitate the incorporation of cyanide into cysteine to form the less toxic amino acids or ammonia.10
+                        </p>
+                    </li>
+                    <li>
+                        <b>
+                            β-cyano-α-aminobutyric acid synthase
+                        </b>
+                        <p>
+                            This enzyme can catalyze the reaction between homocystine and cyanide to give the less toxic y- γ-cyano-α-aminobutyric acid and thiocyanate.11
+                        </p>
+                    </li>
+                    <li>
+                        <b>
+                            Rhodanese
+                        </b>
+                        <p>
+                            This enzyme is also known as sulfurtransferase, as it catalyzes sulfur transfer from thiosulfate to cyanide and leads to the formation of the less toxic thiocyanate.9,11
+                        </p>
+                    </li>
+                </ol>
+                <p>
+                    Among several cyanide-degrading genes, the rhodanese is chosen to be the added gene whose regulation is not affected by the presence of glycine and methionine, unlike the others.12
+                </p>
+            </div>
+            <div>
+                <h6>
+                    What are some concerns to be considered?
+                </h6>
+                <p>
+                    The higher HCN concentration may need a higher expression of its degradation enzyme. Therefore, an optimization of rhodanese expression should be conducted to effectively degrade HCN into its less toxic compound.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Design
+            </h5>
+            <div>
+                <h6>
+                    How to create a feasible HCN degradation part?
+                </h6>
+                <p>
+                    The principle in this system is induction of cyanide degradation in the absence of arabinose. In order to develop an on/off system between HCN production and degradation, we adopted pBAD-TetR regulation and use pTet to regulate the sseA gene to be expressed as sulfurtransferase or rhodanese enzyme. At this stage, we utilized several standard parts already used by previous iGEM teams listed below:
+                </p>
+                <ol>
+                    <li>BBa_C0080 (AraC)</li>
+                    <li>BBa_K542003 (pBAD-TetR)</li>
+                    <li>BBa_R0040 (pTet)</li>
+                    <li>BBa_B0034m (strong RBS)</li>
+                    <li>BBa_B0015 (double terminator)</li>
+                </ol>
+                <p>
+                    We used pBAD-TetR (BBa_K542003) to regulate the sseA gene. The sseA gene has a high percentage of GC content so we faced some problems to synthesize it. Thus, we altered the sseA sequence to reduce the GC content and to remove some illegal sites. For a deeper understanding of the construction, you can visit the Auviola design page (linked to the design page).
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Build
+            </h5>
+            <div>
+                <p>
+                    We ordered the sseA sequence from Twist Bioscience. The sseA sequence referred to the genome of Chromobacterium violaceum ATCC 12472 (NCBI: GenBank: AE016825.1). In order to meet the BioBrick standard and synthesize requirement, we altered some of its sequences. The assembly of plasmid backbone (pSB1C3), AraC (BBa_C0080), pBAD-TetR (BBa_K542003), RBS (BBa_B0034m), sseA gene, and double terminator (BBa_B0015) were done using Gibson Assembly.
+                </p>
+                <p>
+                    We also build a kinetic model using tellurium for cyanide degradation performed by rhodanese as a separate section model with parameters mentioned in previous studies.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Test
+            </h5>
+            <div>
+                <p>
+                    On-going.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Improve
+            </h5>
+            <div>
+                <p>
+                    On-going.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="l-arabinose-converter">
+        <h4 class="display-4 text-primary mb-4">
+            L-Arabinose Converter
+        </h4>
+        <p>
+            These schemes below are our journey to degrade cyanide as the remaining compounds in the gold cyanidation based on the engineering approach to generate --
+        </p>
+        <div>
+            <h5>
+                Research & Imagine
+            </h5>
+            <div>
+                <h6>
+                    What are the properties of regulator genes in C. violaceum?
+                </h6>
+                <p>
+                    Regulator genes play a crucial role in controlling an on-off system. Two of several regulator genes have been tested in C. violaceum are araC and tetR.4 The araC works dependably to arabinose level which acts as both an activator in the presence of arabinose and a repressor in the absence of arabinose.5 A PBAD is one of the inducible promoters presented in C. violaceum and regulated by the araC.6 On the other hand, tetR acts as a repressor and normally play a role in tetracycline resistance with PTET promoter.7,8 These regulator genes as well as their related promoters were the candidates for controlling our Auviola system.
+                </p>
+            </div>
+            <div>
+                <h6>
+                    What are some concerns to be considered in C. violaceum engineering?
+                </h6>
+                <p>
+                    Since C. violaceum is unable to ferment arabinose, a system responsible for converting arabinose into its inactive form is needed. An enzyme of L-arabinose isomerase belongs to the L-arabinose converter into L-ribulose, so that the arabinose concentration can be adjusted.13
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Design
+            </h5>
+            <div>
+                <p>
+                    On-going.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Build
+            </h5>
+            <div>
+                <p>
+                    On-going.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Test
+            </h5>
+            <div>
+                <p>
+                    On-going.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h5>
+                Improve
+            </h5>
+            <div>
+                <p>
+                    On-going.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="pyrite">
+        <h4 class="display-4 text-primary mb-4">
+            Pyrite Dissolution Bioreactor
+        </h4>
+    </section>
+    <section id="references" class="content-references">
+        <h4 class="display-4 text-primary mb-4">
+            References
+        </h4>
+        <ol>
+            <li>KEGG, ENZYME: 1.4.99.5 [Online] https://www.genome.jp/dbget-bin/www_bget?ec:1.4.99.5 [accessed on July 28, 2021 at 09:06 WIT].</li>
+            <li>Kianinia, Y., Khalesi, M.R., Abdollahy, M., Hefter, G., Senanayake, G., Hnedkovsky L., Darban, A.K., Shahbazi, M., 2018, Predicting Cyanide Consumption in Gold Leaching: A Kinetic and Thermodynamic Modeling Approach, Minerals, vol. 8, no. 3, pp. 110. doi:10.3390/min8030110</li>
+            <li>Michaels, R. and Corpe, W.A., 1965, Cyanide Formation by Chromobacterium violaceum, Journal of Bacteriology, vol. 89, no. 1, pp. 106-112.</li>
+            <li>Brazilian National Genome Project Consortium, 2003, The complete genome sequence of Chromobacterium violaceum reveals remarkable and exploitable bacterial adaptability, Proceedings of the National Academy of Sciences of the United States of America, vol. 100, no. 20, pp. 11660-11665.</li>
+            <li>Lobell, R.B., Schleif, R.F., 1990, DNA looping and unlooping by AraC protein, Science, vol. 250, no. 4980, pp. 528-532.</li>
+            <li>Schleif, R., 2003, AraC protein: a love-hate relationship, Bioessays, vol. 25, pp. 274-282.</li>
+            <li>Brazilian National Genome Project Consortium, 2003, The complete genome sequence of Chromobacterium violaceum reveals remarkable and exploitable bacterial adaptability, Proceedings of the National Academy of Sciences of the United States of America, vol. 100, no. 20, pp. 11660–11665. doi:10.1073/pnas.1832124100</li>
+            <li>Cuthbertson, L., Nodwell, J.R., 2013, The TetR family of regulators, Microbiology and molecular biology reviews: MMBR, vol. 77, no. 3, pp. 440–475. doi:10.1128/MMBR.00018-13</li>
+            <li>Machingura, M., Salomon, E., Jez, J.M., Ebbs, S.D., 2016, The β-cyanoalanine synthase pathway: beyond cyanide detoxification, Plant, Cell and Environment, vol. 39, no. 10, pp. 2329-41.</li>
+            <li>Ressler, C., Abe, O., Kondo, Y., Cottrell, B., Abe, K., 1973, Purification and Characterization from Chromobacterium violaceurn of an Enzyme Catalyzing the Synthesis of -Cyano-a-aminobutyric Acid and Thiocyanate, Biochemistry, vol. 12, no. 26, pp. 5369-5377.</li>
+            <li>Cipollone, R., Ascenzi, P., Tomao, P., Imperi, F., Visca, P., 2008, Enzymatic Detoxification of Cyanide: Clues from Pseudomonas aeruginosa Rhodanese, Journal of Molecular Microbiology and Biotechnology, vol 15, pp. 199-211.</li>
+            <li>Rodgers, P.B., Knowles, C.J., 1978, Cyanide Production and Degradation During Growth of Chromobacterium violaceum, Journal of General Microbiology, vol. 108, pp. 261-267.</li>
+            <li>Uniprot, 2021, UniProtKB - P08202 (ARAA_ECOLI) [Online] https://www.uniprot.org/uniprot/P08202 [accessed on August 17, 2021 at 12:25 WIT].</li>
+            <li>Jones, C.A., Kelly, D. P., 1983, Growth of Thiobacillus ferrooxidans on ferrous iron in chemostat culture: Influence of product and substrate inhibition, Journal of Chemical Technology and Biotechnology: Biotechnology, vol. 33, no, 4, pp. 241-261. doi:10.1002/jctb.280330407</li>
+            <li>Suzuki, I., Lizama, H.M., Tackaberry, P.D., 1989, Competitive Inhibition of Ferrous Iron Oxidation by Thiobacillus ferrooxidans by Increasing Concentrations of Cells, Applied and Environmental Microbiology, vol 55 no 5, pp. 1117–1121. doi:10.1128/aem.55.5.1117-1121.1989</li>
+        <ol>
+    </section>
+</div>
