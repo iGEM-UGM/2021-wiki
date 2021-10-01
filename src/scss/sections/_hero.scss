@@ -12,6 +12,15 @@
     box-shadow: inset 0 0 0 4000px rgba($primary, 0.7);
 }
 
+#hero-home .hero-home {
+    background-image: url('/assets/img/hero-home.png');
+    background-color: $white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 #hero .hero-typography {
     width: fit-content;
     display: block;

@@ -159,6 +159,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/7/78/T--UGM_Indonesia--img--hero-design.jpg
     md5: 8e8127f814e67d7da9545b78874d1640
     upload_filename: T--UGM_Indonesia--img--hero-design.jpg
+  assets/img/hero-home.png:
+    link_URL: https://2021.igem.org/wiki/images/8/89/T--UGM_Indonesia--img--hero-home.png
+    md5: 83a052ea706fa66918bc9bb297096184
+    upload_filename: T--UGM_Indonesia--img--hero-home.png
   assets/img/hero-implementation.jpg:
     link_URL: https://2021.igem.org/wiki/images/4/49/T--UGM_Indonesia--img--hero-implementation.jpg
     md5: 4625fc6d4e6e1173f58ff6b594ad8ba5
@@ -178,7 +182,7 @@ assets:
 css:
   css/theme.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/themeCSS?action=raw&ctype=text/css
-    md5: 2c6f256eed8e157aac17352de36bf4bd
+    md5: 46ad81b52a36ace6893c6916a2e63c3c
   css/theme.min.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/theme-minCSS?action=raw&ctype=text/css
     md5: e49abe74bf2fe72ee75f802ac74c0cf2
@@ -254,7 +258,7 @@ html:
     md5: b6f6e9c2730609c4b9a7ecd95ede8f30
   index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia
-    md5: 6fdf4705a63c084308de147cf5650ddf
+    md5: c5a46c9714eb8b072226b58ab226cdf5
 js:
   js/bootstrap.bundle.js:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-bundleJS?action=raw&ctype=text/javascript
