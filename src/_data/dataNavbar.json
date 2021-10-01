@@ -2,54 +2,53 @@
   {
     "name": "Project",
     "submenu": [
-      { "name": "Description", "href": "#" },
-      { "name": "Design", "href": "#" },
-      { "name": "Engineering", "href": "#" },
-      { "name": "Implementation", "href": "#" },
-      { "name": "Safety", "href": "#" },
-      { "name": "Contribution", "href": "#" },
-      { "name": "Poster", "href": "#" }
+      { "name": "Description", "href": "https://2021.igem.org/Team:UGM_Indonesia/Description" },
+      { "name": "Design", "href": "https://2021.igem.org/Team:UGM_Indonesia/Design" },
+      { "name": "Engineering", "href": "https://2021.igem.org/Team:UGM_Indonesia/Engineering" },
+      { "name": "Implementation", "href": "https://2021.igem.org/Team:UGM_Indonesia/Implementation" },
+      { "name": "Safety", "href": "https://2021.igem.org/Team:UGM_Indonesia/Safety" },
+      { "name": "Contribution", "href": "https://2021.igem.org/Team:UGM_Indonesia/Contribution" },
+      { "name": "Notebook", "href": "https://2021.igem.org/Team:UGM_Indonesia/Notebook" },
+      { "name": "Poster", "href": "https://2021.igem.org/Team:UGM_Indonesia/Poster" }
     ]
   },
   {
     "name": "Wet Lab",
     "submenu": [
-      { "name": "Logbook", "href": "#" },
-      { "name": "Parts", "href": "#" },
-      { "name": "Experiments", "href": "#" },
-      { "name": "Results", "href": "#" }
+      { "name": "Parts", "href": "https://2021.igem.org/Team:UGM_Indonesia/Parts" },
+      { "name": "Experiments", "href": "https://2021.igem.org/Team:UGM_Indonesia/Experiments" },
+      { "name": "Results", "href": "https://2021.igem.org/Team:UGM_Indonesia/Results" }
     ]
   },
   {
     "name": "Dry Lab",
     "submenu": [
-      { "name": "Logbook", "href": "#" },
-      { "name": "Model", "href": "#" },
-      { "name": "Bioreactor", "href": "#" },
-      { "name": "Measurements", "href": "#" }
+      { "name": "Model", "href": "https://2021.igem.org/Team:UGM_Indonesia/Model" },
+      { "name": "Bioreactor", "href": "https://2021.igem.org/Team:UGM_Indonesia/Bioreactor" },
+      { "name": "Measurement", "href": "https://2021.igem.org/Team:UGM_Indonesia/Measurement" }
     ]
   },
   {
-    "name": "Human Practice",
+    "name": "Human Practices",
     "submenu": [
-      { "name": "Integrated Human Practices", "href": "#" },
-      { "name": "Education and Communication", "href": "#" }
+      { "name": "Integrated Human Practices", "href": "https://2021.igem.org/Team:UGM_Indonesia/Human_Practices" },
+      { "name": "Education and Communication", "href": "https://2021.igem.org/Team:UGM_Indonesia/Communication" }
     ]
   },
   {
     "name": "Team",
     "submenu": [
-      { "name": "Members", "href": "#" },
-      { "name": "Attributions", "href": "#" },
-      { "name": "Collaborations", "href": "#" },
-      { "name": "Partnership", "href": "#" }
+      { "name": "Members", "href": "https://2021.igem.org/Team:UGM_Indonesia/Team" },
+      { "name": "Attributions", "href": "https://2021.igem.org/Team:UGM_Indonesia/Attributions" },
+      { "name": "Collaborations", "href": "https://2021.igem.org/Team:UGM_Indonesia/Collaborations" },
+      { "name": "Partnership", "href": "https://2021.igem.org/Team:UGM_Indonesia/Partnership" }
     ]
   },
   {
     "name": "Awards",
     "submenu": [
-      { "name": "Awards", "href": "#" },
-      { "name": "Medals", "href": "#" }
+      { "name": "Awards", "href": "https://2021.igem.org/Team:UGM_Indonesia/Awards" },
+      { "name": "Medals", "href": "https://2021.igem.org/Team:UGM_Indonesia/Medals" }
     ]
   }
 ]

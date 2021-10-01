@@ -18,8 +18,8 @@ var paths = cfg.paths;
 
 gulp.task("dist-assets", function (done) {
   gulp.src("./src/assets/js/**.*").pipe(gulp.dest("./dev/js"));
-  gulp.src("./src/assets/img/**.*").pipe(gulp.dest("./dev/img"));
-  gulp.src("./src/assets/font/**.*").pipe(gulp.dest("./dev/font"));
+  gulp.src("./src/assets/img/**.*").pipe(gulp.dest("./dev/assets/img"));
+  gulp.src("./src/assets/font/**.*").pipe(gulp.dest("./dev/assets/font"));
   done();
 });
 

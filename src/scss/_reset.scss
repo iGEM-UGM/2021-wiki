@@ -5,7 +5,7 @@
 
 .body
 {
-	padding-top: 70px !important;
+	// padding-top: 120px !important;
 }
 
 #mw-content-text p
@@ -15,6 +15,13 @@
     padding-bottom: 0%;
     padding-left: 0%;
 }
+
+div.mw-content-ltr>p
+{
+    margin: 0;
+    display: none;
+}
+
 
 html body {
     font-size: inherit;

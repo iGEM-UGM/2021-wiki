@@ -120,3 +120,9 @@ dist
 # 11ty
 _site/
 _site/**
+
+dev/
+
+.env
+wikisync.cookies
+igem/
