@@ -126,3 +126,4 @@ dev/
 .env
 wikisync.cookies
 igem/
+public/

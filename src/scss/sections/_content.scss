@@ -2,22 +2,23 @@
 @use '../components/typography' as *;
 @use '../components/mixins' as *;
 
-.content .display-4 {
+#main-content .display-4 {
     font-family: "Montserrat Bold";
 }
 
-section.content p, section.content li {
+section#main-content p, section#main-content li {
     font-family: "Montserrat Regular";
     text-align: left;
 }
 
-section.content .content-references li { 
+section#main-content .content-references li {
+    font-size: 1rem; 
     word-break: break-all;
 }
 
 
 
-section.content blockquote {
+section#main-content blockquote {
     font-family: "Montserrat Light";
     width: 60%;
     align-self: center;
@@ -27,18 +28,18 @@ section.content blockquote {
     }
 }
 
-section.content figure figcaption {
+section#main-content figure figcaption {
     font-family: "Montserrat Regular";
     align-self: center;
 }
 
-section.content section::before{
+section#main-content section::before{
     height: 100px;
     content: "";
     display: block;
 }
 
-section.content div.scrollspy{
+section#main-content div.scrollspy{
     position: relative;
     height: auto;
     overflow-y: scroll;
