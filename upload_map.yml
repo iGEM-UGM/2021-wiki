@@ -123,6 +123,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/41/T--UGM_Indonesia--img--collaborations-synbiofest.png
     md5: 8ec7ce5f0e0e82c84e96fc1cfac67abc
     upload_filename: T--UGM_Indonesia--img--collaborations-synbiofest.png
+  assets/img/decorative-h4-header.png:
+    link_URL: https://2021.igem.org/wiki/images/7/71/T--UGM_Indonesia--img--decorative-h4-header.png
+    md5: b329d68a522b4798d6f1e6c757fd97e0
+    upload_filename: T--UGM_Indonesia--img--decorative-h4-header.png
   assets/img/description-figure-1.png:
     link_URL: https://2021.igem.org/wiki/images/c/c4/T--UGM_Indonesia--img--description-figure-1.png
     md5: 8e9f6e5c62c6e61585ef059aa07ad710
@@ -238,7 +242,7 @@ assets:
 css:
   css/theme.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/themeCSS?action=raw&ctype=text/css
-    md5: 0309d46a16677020618c25c04232e810
+    md5: 513f3b07b27d746076296b4756ca47a7
   css/theme.min.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/theme-minCSS?action=raw&ctype=text/css
     md5: e49abe74bf2fe72ee75f802ac74c0cf2

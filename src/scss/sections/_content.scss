@@ -2,9 +2,36 @@
 @use '../components/typography' as *;
 @use '../components/mixins' as *;
 
-#main-content .display-4 {
-    font-family: "Montserrat Bold";
-    margin-bottom: 2rem;
+section#main-content  {
+    section.content-references h4.display-4{
+        font-family: "Montserrat Bold";
+        margin-bottom: 2rem;
+        clear: right;
+    }
+
+    section:not(.content-references) h4.display-4{
+        font-family: "Montserrat Bold";
+        margin-bottom: 2rem;
+        clear: right;
+
+        &::before{
+            float: right;
+            transform: translateY(50%);
+            margin-left: 2rem;
+    
+            content: "";
+            width: 217px;
+            height: 35px;
+            background: url("/assets/img/decorative-h4-header.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            overflow: hidden;
+    
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+    }
 }
 
 section#main-content p, section#main-content li {
@@ -12,6 +39,38 @@ section#main-content p, section#main-content li {
     text-align: left;
     line-height: 2;
     margin: 1rem 0;
+}
+
+section#main-content section:not(.content-references)>ol{
+    margin: 0;
+    padding-left: 4rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 3rem;
+    }
+
+    >li{
+        &::marker{
+            font-family: "Montserrat Bold";
+            font-size: 2.5rem;
+            color: $primary;
+            
+            @include media-breakpoint-down(lg) {
+                font-size: 2rem;
+            }
+        }
+
+        & h5 {
+            font-family: "Montserrat Bold";
+            font-size: 1.5rem;
+            color: $white;
+        }
+    
+        color: $white;
+        background-color: $primary;
+        padding: 0 2rem 2rem 2rem;
+        border-radius: 1rem;
+    }
 }
 
 section#main-content h5 {
