@@ -1,6 +1,7 @@
 @use '../components/mixins' as *;
 
-@include font('Montserrat Regular', 'https://2021.igem.org/wiki/images/8/81/', 'T--UGM_Indonesia--Montserrat-Regular');
-@include font('Montserrat Medium', 'https://2021.igem.org/wiki/images/0/06/', 'T--UGM_Indonesia--Montserrat-Medium');
-@include font('Montserrat Bold', 'https://2021.igem.org/wiki/images/1/1b/', 'T--UGM_Indonesia--Montserrat-Bold');
-@include font('Montserrat Light', 'https://2021.igem.org/wiki/images/6/64/', 'T--UGM_Indonesia--Montserrat-Light');
+@include font('Montserrat Regular', 'T--UGM_Indonesia--Montserrat-Regular');
+@include font('Montserrat Medium', 'T--UGM_Indonesia--Montserrat-Medium');
+@include font('Montserrat Bold', 'T--UGM_Indonesia--Montserrat-Bold');
+@include font('Montserrat Light', 'T--UGM_Indonesia--Montserrat-Light');
+@include font('Montserrat Black', 'T--UGM_Indonesia--Montserrat-Black');

@@ -1,7 +1,9 @@
 @use '../custom' as *;
 @use '../components/typography' as *;
 
-.menu {
+nav.menu {
+    padding-top: 26px;
+    padding-bottom: 8px;
     background: $white;
 
     a.nav-link, a.dropdown-item{
@@ -22,7 +24,7 @@
             
             background: $secondary;
 
-            transition:0.4s;
+            transition: 0.4s;
 
             &:focus{
                 width: 100%;

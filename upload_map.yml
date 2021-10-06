@@ -191,13 +191,17 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/8/89/T--UGM_Indonesia--img--hero-home.png
     md5: 83a052ea706fa66918bc9bb297096184
     upload_filename: T--UGM_Indonesia--img--hero-home.png
+  assets/img/hero-home.svg:
+    link_URL: https://2021.igem.org/wiki/images/9/91/T--UGM_Indonesia--img--hero-home.svg
+    md5: cf5a84021f22260ab4a8c01e86301cd1
+    upload_filename: T--UGM_Indonesia--img--hero-home.svg
   assets/img/hero-human_practice.jpg:
     link_URL: https://2021.igem.org/wiki/images/4/4d/T--UGM_Indonesia--img--hero-human_practice.jpg
     md5: aac07a824900e405d37bd94a84c9f100
     upload_filename: T--UGM_Indonesia--img--hero-human_practice.jpg
   assets/img/hero-implementation.jpg:
     link_URL: https://2021.igem.org/wiki/images/4/49/T--UGM_Indonesia--img--hero-implementation.jpg
-    md5: 4625fc6d4e6e1173f58ff6b594ad8ba5
+    md5: 4e4ca828d9287a23598b8a5d0c287e46
     upload_filename: T--UGM_Indonesia--img--hero-implementation.jpg
   assets/img/hero-measurement.jpg:
     link_URL: https://2021.igem.org/wiki/images/5/5c/T--UGM_Indonesia--img--hero-measurement.jpg
@@ -231,6 +235,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/3/31/T--UGM_Indonesia--img--hero-safety.jpg
     md5: 99422cac76629962234230c218f828c9
     upload_filename: T--UGM_Indonesia--img--hero-safety.jpg
+  assets/img/hero-team.JPG:
+    link_URL: https://2021.igem.org/wiki/images/7/7f/T--UGM_Indonesia--img--hero-team.JPG
+    md5: 9a254c08bc16e977b7fd2e36a2d235f3
+    upload_filename: T--UGM_Indonesia--img--hero-team.JPG
+  assets/img/hero-team.jpg:
+    link_URL: https://2021.igem.org/wiki/images/9/91/T--UGM_Indonesia--img--hero-team.jpg
+    md5: 9a254c08bc16e977b7fd2e36a2d235f3
+    upload_filename: T--UGM_Indonesia--img--hero-team.jpg
   assets/img/logo-white.png:
     link_URL: https://2021.igem.org/wiki/images/f/fa/T--UGM_Indonesia--img--logo-white.png
     md5: 50ff898221f20ef45459f2e2c5413263
@@ -242,83 +254,83 @@ assets:
 css:
   css/theme.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/themeCSS?action=raw&ctype=text/css
-    md5: 513f3b07b27d746076296b4756ca47a7
+    md5: 4231b55e64be38772c3e10bf9b185d3d
   css/theme.min.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/theme-minCSS?action=raw&ctype=text/css
     md5: e49abe74bf2fe72ee75f802ac74c0cf2
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Attributions
-    md5: 3c6d93c1c188b9e760df32347d6a7c2f
+    md5: 34b37fae4f1c6bbcb6b26b41fbd6fe45
   Awards/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Awards
-    md5: f3e701ab203deff086c9a98f35747d2e
+    md5: e397d8b0a49ef7dbb2ba7bfd41e11f1e
   Bioreactor/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Bioreactor
-    md5: 7135e910b4b6afb1895a34d89abaeb27
+    md5: d1642b1622bdea5330f74753c5572911
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Collaborations
-    md5: 674de87b2e56dfdcf0b12d98af71e8b2
+    md5: 2c52b54f1289997ab98072498285f952
   Communication/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Communication
-    md5: a7106fba70b6789a765c1deb93f0fc60
+    md5: 0a553932f4205cbe728f86b14443d4f0
   Contribution/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Contribution
-    md5: 1006d258bd864facb45a9c012fc7d99b
+    md5: b0af2735b04dcf358eacebffd736051f
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Description
-    md5: 63470418f670846623246a939a85ef54
+    md5: f8ef4d1a1cc6f71cafc0c1121d1d2f7c
   Design/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Design
-    md5: b02ac09a2e0ea92a50bac9b58c046c0f
+    md5: 3958c88111764131c19dabe3dcfc4593
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Engineering
-    md5: d037b0d65494fcdde809e17a5bf8a615
+    md5: 55c35414cdafad2cbc2a09e1dd73584c
   Entrepreneurship/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Entrepreneurship
-    md5: 18b1f23862284a734fcbf4aa5f6d7027
+    md5: cc124ace9c58664bcb2fec694ba5e4ff
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Experiments
-    md5: dea3f5bd59606006bddc627d8f21713d
+    md5: 2b5099628c6e6e30f7bfcdb51664c11e
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Human_Practices
-    md5: 0f64a8e05ccef5f6ede56b79fcf14410
+    md5: c4dffcc0f63c847b56bd1f4ff349ed71
   Implementation/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Implementation
-    md5: 04951270f6d036e1be6aa6ce9520f8dc
+    md5: b9ade190dc7a72e9b788c672bfc84bce
   Measurement/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Measurement
-    md5: ef8b15ce049e2a561c26bb25341d6644
+    md5: 0892aef1fff3b39f7b882faf9817700d
   Medals/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Medals
-    md5: b709bad4426779baeb66671e87fba9d3
+    md5: 9149ecfe4e949ea9d8e150e1b263b782
   Model/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Model
-    md5: 648050720a91a1d409c73e55baab7a51
+    md5: 33863856cb3d707b37f86ca84c852f38
   Notebook/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Notebook
-    md5: 284051b275a6f0873f6ca4e73e26cbca
+    md5: 8101e5debe0a5958c1021af80762cf41
   Partnership/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Partnership
-    md5: 755327ffc7870c46c756d6ec7155d4c2
+    md5: f189ba3694022854dfe8bada665b91d3
   Parts/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Parts
-    md5: 58124c761ed53900a1ab589a9aaa7c61
+    md5: 87689e8e2955a81476c5ff9436ce0e87
   Poster/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Poster
     md5: 378b1cf6ffd9431f964420f41299d10e
   Results/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Results
-    md5: 22273425365ca3d7c9ad28471f271329
+    md5: 4654ca767f8362e86c0f76af757735f0
   Safety/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Safety
-    md5: 6bd2e404f5cc459d3dff4ec53471e70c
+    md5: 146682cbb938e2bc3f5ef7402bd2c2b1
   Team/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Team
-    md5: 6a4626fa2fed7c9bf0a48c50fbf562d3
+    md5: db9cd08fd92aecfd6ea52d4df582a621
   index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia
-    md5: 77ad380ce243c807ea79b0e4a267a655
+    md5: 589a3c8da99d153babea4e84fd6b1985
 js:
   js/bootstrap.bundle.js:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-bundleJS?action=raw&ctype=text/javascript

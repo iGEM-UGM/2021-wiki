@@ -1,16 +1,22 @@
 <style>
     .hero {
-        background-image: url("{{ heroImage }}");
+        background-image: url("{{ heroImage | url }}");
     }
 </style>
 
 <section id="hero" class="hero">
-    <div class="container min-vh-100">
-        <div class="row min-vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="container-fluid">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <h1 class="hero-decorative decorative-right">
+                {{ title }}
+            </h1>
+            <h1 class="hero-decorative decorative-left">
+                {{ title }}
+            </h1>
             <h1 class="display-1 hero-typography">
                 {{ title }}
             </h1>
-            <a class="btn btn-light scroll-content-button" href="#main-content">Scroll to Content</a>
+            <a class="btn btn-light scroll-content-button" href="#main-content">Learn More</a>
         </div>
     </div>
 </section>

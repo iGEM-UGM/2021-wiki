@@ -2,40 +2,102 @@
 @use '../components/typography' as *;
 @use '../components/mixins' as *;
 
-.hero {
+// #hero-home .hero-home {
+//     background-image: url('/assets/img/hero-home.png');
+//     background-color: $white;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: relative;
+// }
+
+#hero.hero{
     background-color: $primary;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 
     box-shadow: inset 0 0 0 4000px rgba($primary, 0.7);
-}
 
-#hero-home .hero-home {
-    background-image: url('/assets/img/hero-home.png');
-    background-color: $white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
 
-#hero .hero-typography {
-    width: fit-content;
-    display: block;
-    color: $white;
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
-    border-bottom: 10px solid $secondary;
+    h1{
+        margin-bottom: 0;
+    }
 
-    font-family: "Montserrat Bold";
-}
+    .hero-decorative {
+        user-select: none;
+        font-family: "Montserrat Bold";
+        font-size: 12rem;
+        color: rgba($white, 0.15);
 
-#hero .scroll-content-button {
-    display: block;
-    margin-top: 1rem;
-    width: fit-content;
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
+        &.decorative-right {
+            text-align: left;
+            width: fit-content;
+            display: block;
+            position: absolute;
+            top: 5%;
+            right: 0;
+            transform: translateX(50%);
+        }
 
-    font-family: "Montserrat Regular";
+        &.decorative-left {
+            direction: rtl;
+            text-align: right;
+            width: fit-content;
+            display: block;
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+            transform: translateX(-50%);
+        }
+
+        @include media-breakpoint-down(xl){
+            font-size: calc(6rem + 1.0vw);
+        }
+    }
+
+    .row {
+        min-height: 100vh;
+    }
+
+    .hero-typography {
+        width: fit-content;
+        display: block;
+        color: $white;
+        filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
+        border-bottom: 10px solid $secondary;
+
+        font-family: "Montserrat Bold";
+        font-size: 7rem;
+
+        @include media-breakpoint-down(xl) {
+            font-size: calc(1.625rem + 4.5vw);
+        }
+    }
+
+    .scroll-content-button {
+        display: block;
+        margin-top: 1rem;
+        width: fit-content;
+        filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
+    
+        font-family: "Montserrat Regular";
+        color: $white;
+        background-color: rgba($white, 0.0);
+        border-color: rgba($white, 1.0);
+
+        transition: 0.4s;
+
+        &:hover{
+            color: $primary;
+            background-color: rgba($white, 1.0);
+            border-color: rgba($white, 1.0);
+        }
+
+        @include media-breakpoint-down(xl) {
+            font-size: calc(0.675rem + 0.5vw);
+        }
+    }
 }
