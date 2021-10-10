@@ -1,11 +1,25 @@
 <div class="container">
-  <div class="row border-top py-5">
+  <div class="row py-5">
     <div class="col-12">
       <div class="d-flex align-content-between align-items-center justify-content-center flex-wrap sponsors p-2">
         {% for menu in dataSponsor %}
         <img src="{{ menu.logo | url }}" class="mx-4 my-4" alt="{{ menu.name }}" style="max-height: {{ menu.height }}px">
         {% endfor %}
       </div>
+    </div>
+  </div>
+  <div class="row border-top py-5 d-flex align-items-center" id="footer-contact">
+    <div class="col-1 d-flex flex-column">
+      <img src="{{ '/assets/img/logo-ugm-white.png' | url }}" class="img-fluid p-2" alt="{{ menu.name }}">
+      <img src="{{ '/assets/img/logo-igem-ugm-white.png' | url }}" class="img-fluid p-2" alt="{{ menu.name }}">
+    </div>
+    <div class="col-6 mx-2">
+      <h5>
+        Biotechnology Laboratory of Inter University Center in Universitas Gadjah Mada
+      </h5>
+      <p>
+        Jl. Teknika Utara, Senolowo, Sinduadi, Kecamatan Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+      </p>
     </div>
   </div>
 </div>
