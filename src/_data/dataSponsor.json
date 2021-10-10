@@ -1,0 +1,72 @@
+[
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-ugm.png",
+        "height" : 175
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-genscript.png",
+        "height" : 150
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-rentokill.png",
+        "height" : 100
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-geneious.png",
+        "height" : 80
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-its.png",
+        "height" : 100
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-twistbio.png",
+        "height" : 90
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-idt.png",
+        "height" : 75
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-biotek.png",
+        "height" : 35
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-biology.png",
+        "height" : 50
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-agriculture.png",
+        "height" : 50
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-pharmacy.png",
+        "height" : 50
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-engineering.png",
+        "height" : 50
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-kkmk.png",
+        "height" : 50
+    },
+    {
+        "name" : "Universitas Gadjah Mada",
+        "logo" : "/assets/img/sponsor-feb.png",
+        "height" : 50
+    }
+]

@@ -1,0 +1,17 @@
+@use '../custom' as *;
+@use '../components/typography' as *;
+@use '../components/mixins' as *;
+
+footer#footer {
+    background-color: $primary;
+
+    .sponsors {
+        background-color: $white;
+        border-radius: 30px;
+
+        img {
+            width: auto;
+            overflow: hidden;
+        }
+    }
+}

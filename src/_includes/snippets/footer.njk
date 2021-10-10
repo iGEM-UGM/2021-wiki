@@ -1,8 +1,12 @@
-<div class="row border-top py-5">
-  <div class="col-12">
-    <p>
-        Footer Lorem Ipsum
-    </p>
+<div class="container">
+  <div class="row border-top py-5">
+    <div class="col-12">
+      <div class="d-flex align-content-between align-items-center justify-content-center flex-wrap sponsors p-2">
+        {% for menu in dataSponsor %}
+        <img src="{{ menu.logo | url }}" class="mx-4 my-4" alt="{{ menu.name }}" style="max-height: {{ menu.height }}px">
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </div>
 

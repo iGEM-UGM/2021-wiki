@@ -2,6 +2,7 @@
 @use '../components/typography' as *;
 
 nav.menu {
+    z-index: 2000;
     padding-top: 26px;
     padding-bottom: 8px;
     background: $white;

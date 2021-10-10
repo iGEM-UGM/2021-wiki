@@ -3,6 +3,8 @@
 @use '../components/mixins' as *;
 
 section#main-content  {
+    margin-bottom: 4rem;
+
     section.content-references h4.display-4{
         font-family: "Montserrat Bold";
         margin-bottom: 2rem;
