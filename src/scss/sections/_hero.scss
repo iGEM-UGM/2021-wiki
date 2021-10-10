@@ -29,7 +29,7 @@
     .hero-decorative {
         user-select: none;
         font-family: "Montserrat Bold";
-        font-size: 12rem;
+        font-size: calc(12rem);
         color: rgba($white, 0.15);
 
         &.decorative-right {
