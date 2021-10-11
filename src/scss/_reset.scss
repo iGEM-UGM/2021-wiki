@@ -8,12 +8,14 @@
 	// padding-top: 120px !important;
 }
 
-#mw-content-text p
+#mw-content-text
 {
-    padding-top: 0%;
-    padding-right: 0%;
-    padding-bottom: 0%;
-    padding-left: 0%;
+    p {
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
 }
 
 div.mw-content-ltr>p

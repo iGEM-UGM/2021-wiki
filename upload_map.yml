@@ -255,6 +255,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/d/da/T--UGM_Indonesia--img--layout-main.jpg
     md5: efdb0a27d1c942f4725f0b0641851e69
     upload_filename: T--UGM_Indonesia--img--layout-main.jpg
+  assets/img/logo-igem-ugm-white.png:
+    link_URL: https://2021.igem.org/wiki/images/0/0b/T--UGM_Indonesia--img--logo-igem-ugm-white.png
+    md5: 92a2803331303ab925b8ea58fa8d2e46
+    upload_filename: T--UGM_Indonesia--img--logo-igem-ugm-white.png
+  assets/img/logo-ugm-white.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f1/T--UGM_Indonesia--img--logo-ugm-white.png
+    md5: 99f6c694977df61190c0e0b409c47740
+    upload_filename: T--UGM_Indonesia--img--logo-ugm-white.png
   assets/img/logo-white.png:
     link_URL: https://2021.igem.org/wiki/images/f/fa/T--UGM_Indonesia--img--logo-white.png
     md5: 50ff898221f20ef45459f2e2c5413263
@@ -265,7 +273,7 @@ assets:
     upload_filename: T--UGM_Indonesia--img--project-logo.png
   assets/img/sponsor-agriculture.png:
     link_URL: https://2021.igem.org/wiki/images/3/3c/T--UGM_Indonesia--img--sponsor-agriculture.png
-    md5: 473351371e9ca0ea5f0d3cb89be23695
+    md5: 38618d91bc8aba3b5e4ee98107b46dc3
     upload_filename: T--UGM_Indonesia--img--sponsor-agriculture.png
   assets/img/sponsor-bio.png:
     link_URL: https://2021.igem.org/wiki/images/1/19/T--UGM_Indonesia--img--sponsor-bio.png
@@ -273,7 +281,7 @@ assets:
     upload_filename: T--UGM_Indonesia--img--sponsor-bio.png
   assets/img/sponsor-biology.png:
     link_URL: https://2021.igem.org/wiki/images/6/65/T--UGM_Indonesia--img--sponsor-biology.png
-    md5: d3697259cfab1ff9e18e577d94a283e8
+    md5: 22eb2a201d34ed0053bf0d25a658520b
     upload_filename: T--UGM_Indonesia--img--sponsor-biology.png
   assets/img/sponsor-biotek.png:
     link_URL: https://2021.igem.org/wiki/images/6/67/T--UGM_Indonesia--img--sponsor-biotek.png
@@ -281,11 +289,11 @@ assets:
     upload_filename: T--UGM_Indonesia--img--sponsor-biotek.png
   assets/img/sponsor-engineering.png:
     link_URL: https://2021.igem.org/wiki/images/2/2c/T--UGM_Indonesia--img--sponsor-engineering.png
-    md5: 22e69478b1345d6a377a8483af8ece47
+    md5: 43f253b1b01be3d5138508dba3c0d431
     upload_filename: T--UGM_Indonesia--img--sponsor-engineering.png
   assets/img/sponsor-feb.png:
     link_URL: https://2021.igem.org/wiki/images/9/9e/T--UGM_Indonesia--img--sponsor-feb.png
-    md5: de2b0a3b36ce7739be14057297ec0723
+    md5: d9cfd3238dacaa12967a2682ed73fb21
     upload_filename: T--UGM_Indonesia--img--sponsor-feb.png
   assets/img/sponsor-geneious.png:
     link_URL: https://2021.igem.org/wiki/images/4/44/T--UGM_Indonesia--img--sponsor-geneious.png
@@ -305,11 +313,11 @@ assets:
     upload_filename: T--UGM_Indonesia--img--sponsor-its.png
   assets/img/sponsor-kkmk.png:
     link_URL: https://2021.igem.org/wiki/images/f/f3/T--UGM_Indonesia--img--sponsor-kkmk.png
-    md5: 1efd244e9bd9f0e96a086d072834a936
+    md5: 74b2fb1915a5a75495f72e52e4c6f31c
     upload_filename: T--UGM_Indonesia--img--sponsor-kkmk.png
   assets/img/sponsor-pharmacy.png:
     link_URL: https://2021.igem.org/wiki/images/1/1f/T--UGM_Indonesia--img--sponsor-pharmacy.png
-    md5: 3f01a6fa8f4f081e2d30aab27ed8cec0
+    md5: 22aef75074399375b16442ce4400bb4a
     upload_filename: T--UGM_Indonesia--img--sponsor-pharmacy.png
   assets/img/sponsor-rentokill.png:
     link_URL: https://2021.igem.org/wiki/images/1/10/T--UGM_Indonesia--img--sponsor-rentokill.png
@@ -330,86 +338,86 @@ assets:
 css:
   css/theme.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/themeCSS?action=raw&ctype=text/css
-    md5: 92b212be2db56aadc8e8ff378000cb15
+    md5: f0fb0f1d89eee7117ecdadcf99afe969
   css/theme.min.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/theme-minCSS?action=raw&ctype=text/css
     md5: e49abe74bf2fe72ee75f802ac74c0cf2
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Attributions
-    md5: 2be2223c2cbb3979ead83476e80216cc
+    md5: e6748ba1a13dc2c4f385e3fabac708c6
   Awards/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Awards
-    md5: b9f074cb0ea3abfd1638cc4108ddede5
+    md5: d50b9a9969900a3d8e4e4ddcef96a8ca
   Bioreactor/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Bioreactor
-    md5: 57868275bf8741c72104a68b41005e2b
+    md5: 8fb98c511bbf93839eff6b7c2f918cdf
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Collaborations
-    md5: 42231d608a242a17241d7893d45e4731
+    md5: b9e1b5e10808a7accd23e72a326330f0
   Communication/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Communication
-    md5: 3f7e2cea9d04ce3458a29fa341a0a42b
+    md5: 80deef7735f86994473d32c905419ac7
   Contribution/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Contribution
-    md5: c621d524e17efee12f1b54e0ef6a5fd6
+    md5: 1bb17d85f66e517c523efc384f392bc7
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Description
-    md5: ff5840649b17bf901bf80294bc98bd1f
+    md5: 238b91def42708c3677005cd969dad3e
   Design/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Design
-    md5: 598ca8e558d7c0bd9472f8813782b97b
+    md5: 4340e996ade6a17ba9b24ba5557bb449
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Engineering
-    md5: 4d991fa98abc9c76a2878fbb10a9cf41
+    md5: 33927f1b7f2834f47ea23cf8c112b2a0
   Entrepreneurship/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Entrepreneurship
-    md5: 72e3cd99302dad525390981d9676ea63
+    md5: eeff8bd79c2df5bdfd99682f969cd8f2
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Experiments
-    md5: 2f1fa11121496547e11472661f858240
+    md5: 5ff558cf10ac29e7d184e8aa8f26365e
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Human_Practices
-    md5: a1f876110d428fc3ec3d0197271270c3
+    md5: e1e4e1b6267e1a8201c0cd8606a81790
   Implementation/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Implementation
-    md5: 5e51ee5848f0d32ffcc35360a8d8b9b5
+    md5: 2c282cd1888d53de021f0c71277a79e8
   Measurement/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Measurement
-    md5: e722bf1f1c3b2b60e361d0953f112840
+    md5: cd3b84258017ca1b880613e78f5396ee
   Medals/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Medals
-    md5: ed46eaffad84b420a1543f47b4727b20
+    md5: ffbe643ec9c51a8c7d1784d8b5efa452
   Model/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Model
-    md5: 9a3dbb21802711256edca8955c57cebc
+    md5: 284ac9bfd1f4f1fa17e5b7f07410f6fb
   Notebook/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Notebook
-    md5: f50a942084c9c2ae9dcb6d9c451f46df
+    md5: 80b650939d4ab2298ead2309d41a0fc7
   Partnership/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Partnership
-    md5: 527a795220d56ca8e22f96eadea5f668
+    md5: 30f1c90b05dcb6bc3ed4870cf1281384
   Parts/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Parts
-    md5: 32be99aa6323392eb782b0704bba0e31
+    md5: 7e3bc063028db2709adb239f2d23717b
   Poster/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Poster
     md5: 378b1cf6ffd9431f964420f41299d10e
   Results/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Results
-    md5: 662426693a33d656836f8e5fa165b314
+    md5: 477cc81e0dd22a72d42747cafb93408b
   Safety/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Safety
-    md5: ccedc7bed0320509dc06223e2e945651
+    md5: 406bd1f99f34404f9a3169ac94b7fdd4
   Team/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Team
-    md5: 00aa11f4da80b2bc26374ad783995847
+    md5: 0cf7969883624e204cc926f5e2622ffa
   Template_Testing/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Template_Testing
-    md5: 2a80f55f0e67ec6d09ae0505c4cd4bf8
+    md5: c474aff80956559cc446391df8d1cd48
   index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia
-    md5: 7bdd40c46176e87cd9b1e1e9854ecf62
+    md5: ec2ff3fb72ddcdc5f72c4737b870b59b
 js:
   js/bootstrap.bundle.js:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-bundleJS?action=raw&ctype=text/javascript

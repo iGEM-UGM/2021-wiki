@@ -1,7 +1,7 @@
 @use '../custom' as *;
 @use '../components/typography' as *;
 
-nav.menu {
+nav#navbar {
     z-index: 2000;
     padding-top: 26px;
     padding-bottom: 8px;

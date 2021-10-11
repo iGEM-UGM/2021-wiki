@@ -16,16 +16,101 @@ footer#footer {
     }
 
     #footer-contact {
-        h5 {
-            color: $white;
-            font-family: "Montserrat Bold";
-            font-size: 1.5rem;
+        .footer-logo {
+            img {
+                max-width: 8rem;
+                max-height: 8rem;
+                height: auto;
+                overflow: hidden;
+            }
+        }
+        .footer-address{
+            h5 {
+                color: $white;
+                font-family: "Montserrat Bold";
+                font-size: 1.5rem;
+                text-align: left;
+            }
+    
+            p {
+                color: $gray-400;
+                font-family: "Montserrat Regular";
+                font-size: 1rem;
+                text-align: left;
+            }
+
+            a {
+                display: inline-block;
+                p {
+                    
+                    margin-bottom: 0;
+                }
+
+                &:hover{
+                    p {
+                        color: $white;
+                    }
+                }
+
+                
+            }
         }
 
+        .footer-social-media {
+            h4 {
+                color: $white;
+                font-family: "Montserrat Bold";
+                font-size: 3rem;
+                text-align: center;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            li {
+                display: inline-block;
+                i {
+                    color: $gray-400;
+                    font-size: 2rem;
+    
+                    transition: 0.4s;
+    
+                    &:hover{
+                        color: $white;
+                        filter: drop-shadow(0 5px 10px rgba($black, 0.5));
+                    }
+                }
+
+                margin: 1rem 1.25rem;
+
+                @include media-breakpoint-down(lg) {
+                    margin: 1rem 0.75rem;
+                }
+            }
+        }
+    }
+
+    #footer-license {
         p {
-            color: $white;
             font-family: "Montserrat Regular";
-            font-size: 1rem;
+            font-size: 0.75rem;
+            color: $gray-400;
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: fit-content;
+            margin-bottom: 0;
+            padding: 1rem 2rem;
+
+            a {
+                color: $white;
+                padding: 0;
+
+                &:hover {
+                    color: $secondary;
+                }
+            }
         }
     }
 }

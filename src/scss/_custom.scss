@@ -24,7 +24,12 @@ $gray-900: #212529;
 $black:    #000;
 
 $primary:       #4A148C; // $purple
+$primary-50: #F3E5F5;
+$primary-100: #E1BEE7;
+$primary-200: #CE93D8;
+$primary-800: #6A1B9A;
 $secondary:     #F4AF2E; // $yellow
+$secondary-dark:   #F57F17;
 
 // These are the defaults, but you can override any values
 $font-family-sans-serif:    "Montserrat Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -33,3 +38,7 @@ $font-family-monospace:     Menlo, Monaco, Consolas, "Liberation Mono", "Courier
 $font-family-base:          $font-family-sans-serif !default;
 
 @import "assets/bootstrap/bootstrap.scss";
+@import "assets/fontawesome/fontawesome.scss";
+@import "assets/fontawesome/regular.scss";
+@import "assets/fontawesome/brands.scss";
+@import "assets/fontawesome/solid.scss";

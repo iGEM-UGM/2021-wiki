@@ -1,26 +1,68 @@
 <div class="container">
   <div class="row py-5">
     <div class="col-12">
-      <div class="d-flex align-content-between align-items-center justify-content-center flex-wrap sponsors p-2">
-        {% for menu in dataSponsor %}
-        <img src="{{ menu.logo | url }}" class="mx-4 my-4" alt="{{ menu.name }}" style="max-height: {{ menu.height }}px">
+      <div class="d-flex align-content-between align-items-center justify-content-center flex-wrap sponsors p-4">
+        {% for sponsor in dataSponsor %}
+        <img src="{{ sponsor.logo | url }}" class="mx-4 my-4" alt="{{ sponsor.name }}" style="max-height: {{ sponsor.height }}px">
         {% endfor %}
       </div>
     </div>
   </div>
-  <div class="row border-top py-5 d-flex align-items-center" id="footer-contact">
-    <div class="col-1 d-flex flex-column">
-      <img src="{{ '/assets/img/logo-ugm-white.png' | url }}" class="img-fluid p-2" alt="{{ menu.name }}">
-      <img src="{{ '/assets/img/logo-igem-ugm-white.png' | url }}" class="img-fluid p-2" alt="{{ menu.name }}">
+  <div class="row border-top pt-5 pb-2 d-flex align-items-center" id="footer-contact">
+    <div class="col-12 col-lg-1 my-4 d-flex flex-row flex-lg-column justify-content-center footer-logo">
+      <img src="{{ '/assets/img/logo-ugm-white.png' | url }}" class="img-fluid my-2 mx-4 mx-lg-0" alt="Universitas Gadjah Mada Logo">
+      <img src="{{ '/assets/img/logo-igem-ugm-white.png' | url }}" class="img-fluid my-2 mx-4 mx-lg-0" alt="iGEM UGM 2021 Logo">
     </div>
-    <div class="col-6 mx-2">
-      <h5>
-        Biotechnology Laboratory of Inter University Center in Universitas Gadjah Mada
+    <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start my-4 ps-2 ps-lg-4 footer-address">
+      <h5 class="text-center text-lg-start">
+        iGEM UGM
       </h5>
-      <p>
-        Jl. Teknika Utara, Senolowo, Sinduadi, Kecamatan Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+      <p class="text-center text-lg-start">
+        Bulaksumur F11, Caturtunggal, Kecamatan Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta, Indonesia 55281
       </p>
+      <a href="mailto:igemugm@gmail.com" class="mt-2">
+        <p class="text-center text-lg-start">
+          igemugm@gmail.com
+        </p>
+      </a>
     </div>
+    <div class="col-12 col-lg-5 my-4 d-flex flex-column align-items-center footer-social-media">
+      <h4>
+        Contact Us!
+      </h4>
+      <ul class="list-unstyled d-flex flex-row justify-content-center align-items-center flex-wrap">
+        <li>
+          <a href="https://www.instagram.com/igem_ugm/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/igem_ugm" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCmauJ9hUdzTSubf8BXBZrFg" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/igemugm" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        {# <li>
+          <a href="mailto:igemugm@gmail.co">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li> #}
+      </ul>
+    </div>
+  </div>
+  <div class="row mt-2 d-flex flex-row justify-content-center" id="footer-license">
+      <p class="text-center">
+        All content on this wiki is available under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 license</a> (or any later version).
+      </p>
   </div>
 </div>
 
