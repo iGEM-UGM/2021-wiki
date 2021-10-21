@@ -479,6 +479,682 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/1/13/T--UGM_Indonesia--img--sponsor-ugm.png
     md5: 71fa5b0c1f1f0259f651811037352538
     upload_filename: T--UGM_Indonesia--img--sponsor-ugm.png
+  assets\font\T--UGM_Indonesia--Montserrat-Black.ttf:
+    link_URL: https://2021.igem.org/wiki/images/2/27/T--UGM_Indonesia--Montserrat-Black.ttf
+    md5: 27e3649bab7c62fa21b8837c4842e40e
+    upload_filename: T--UGM_Indonesia--Montserrat-Black.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-BlackItalic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/e/e3/T--UGM_Indonesia--Montserrat-BlackItalic.ttf
+    md5: d9b6ba595b059fc5d48e8f52c30f73b3
+    upload_filename: T--UGM_Indonesia--Montserrat-BlackItalic.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-Bold.ttf:
+    link_URL: https://2021.igem.org/wiki/images/1/1b/T--UGM_Indonesia--Montserrat-Bold.ttf
+    md5: ade91f473255991f410f61857696434b
+    upload_filename: T--UGM_Indonesia--Montserrat-Bold.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-BoldItalic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/f/f7/T--UGM_Indonesia--Montserrat-BoldItalic.ttf
+    md5: 1b38414956c666bd1df78fe5b9c84756
+    upload_filename: T--UGM_Indonesia--Montserrat-BoldItalic.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-ExtraBold.ttf:
+    link_URL: https://2021.igem.org/wiki/images/0/00/T--UGM_Indonesia--Montserrat-ExtraBold.ttf
+    md5: 19ba7aa52a78c3896558ac1c0a5fb4c7
+    upload_filename: T--UGM_Indonesia--Montserrat-ExtraBold.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-ExtraBoldItalic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/9/96/T--UGM_Indonesia--Montserrat-ExtraBoldItalic.ttf
+    md5: 52a50ca037f2f96fa567404dc3c5bdfb
+    upload_filename: T--UGM_Indonesia--Montserrat-ExtraBoldItalic.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-ExtraLight.ttf:
+    link_URL: https://2021.igem.org/wiki/images/9/99/T--UGM_Indonesia--Montserrat-ExtraLight.ttf
+    md5: 570a244cacd3d78b8c75ac5dd622f537
+    upload_filename: T--UGM_Indonesia--Montserrat-ExtraLight.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-ExtraLightItalic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/f/fb/T--UGM_Indonesia--Montserrat-ExtraLightItalic.ttf
+    md5: 1170df5548b7e238df5fa14b6f1a753e
+    upload_filename: T--UGM_Indonesia--Montserrat-ExtraLightItalic.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-Italic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/9/9f/T--UGM_Indonesia--Montserrat-Italic.ttf
+    md5: a7063e0c0f0cb546ad45e9e24b27bd3b
+    upload_filename: T--UGM_Indonesia--Montserrat-Italic.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-Light.ttf:
+    link_URL: https://2021.igem.org/wiki/images/6/64/T--UGM_Indonesia--Montserrat-Light.ttf
+    md5: 409c7f79a42e56c785f50ed37535f0be
+    upload_filename: T--UGM_Indonesia--Montserrat-Light.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-LightItalic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/f/ff/T--UGM_Indonesia--Montserrat-LightItalic.ttf
+    md5: 01c4560c9c15069b6700ce7ad2e49a9c
+    upload_filename: T--UGM_Indonesia--Montserrat-LightItalic.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-Medium.ttf:
+    link_URL: https://2021.igem.org/wiki/images/0/06/T--UGM_Indonesia--Montserrat-Medium.ttf
+    md5: c8b6e083af3f94009801989c3739425e
+    upload_filename: T--UGM_Indonesia--Montserrat-Medium.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-MediumItalic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/1/1b/T--UGM_Indonesia--Montserrat-MediumItalic.ttf
+    md5: 40a74702035bf9ef19053c84ce9a58b9
+    upload_filename: T--UGM_Indonesia--Montserrat-MediumItalic.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-Regular.ttf:
+    link_URL: https://2021.igem.org/wiki/images/8/81/T--UGM_Indonesia--Montserrat-Regular.ttf
+    md5: ee6539921d713482b8ccd4d0d23961bb
+    upload_filename: T--UGM_Indonesia--Montserrat-Regular.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-SemiBold.ttf:
+    link_URL: https://2021.igem.org/wiki/images/9/9f/T--UGM_Indonesia--Montserrat-SemiBold.ttf
+    md5: c641dbee1d75892e4d88bdc31560c91b
+    upload_filename: T--UGM_Indonesia--Montserrat-SemiBold.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-SemiBoldItalic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/3/39/T--UGM_Indonesia--Montserrat-SemiBoldItalic.ttf
+    md5: 83c1ec1f1db9a6416791f7d9d29536f2
+    upload_filename: T--UGM_Indonesia--Montserrat-SemiBoldItalic.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-Thin.ttf:
+    link_URL: https://2021.igem.org/wiki/images/e/ee/T--UGM_Indonesia--Montserrat-Thin.ttf
+    md5: 43dd5b7a3d277362d5e801e5353e3a01
+    upload_filename: T--UGM_Indonesia--Montserrat-Thin.ttf
+  assets\font\T--UGM_Indonesia--Montserrat-ThinItalic.ttf:
+    link_URL: https://2021.igem.org/wiki/images/6/6d/T--UGM_Indonesia--Montserrat-ThinItalic.ttf
+    md5: 3c2b290f95cd5b33c3ead2911064a2ab
+    upload_filename: T--UGM_Indonesia--Montserrat-ThinItalic.ttf
+  assets\font\fa-brands-400.eot:
+    link_URL: https://2021.igem.org/wiki/images/3/30/T--UGM_Indonesia--font--fa-brands-400.eot
+    md5: 592643a83b8541edc52063d84c468700
+    upload_filename: T--UGM_Indonesia--font--fa-brands-400.eot
+  assets\font\fa-brands-400.svg:
+    link_URL: https://2021.igem.org/wiki/images/a/ad/T--UGM_Indonesia--font--fa-brands-400.svg
+    md5: 0c12ff655da379ab518f8afe0b3ffe15
+    upload_filename: T--UGM_Indonesia--font--fa-brands-400.svg
+  assets\font\fa-brands-400.ttf:
+    link_URL: https://2021.igem.org/wiki/images/7/74/T--UGM_Indonesia--font--fa-brands-400.ttf
+    md5: 513aa607d398efaccc559916c3431403
+    upload_filename: T--UGM_Indonesia--font--fa-brands-400.ttf
+  assets\font\fa-brands-400.woff:
+    link_URL: https://2021.igem.org/wiki/images/6/63/T--UGM_Indonesia--font--fa-brands-400.woff
+    md5: 1a575a4138e5f366474f0e7c5bd614a5
+    upload_filename: T--UGM_Indonesia--font--fa-brands-400.woff
+  assets\font\fa-regular-400.eot:
+    link_URL: https://2021.igem.org/wiki/images/a/a1/T--UGM_Indonesia--font--fa-regular-400.eot
+    md5: b0e2db3b634d1bc3928e127458d993d8
+    upload_filename: T--UGM_Indonesia--font--fa-regular-400.eot
+  assets\font\fa-regular-400.svg:
+    link_URL: https://2021.igem.org/wiki/images/5/5d/T--UGM_Indonesia--font--fa-regular-400.svg
+    md5: 7b18e1bf54898a45b78a1a36806a4bc8
+    upload_filename: T--UGM_Indonesia--font--fa-regular-400.svg
+  assets\font\fa-regular-400.ttf:
+    link_URL: https://2021.igem.org/wiki/images/3/30/T--UGM_Indonesia--font--fa-regular-400.ttf
+    md5: 766913e6c0088ab8c9f73e18b4127bc4
+    upload_filename: T--UGM_Indonesia--font--fa-regular-400.ttf
+  assets\font\fa-regular-400.woff:
+    link_URL: https://2021.igem.org/wiki/images/c/c1/T--UGM_Indonesia--font--fa-regular-400.woff
+    md5: d1d7e3b4c219fde0f7376c6facfd7149
+    upload_filename: T--UGM_Indonesia--font--fa-regular-400.woff
+  assets\font\fa-solid-900.eot:
+    link_URL: https://2021.igem.org/wiki/images/6/6a/T--UGM_Indonesia--font--fa-solid-900.eot
+    md5: 0c6bfc668a72935760178f91327aed3a
+    upload_filename: T--UGM_Indonesia--font--fa-solid-900.eot
+  assets\font\fa-solid-900.svg:
+    link_URL: https://2021.igem.org/wiki/images/5/5f/T--UGM_Indonesia--font--fa-solid-900.svg
+    md5: b45a634efe8a9e0a3938a86c5e216417
+    upload_filename: T--UGM_Indonesia--font--fa-solid-900.svg
+  assets\font\fa-solid-900.ttf:
+    link_URL: https://2021.igem.org/wiki/images/8/8f/T--UGM_Indonesia--font--fa-solid-900.ttf
+    md5: b9625119ce4300f0ef890a8f3234c773
+    upload_filename: T--UGM_Indonesia--font--fa-solid-900.ttf
+  assets\font\fa-solid-900.woff:
+    link_URL: https://2021.igem.org/wiki/images/6/67/T--UGM_Indonesia--font--fa-solid-900.woff
+    md5: d745348d289b149026921f197929a893
+    upload_filename: T--UGM_Indonesia--font--fa-solid-900.woff
+  assets\img\bioreactor-figure-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/5/5b/T--UGM_Indonesia--img--bioreactor-figure-1.jpg
+    md5: 136cca461277d5377c81f88b60ec629d
+    upload_filename: T--UGM_Indonesia--img--bioreactor-figure-1.jpg
+  assets\img\bioreactor-figure-2.png:
+    link_URL: https://2021.igem.org/wiki/images/3/34/T--UGM_Indonesia--img--bioreactor-figure-2.png
+    md5: 7aa744bf08f83fab8b41b80e788a6e4b
+    upload_filename: T--UGM_Indonesia--img--bioreactor-figure-2.png
+  assets\img\collaboration-0.png:
+    link_URL: https://2021.igem.org/wiki/images/e/ea/T--UGM_Indonesia--img--collaboration-0.png
+    md5: 94b8470876040433c011442713c916c6
+    upload_filename: T--UGM_Indonesia--img--collaboration-0.png
+  assets\img\collaboration-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/d/de/T--UGM_Indonesia--img--collaboration-1.jpg
+    md5: 68687f71ba1a33d6cddfc6692b64e867
+    upload_filename: T--UGM_Indonesia--img--collaboration-1.jpg
+  assets\img\collaboration-2.png:
+    link_URL: https://2021.igem.org/wiki/images/9/99/T--UGM_Indonesia--img--collaboration-2.png
+    md5: 5e7d40a8a9098dea2ec6ef4cf76c6c04
+    upload_filename: T--UGM_Indonesia--img--collaboration-2.png
+  assets\img\collaboration-3.jpg:
+    link_URL: https://2021.igem.org/wiki/images/5/50/T--UGM_Indonesia--img--collaboration-3.jpg
+    md5: d7bc16df03e78f23aef5f080f4d8afb0
+    upload_filename: T--UGM_Indonesia--img--collaboration-3.jpg
+  assets\img\collaboration-4.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/2c/T--UGM_Indonesia--img--collaboration-4.jpg
+    md5: 3e9c8c1e3b14f7ae41308c693188da47
+    upload_filename: T--UGM_Indonesia--img--collaboration-4.jpg
+  assets\img\collaboration-5.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/2f/T--UGM_Indonesia--img--collaboration-5.jpg
+    md5: bce0f65895a5606d28f35e7fb3c91727
+    upload_filename: T--UGM_Indonesia--img--collaboration-5.jpg
+  assets\img\collaborations-synbiofest.png:
+    link_URL: https://2021.igem.org/wiki/images/4/41/T--UGM_Indonesia--img--collaborations-synbiofest.png
+    md5: 8ec7ce5f0e0e82c84e96fc1cfac67abc
+    upload_filename: T--UGM_Indonesia--img--collaborations-synbiofest.png
+  assets\img\communication-hands-on-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/5/5d/T--UGM_Indonesia--img--communication-hands-on-1.jpg
+    md5: c3a03769fa9c2c682241e4baf63fffb2
+    upload_filename: T--UGM_Indonesia--img--communication-hands-on-1.jpg
+  assets\img\communication-intro-synbio-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/6/6a/T--UGM_Indonesia--img--communication-intro-synbio-1.jpg
+    md5: a06f2010e11fd21e176d5905420dd2ab
+    upload_filename: T--UGM_Indonesia--img--communication-intro-synbio-1.jpg
+  assets\img\communication-intro-synbio-2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/44/T--UGM_Indonesia--img--communication-intro-synbio-2.jpg
+    md5: 8989994517a128d36ceece381ddb3883
+    upload_filename: T--UGM_Indonesia--img--communication-intro-synbio-2.jpg
+  assets\img\communication-synbio-highschool-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/4a/T--UGM_Indonesia--img--communication-synbio-highschool-1.jpg
+    md5: 81c1e9378c958ac1f6dc16a0ac9411da
+    upload_filename: T--UGM_Indonesia--img--communication-synbio-highschool-1.jpg
+  assets\img\communication-synbio-highschool-2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/0d/T--UGM_Indonesia--img--communication-synbio-highschool-2.jpg
+    md5: bc361d7c5cd0e9d45685f1f803b81aee
+    upload_filename: T--UGM_Indonesia--img--communication-synbio-highschool-2.jpg
+  assets\img\communication-synbiofest-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/a/af/T--UGM_Indonesia--img--communication-synbiofest-1.jpg
+    md5: 217986372fbbe07e74092e0ccb72e25f
+    upload_filename: T--UGM_Indonesia--img--communication-synbiofest-1.jpg
+  assets\img\contribution-figure-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/24/T--UGM_Indonesia--img--contribution-figure-1.jpg
+    md5: 5a298167de1fe5ce7057c5cea8ac6049
+    upload_filename: T--UGM_Indonesia--img--contribution-figure-1.jpg
+  assets\img\contribution-figure-2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/0a/T--UGM_Indonesia--img--contribution-figure-2.jpg
+    md5: 8e796c9d6e4aa424bab06ee0bebe0c5d
+    upload_filename: T--UGM_Indonesia--img--contribution-figure-2.jpg
+  assets\img\contribution-figure-3.jpg:
+    link_URL: https://2021.igem.org/wiki/images/f/f0/T--UGM_Indonesia--img--contribution-figure-3.jpg
+    md5: 069c27b1dfde9cad3c5d6b54eb100041
+    upload_filename: T--UGM_Indonesia--img--contribution-figure-3.jpg
+  assets\img\decorative-h4-header.png:
+    link_URL: https://2021.igem.org/wiki/images/7/71/T--UGM_Indonesia--img--decorative-h4-header.png
+    md5: b329d68a522b4798d6f1e6c757fd97e0
+    upload_filename: T--UGM_Indonesia--img--decorative-h4-header.png
+  assets\img\description-figure-1.png:
+    link_URL: https://2021.igem.org/wiki/images/c/c4/T--UGM_Indonesia--img--description-figure-1.png
+    md5: 8e9f6e5c62c6e61585ef059aa07ad710
+    upload_filename: T--UGM_Indonesia--img--description-figure-1.png
+  assets\img\description-figure-2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/9/90/T--UGM_Indonesia--img--description-figure-2.jpg
+    md5: a457111814ea6f238bcb211f1d8825a9
+    upload_filename: T--UGM_Indonesia--img--description-figure-2.jpg
+  assets\img\design-figure-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/e/e7/T--UGM_Indonesia--img--design-figure-1.jpg
+    md5: edd7772d52d8978f4ea528ae8e2c86f5
+    upload_filename: T--UGM_Indonesia--img--design-figure-1.jpg
+  assets\img\design-figure-2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/6/6a/T--UGM_Indonesia--img--design-figure-2.jpg
+    md5: c18424630a1822b85415d17490197479
+    upload_filename: T--UGM_Indonesia--img--design-figure-2.jpg
+  assets\img\design-figure-3.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/1c/T--UGM_Indonesia--img--design-figure-3.jpg
+    md5: 06f41e7c53c7ebf2a1988012806fda0e
+    upload_filename: T--UGM_Indonesia--img--design-figure-3.jpg
+  assets\img\design-figure-4.jpg:
+    link_URL: https://2021.igem.org/wiki/images/5/5f/T--UGM_Indonesia--img--design-figure-4.jpg
+    md5: 2fbebc5d9df8cb1346f0ab24db1080b4
+    upload_filename: T--UGM_Indonesia--img--design-figure-4.jpg
+  assets\img\design-figure-5.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/03/T--UGM_Indonesia--img--design-figure-5.jpg
+    md5: ef1eebe367a433e7c8e626eff867aecc
+    upload_filename: T--UGM_Indonesia--img--design-figure-5.jpg
+  assets\img\design-figure-6.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/11/T--UGM_Indonesia--img--design-figure-6.jpg
+    md5: c1e58ffa89d69518f3c953bf9ae837e3
+    upload_filename: T--UGM_Indonesia--img--design-figure-6.jpg
+  assets\img\education-hands-on-figure-6.png:
+    link_URL: https://2021.igem.org/wiki/images/4/4c/T--UGM_Indonesia--img--education-hands-on-figure-6.png
+    md5: a7d291a099e12801d4287d60a33f0213
+    upload_filename: T--UGM_Indonesia--img--education-hands-on-figure-6.png
+  assets\img\education-hands-on-figure-7.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f0/T--UGM_Indonesia--img--education-hands-on-figure-7.png
+    md5: e87559fe3e96f0286e265cb7ba995c84
+    upload_filename: T--UGM_Indonesia--img--education-hands-on-figure-7.png
+  assets\img\education-hands-on-figure-8.png:
+    link_URL: https://2021.igem.org/wiki/images/3/3a/T--UGM_Indonesia--img--education-hands-on-figure-8.png
+    md5: bdc00e63e83b3e9f28334aa28ba79ac5
+    upload_filename: T--UGM_Indonesia--img--education-hands-on-figure-8.png
+  assets\img\education-hands-on-figure-9.png:
+    link_URL: https://2021.igem.org/wiki/images/d/dc/T--UGM_Indonesia--img--education-hands-on-figure-9.png
+    md5: d75d9679fed6f9c2e08e2e79643741b9
+    upload_filename: T--UGM_Indonesia--img--education-hands-on-figure-9.png
+  assets\img\education-intro-synbio-figure-3.png:
+    link_URL: https://2021.igem.org/wiki/images/5/52/T--UGM_Indonesia--img--education-intro-synbio-figure-3.png
+    md5: b715bc964fb62f8ca657f23fc9e0b748
+    upload_filename: T--UGM_Indonesia--img--education-intro-synbio-figure-3.png
+  assets\img\education-intro-synbio-figure-4.png:
+    link_URL: https://2021.igem.org/wiki/images/b/b2/T--UGM_Indonesia--img--education-intro-synbio-figure-4.png
+    md5: 44a3a17a6289ee0d0a27e2d0fe41af35
+    upload_filename: T--UGM_Indonesia--img--education-intro-synbio-figure-4.png
+  assets\img\education-intro-synbio-figure-5.png:
+    link_URL: https://2021.igem.org/wiki/images/3/33/T--UGM_Indonesia--img--education-intro-synbio-figure-5.png
+    md5: 7c247bd27646149738d5d357bb092476
+    upload_filename: T--UGM_Indonesia--img--education-intro-synbio-figure-5.png
+  assets\img\education-intro-synbio-minigames-a.png:
+    link_URL: https://2021.igem.org/wiki/images/5/5f/T--UGM_Indonesia--img--education-intro-synbio-minigames-a.png
+    md5: e99c8ee55e8cb191385f7e479b5d8846
+    upload_filename: T--UGM_Indonesia--img--education-intro-synbio-minigames-a.png
+  assets\img\education-intro-synbio-minigames-b.png:
+    link_URL: https://2021.igem.org/wiki/images/5/5b/T--UGM_Indonesia--img--education-intro-synbio-minigames-b.png
+    md5: 20ee938495642fc40bba4523b4e76311
+    upload_filename: T--UGM_Indonesia--img--education-intro-synbio-minigames-b.png
+  assets\img\education-synbiofest-figure-1.png:
+    link_URL: https://2021.igem.org/wiki/images/c/ce/T--UGM_Indonesia--img--education-synbiofest-figure-1.png
+    md5: 97ac86dce2d2b32c349937cf27274901
+    upload_filename: T--UGM_Indonesia--img--education-synbiofest-figure-1.png
+  assets\img\education-synbiofest-figure-2.png:
+    link_URL: https://2021.igem.org/wiki/images/3/3b/T--UGM_Indonesia--img--education-synbiofest-figure-2.png
+    md5: 718500e4d022f0049051cdd2fd73d2a4
+    upload_filename: T--UGM_Indonesia--img--education-synbiofest-figure-2.png
+  assets\img\education-test-figure-10.png:
+    link_URL: https://2021.igem.org/wiki/images/b/bc/T--UGM_Indonesia--img--education-test-figure-10.png
+    md5: f9c879da12aa8df6df40ba7c1b2a7c10
+    upload_filename: T--UGM_Indonesia--img--education-test-figure-10.png
+  assets\img\education-test-figure-11.png:
+    link_URL: https://2021.igem.org/wiki/images/6/68/T--UGM_Indonesia--img--education-test-figure-11.png
+    md5: 9f0535365095126c00a0b5bf757beddb
+    upload_filename: T--UGM_Indonesia--img--education-test-figure-11.png
+  assets\img\education-test-figure-12.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f8/T--UGM_Indonesia--img--education-test-figure-12.png
+    md5: 0b18c709d821c152c82897c9bdbaa884
+    upload_filename: T--UGM_Indonesia--img--education-test-figure-12.png
+  assets\img\education-test-figure-13.png:
+    link_URL: https://2021.igem.org/wiki/images/8/80/T--UGM_Indonesia--img--education-test-figure-13.png
+    md5: 602e3518d6f7622d5f071d7571ca2079
+    upload_filename: T--UGM_Indonesia--img--education-test-figure-13.png
+  assets\img\education-test-figure-14.png:
+    link_URL: https://2021.igem.org/wiki/images/8/86/T--UGM_Indonesia--img--education-test-figure-14.png
+    md5: 252bac3f877fa8839c8ccbd2e902c37f
+    upload_filename: T--UGM_Indonesia--img--education-test-figure-14.png
+  assets\img\education-test-figure-15.png:
+    link_URL: https://2021.igem.org/wiki/images/6/64/T--UGM_Indonesia--img--education-test-figure-15.png
+    md5: 61392c072f6f2a84046c677b5d4e0cda
+    upload_filename: T--UGM_Indonesia--img--education-test-figure-15.png
+  assets\img\hero-attributions.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/37/T--UGM_Indonesia--img--hero-attributions.jpg
+    md5: dad0e92eb1b7013fcb867af7cb7b4df4
+    upload_filename: T--UGM_Indonesia--img--hero-attributions.jpg
+  assets\img\hero-bioreactor.jpg:
+    link_URL: https://2021.igem.org/wiki/images/6/63/T--UGM_Indonesia--img--hero-bioreactor.jpg
+    md5: f326cf32f8a769e0e386625bd66a74b8
+    upload_filename: T--UGM_Indonesia--img--hero-bioreactor.jpg
+  assets\img\hero-communication.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/04/T--UGM_Indonesia--img--hero-communication.jpg
+    md5: 0fb94078613166ab41285a94e8a5e143
+    upload_filename: T--UGM_Indonesia--img--hero-communication.jpg
+  assets\img\hero-contribution.jpg:
+    link_URL: https://2021.igem.org/wiki/images/a/a8/T--UGM_Indonesia--img--hero-contribution.jpg
+    md5: 5cef75f58560436526aae8afbe00a98c
+    upload_filename: T--UGM_Indonesia--img--hero-contribution.jpg
+  assets\img\hero-description.jpg:
+    link_URL: https://2021.igem.org/wiki/images/c/c3/T--UGM_Indonesia--img--hero-description.jpg
+    md5: 2f046273933f76698bf8923b1b729fb0
+    upload_filename: T--UGM_Indonesia--img--hero-description.jpg
+  assets\img\hero-design.jpg:
+    link_URL: https://2021.igem.org/wiki/images/7/78/T--UGM_Indonesia--img--hero-design.jpg
+    md5: 8e8127f814e67d7da9545b78874d1640
+    upload_filename: T--UGM_Indonesia--img--hero-design.jpg
+  assets\img\hero-education.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/1f/T--UGM_Indonesia--img--hero-education.jpg
+    md5: 3b4924f1b35a72361448157f6f27f662
+    upload_filename: T--UGM_Indonesia--img--hero-education.jpg
+  assets\img\hero-engineering.jpg:
+    link_URL: https://2021.igem.org/wiki/images/7/75/T--UGM_Indonesia--img--hero-engineering.jpg
+    md5: 5af232c6ddd21e1dc1be713db35bfac5
+    upload_filename: T--UGM_Indonesia--img--hero-engineering.jpg
+  assets\img\hero-entrepreneurship.jpg:
+    link_URL: https://2021.igem.org/wiki/images/8/89/T--UGM_Indonesia--img--hero-entrepreneurship.jpg
+    md5: 57804dd0d59425140b2e4f4c10835549
+    upload_filename: T--UGM_Indonesia--img--hero-entrepreneurship.jpg
+  assets\img\hero-experiments.jpg:
+    link_URL: https://2021.igem.org/wiki/images/f/fe/T--UGM_Indonesia--img--hero-experiments.jpg
+    md5: 177d1e1a9d0dbc1577bb012ec91dfca4
+    upload_filename: T--UGM_Indonesia--img--hero-experiments.jpg
+  assets\img\hero-home.png:
+    link_URL: https://2021.igem.org/wiki/images/8/89/T--UGM_Indonesia--img--hero-home.png
+    md5: 83a052ea706fa66918bc9bb297096184
+    upload_filename: T--UGM_Indonesia--img--hero-home.png
+  assets\img\hero-home.svg:
+    link_URL: https://2021.igem.org/wiki/images/9/91/T--UGM_Indonesia--img--hero-home.svg
+    md5: cf5a84021f22260ab4a8c01e86301cd1
+    upload_filename: T--UGM_Indonesia--img--hero-home.svg
+  assets\img\hero-human_practice.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/4d/T--UGM_Indonesia--img--hero-human_practice.jpg
+    md5: aac07a824900e405d37bd94a84c9f100
+    upload_filename: T--UGM_Indonesia--img--hero-human_practice.jpg
+  assets\img\hero-implementation.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/49/T--UGM_Indonesia--img--hero-implementation.jpg
+    md5: 4e4ca828d9287a23598b8a5d0c287e46
+    upload_filename: T--UGM_Indonesia--img--hero-implementation.jpg
+  assets\img\hero-measurement.jpg:
+    link_URL: https://2021.igem.org/wiki/images/5/5c/T--UGM_Indonesia--img--hero-measurement.jpg
+    md5: 1e2d8d5db3e5058cad1bd39966938a34
+    upload_filename: T--UGM_Indonesia--img--hero-measurement.jpg
+  assets\img\hero-medals.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/33/T--UGM_Indonesia--img--hero-medals.jpg
+    md5: 3497576f4a795cd3dc0ae034bdc14be6
+    upload_filename: T--UGM_Indonesia--img--hero-medals.jpg
+  assets\img\hero-model.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/34/T--UGM_Indonesia--img--hero-model.jpg
+    md5: 45d04947fdc4aa45c169071eecd18556
+    upload_filename: T--UGM_Indonesia--img--hero-model.jpg
+  assets\img\hero-notebook.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/2c/T--UGM_Indonesia--img--hero-notebook.jpg
+    md5: ef02ad3e5d2582ec233428ac1bd4be68
+    upload_filename: T--UGM_Indonesia--img--hero-notebook.jpg
+  assets\img\hero-partnership.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/15/T--UGM_Indonesia--img--hero-partnership.jpg
+    md5: 0da9d6fad98320d4732fa434401a3634
+    upload_filename: T--UGM_Indonesia--img--hero-partnership.jpg
+  assets\img\hero-parts.jpg:
+    link_URL: https://2021.igem.org/wiki/images/d/db/T--UGM_Indonesia--img--hero-parts.jpg
+    md5: 508960d05cfc8e9a6ce74e752532c669
+    upload_filename: T--UGM_Indonesia--img--hero-parts.jpg
+  assets\img\hero-results.jpg:
+    link_URL: https://2021.igem.org/wiki/images/c/c7/T--UGM_Indonesia--img--hero-results.jpg
+    md5: 1fa94d83d122c874127ad182fd57fcad
+    upload_filename: T--UGM_Indonesia--img--hero-results.jpg
+  assets\img\hero-safety.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/31/T--UGM_Indonesia--img--hero-safety.jpg
+    md5: 99422cac76629962234230c218f828c9
+    upload_filename: T--UGM_Indonesia--img--hero-safety.jpg
+  assets\img\hero-sustainable.jpg:
+    link_URL: https://2021.igem.org/wiki/images/5/5a/T--UGM_Indonesia--img--hero-sustainable.jpg
+    md5: 4575e69faa2889124d8282a7e086d971
+    upload_filename: T--UGM_Indonesia--img--hero-sustainable.jpg
+  assets\img\hero-team.jpg:
+    link_URL: https://2021.igem.org/wiki/images/9/91/T--UGM_Indonesia--img--hero-team.jpg
+    md5: 9a254c08bc16e977b7fd2e36a2d235f3
+    upload_filename: T--UGM_Indonesia--img--hero-team.jpg
+  assets\img\home-background-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/e/ea/T--UGM_Indonesia--img--home-background-1.jpg
+    md5: 5763eea1c917ff30856b5876accd1171
+    upload_filename: T--UGM_Indonesia--img--home-background-1.jpg
+  assets\img\home-background-3.png:
+    link_URL: https://2021.igem.org/wiki/images/c/c5/T--UGM_Indonesia--img--home-background-3.png
+    md5: 26b58b8971a07d7c2c3ef2a0ce4ee063
+    upload_filename: T--UGM_Indonesia--img--home-background-3.png
+  assets\img\home-background-6-intro.png:
+    link_URL: https://2021.igem.org/wiki/images/8/87/T--UGM_Indonesia--img--home-background-6-intro.png
+    md5: e17cda7ec9d7bda759f5c49acdb396e9
+    upload_filename: T--UGM_Indonesia--img--home-background-6-intro.png
+  assets\img\home-figure-2.png:
+    link_URL: https://2021.igem.org/wiki/images/a/a1/T--UGM_Indonesia--img--home-figure-2.png
+    md5: 72f4af099636e66938f454892c95a1b3
+    upload_filename: T--UGM_Indonesia--img--home-figure-2.png
+  assets\img\home-figure-3.png:
+    link_URL: https://2021.igem.org/wiki/images/6/67/T--UGM_Indonesia--img--home-figure-3.png
+    md5: c66742a4c064a61bf7896b0446489342
+    upload_filename: T--UGM_Indonesia--img--home-figure-3.png
+  assets\img\home-figure-4.png:
+    link_URL: https://2021.igem.org/wiki/images/6/6f/T--UGM_Indonesia--img--home-figure-4.png
+    md5: 68af18554aa240e010451d169dd1011f
+    upload_filename: T--UGM_Indonesia--img--home-figure-4.png
+  assets\img\home-figure-5-outro.png:
+    link_URL: https://2021.igem.org/wiki/images/4/4b/T--UGM_Indonesia--img--home-figure-5-outro.png
+    md5: efcf4792a16a9b99d32f267ffbe45b51
+    upload_filename: T--UGM_Indonesia--img--home-figure-5-outro.png
+  assets\img\home-figure-5.png:
+    link_URL: https://2021.igem.org/wiki/images/d/d8/T--UGM_Indonesia--img--home-figure-5.png
+    md5: b25ca41807fdf8ba6033bfb3b5f65cf6
+    upload_filename: T--UGM_Indonesia--img--home-figure-5.png
+  assets\img\home-figure-6-intro.png:
+    link_URL: https://2021.igem.org/wiki/images/0/0d/T--UGM_Indonesia--img--home-figure-6-intro.png
+    md5: 45cd020c26bc925384f1dde19407760f
+    upload_filename: T--UGM_Indonesia--img--home-figure-6-intro.png
+  assets\img\home-figure-6-outro.png:
+    link_URL: https://2021.igem.org/wiki/images/9/93/T--UGM_Indonesia--img--home-figure-6-outro.png
+    md5: adff0fee3d2adb75a7d89ebd7a2586dd
+    upload_filename: T--UGM_Indonesia--img--home-figure-6-outro.png
+  assets\img\home-figure-7.png:
+    link_URL: https://2021.igem.org/wiki/images/6/6a/T--UGM_Indonesia--img--home-figure-7.png
+    md5: e3d0ae005007eb71a2f3731f0a159c89
+    upload_filename: T--UGM_Indonesia--img--home-figure-7.png
+  assets\img\home-frame-7.png:
+    link_URL: https://2021.igem.org/wiki/images/a/a8/T--UGM_Indonesia--img--home-frame-7.png
+    md5: 59b0ac3c563eb19475edc8af03e1e782
+    upload_filename: T--UGM_Indonesia--img--home-frame-7.png
+  assets\img\home-logo-7.png:
+    link_URL: https://2021.igem.org/wiki/images/0/0f/T--UGM_Indonesia--img--home-logo-7.png
+    md5: f403956753cc97de0bc66fd5c4c40c2b
+    upload_filename: T--UGM_Indonesia--img--home-logo-7.png
+  assets\img\home-spacing-7-8.png:
+    link_URL: https://2021.igem.org/wiki/images/4/4f/T--UGM_Indonesia--img--home-spacing-7-8.png
+    md5: df4c263351cc5aeff8d63ca4fcf3c0aa
+    upload_filename: T--UGM_Indonesia--img--home-spacing-7-8.png
+  assets\img\human_practices-asgm-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/0d/T--UGM_Indonesia--img--human_practices-asgm-1.jpg
+    md5: 73b7f899845e0f210f7c84070932a6cc
+    upload_filename: T--UGM_Indonesia--img--human_practices-asgm-1.jpg
+  assets\img\human_practices-asgm-2.png:
+    link_URL: https://2021.igem.org/wiki/images/5/5b/T--UGM_Indonesia--img--human_practices-asgm-2.png
+    md5: 69cf68381e03b22a6027d4b14fd06eb5
+    upload_filename: T--UGM_Indonesia--img--human_practices-asgm-2.png
+  assets\img\human_practices-asgm-3.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/28/T--UGM_Indonesia--img--human_practices-asgm-3.jpg
+    md5: 6b7490c32765e33028c774c17c131159
+    upload_filename: T--UGM_Indonesia--img--human_practices-asgm-3.jpg
+  assets\img\human_practices-asgm-4.jpg:
+    link_URL: https://2021.igem.org/wiki/images/e/ec/T--UGM_Indonesia--img--human_practices-asgm-4.jpg
+    md5: b56c2310dc3c6effca4f1e15a391d15d
+    upload_filename: T--UGM_Indonesia--img--human_practices-asgm-4.jpg
+  assets\img\human_practices-asgm-5.jpg:
+    link_URL: https://2021.igem.org/wiki/images/f/fb/T--UGM_Indonesia--img--human_practices-asgm-5.jpg
+    md5: 762e9cdb27d01f0f09415574b371b94f
+    upload_filename: T--UGM_Indonesia--img--human_practices-asgm-5.jpg
+  assets\img\human_practices-asgm-6.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/14/T--UGM_Indonesia--img--human_practices-asgm-6.jpg
+    md5: de78ed0581026d83b737e68923067159
+    upload_filename: T--UGM_Indonesia--img--human_practices-asgm-6.jpg
+  assets\img\ihp-framework.jpg:
+    link_URL: https://2021.igem.org/wiki/images/d/dd/T--UGM_Indonesia--img--ihp-framework.jpg
+    md5: 614dd55380a8c76de65d5df6859a527e
+    upload_filename: T--UGM_Indonesia--img--ihp-framework.jpg
+  assets\img\ihp-step.png:
+    link_URL: https://2021.igem.org/wiki/images/d/db/T--UGM_Indonesia--img--ihp-step.png
+    md5: 623f21856031b43239d023d4c60284ed
+    upload_filename: T--UGM_Indonesia--img--ihp-step.png
+  assets\img\implementation-figure-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/e/e7/T--UGM_Indonesia--img--implementation-figure-1.jpg
+    md5: 36ca654aeb7ef6dd70e1438a48dfdab8
+    upload_filename: T--UGM_Indonesia--img--implementation-figure-1.jpg
+  assets\img\implementation-figure-2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/6/67/T--UGM_Indonesia--img--implementation-figure-2.jpg
+    md5: 2a6a75a9ae3c4d1867c8dbc3a0c78034
+    upload_filename: T--UGM_Indonesia--img--implementation-figure-2.jpg
+  assets\img\implementation-figure-3.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/23/T--UGM_Indonesia--img--implementation-figure-3.jpg
+    md5: 48bfc40d27ed42f91b311ce89e119a79
+    upload_filename: T--UGM_Indonesia--img--implementation-figure-3.jpg
+  assets\img\layout-home.jpg:
+    link_URL: https://2021.igem.org/wiki/images/a/af/T--UGM_Indonesia--img--layout-home.jpg
+    md5: 346f0920d07b62fcde3b4e2e24ed4927
+    upload_filename: T--UGM_Indonesia--img--layout-home.jpg
+  assets\img\logo-igem-ugm-white.png:
+    link_URL: https://2021.igem.org/wiki/images/0/0b/T--UGM_Indonesia--img--logo-igem-ugm-white.png
+    md5: 92a2803331303ab925b8ea58fa8d2e46
+    upload_filename: T--UGM_Indonesia--img--logo-igem-ugm-white.png
+  assets\img\logo-ugm-white.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f1/T--UGM_Indonesia--img--logo-ugm-white.png
+    md5: 99f6c694977df61190c0e0b409c47740
+    upload_filename: T--UGM_Indonesia--img--logo-ugm-white.png
+  assets\img\logo-white.png:
+    link_URL: https://2021.igem.org/wiki/images/f/fa/T--UGM_Indonesia--img--logo-white.png
+    md5: 50ff898221f20ef45459f2e2c5413263
+    upload_filename: T--UGM_Indonesia--img--logo-white.png
+  assets\img\model-arabinose-conversion-1.png:
+    link_URL: https://2021.igem.org/wiki/images/0/08/T--UGM_Indonesia--img--model-arabinose-conversion-1.png
+    md5: 4db1c1440fe1ab035968b8ccceb19794
+    upload_filename: T--UGM_Indonesia--img--model-arabinose-conversion-1.png
+  assets\img\model-arabinose-conversion-li-ai-1.png:
+    link_URL: https://2021.igem.org/wiki/images/8/8f/T--UGM_Indonesia--img--model-arabinose-conversion-li-ai-1.png
+    md5: 74c4ed7355eeb930b06cd2800174a91e
+    upload_filename: T--UGM_Indonesia--img--model-arabinose-conversion-li-ai-1.png
+  assets\img\model-arabinose-conversion-li-ai-2.png:
+    link_URL: https://2021.igem.org/wiki/images/4/47/T--UGM_Indonesia--img--model-arabinose-conversion-li-ai-2.png
+    md5: f374c061f31a7e90ec112737558bad2d
+    upload_filename: T--UGM_Indonesia--img--model-arabinose-conversion-li-ai-2.png
+  assets\img\model-arabinose-conversion-li-ai-3.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/17/T--UGM_Indonesia--img--model-arabinose-conversion-li-ai-3.jpg
+    md5: c1c30367efc5f04b60a7c668f275b432
+    upload_filename: T--UGM_Indonesia--img--model-arabinose-conversion-li-ai-3.jpg
+  assets\img\model-au-extraction-1.png:
+    link_URL: https://2021.igem.org/wiki/images/e/eb/T--UGM_Indonesia--img--model-au-extraction-1.png
+    md5: 67349b338e667776c555f6d84d69e937
+    upload_filename: T--UGM_Indonesia--img--model-au-extraction-1.png
+  assets\img\model-au-extraction-2.png:
+    link_URL: https://2021.igem.org/wiki/images/9/9e/T--UGM_Indonesia--img--model-au-extraction-2.png
+    md5: d81c314184942be8c29abd6b88512dda
+    upload_filename: T--UGM_Indonesia--img--model-au-extraction-2.png
+  assets\img\model-au-extraction-3.png:
+    link_URL: https://2021.igem.org/wiki/images/8/8c/T--UGM_Indonesia--img--model-au-extraction-3.png
+    md5: 1efd82f08f73b1aa7e47dd49e837a79f
+    upload_filename: T--UGM_Indonesia--img--model-au-extraction-3.png
+  assets\img\model-au-extraction-4.png:
+    link_URL: https://2021.igem.org/wiki/images/4/4a/T--UGM_Indonesia--img--model-au-extraction-4.png
+    md5: 1086c9c2e5daaf2a4781905c00afd965
+    upload_filename: T--UGM_Indonesia--img--model-au-extraction-4.png
+  assets\img\model-au-extraction-5.png:
+    link_URL: https://2021.igem.org/wiki/images/c/c4/T--UGM_Indonesia--img--model-au-extraction-5.png
+    md5: 4e8b487cf036565643cc74e0d735b3a3
+    upload_filename: T--UGM_Indonesia--img--model-au-extraction-5.png
+  assets\img\model-condition-plus-arabinose-1.png:
+    link_URL: https://2021.igem.org/wiki/images/0/0f/T--UGM_Indonesia--img--model-condition-plus-arabinose-1.png
+    md5: 850e63f03c4c177fef7517d4baf6f9d2
+    upload_filename: T--UGM_Indonesia--img--model-condition-plus-arabinose-1.png
+  assets\img\model-condition-plus-arabinose-2.png:
+    link_URL: https://2021.igem.org/wiki/images/b/ba/T--UGM_Indonesia--img--model-condition-plus-arabinose-2.png
+    md5: b580537c75afb3ec752b0acaca604ce1
+    upload_filename: T--UGM_Indonesia--img--model-condition-plus-arabinose-2.png
+  assets\img\model-condition-plus-arabinose-3.png:
+    link_URL: https://2021.igem.org/wiki/images/3/3a/T--UGM_Indonesia--img--model-condition-plus-arabinose-3.png
+    md5: 84258f9013d5462426c90bb2fd971320
+    upload_filename: T--UGM_Indonesia--img--model-condition-plus-arabinose-3.png
+  assets\img\model-condition-plus-arabinose-4.png:
+    link_URL: https://2021.igem.org/wiki/images/8/8b/T--UGM_Indonesia--img--model-condition-plus-arabinose-4.png
+    md5: eae84acc0c986c84b875e77a9a8b8254
+    upload_filename: T--UGM_Indonesia--img--model-condition-plus-arabinose-4.png
+  assets\img\model-condition-plus-arabinose-5.png:
+    link_URL: https://2021.igem.org/wiki/images/8/8d/T--UGM_Indonesia--img--model-condition-plus-arabinose-5.png
+    md5: ea5664f302dd3fdbdc779839c89128d2
+    upload_filename: T--UGM_Indonesia--img--model-condition-plus-arabinose-5.png
+  assets\img\model-degradation-1.png:
+    link_URL: https://2021.igem.org/wiki/images/2/2b/T--UGM_Indonesia--img--model-degradation-1.png
+    md5: adad2e3beee4d57ff0fb8eea910c1dde
+    upload_filename: T--UGM_Indonesia--img--model-degradation-1.png
+  assets\img\model-degradation-2.png:
+    link_URL: https://2021.igem.org/wiki/images/4/4e/T--UGM_Indonesia--img--model-degradation-2.png
+    md5: 38c98b1653ba6678553634a4c92220a7
+    upload_filename: T--UGM_Indonesia--img--model-degradation-2.png
+  assets\img\model-degradation-3.png:
+    link_URL: https://2021.igem.org/wiki/images/9/9b/T--UGM_Indonesia--img--model-degradation-3.png
+    md5: 799206b25c88be1e9743aeeffc64febf
+    upload_filename: T--UGM_Indonesia--img--model-degradation-3.png
+  assets\img\model-degradation-4.png:
+    link_URL: https://2021.igem.org/wiki/images/9/90/T--UGM_Indonesia--img--model-degradation-4.png
+    md5: c7dfd565ba59a1feefbdc45df7b4f4bd
+    upload_filename: T--UGM_Indonesia--img--model-degradation-4.png
+  assets\img\model-degradation-5.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f5/T--UGM_Indonesia--img--model-degradation-5.png
+    md5: 22896d647bb18803b99330131857f7e8
+    upload_filename: T--UGM_Indonesia--img--model-degradation-5.png
+  assets\img\model-degradation-6.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f3/T--UGM_Indonesia--img--model-degradation-6.png
+    md5: 6a3f7d94b21a3f939afd308dbcb962d1
+    upload_filename: T--UGM_Indonesia--img--model-degradation-6.png
+  assets\img\model-degradation-7.png:
+    link_URL: https://2021.igem.org/wiki/images/1/1c/T--UGM_Indonesia--img--model-degradation-7.png
+    md5: 99a2a334e28e5d652d98834cb27a0f35
+    upload_filename: T--UGM_Indonesia--img--model-degradation-7.png
+  assets\img\model-degradation-8.png:
+    link_URL: https://2021.igem.org/wiki/images/1/1b/T--UGM_Indonesia--img--model-degradation-8.png
+    md5: ef1fb59f6f25ecfc6f70adb5b5c8b4ee
+    upload_filename: T--UGM_Indonesia--img--model-degradation-8.png
+  assets\img\model-figure-1.png:
+    link_URL: https://2021.igem.org/wiki/images/1/16/T--UGM_Indonesia--img--model-figure-1.png
+    md5: 55ff19cd41877a06ef1e378a8fe8c9e5
+    upload_filename: T--UGM_Indonesia--img--model-figure-1.png
+  assets\img\partnership-1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/f/fa/T--UGM_Indonesia--img--partnership-1.jpg
+    md5: 5af2840142279fab7112cdf087d8d183
+    upload_filename: T--UGM_Indonesia--img--partnership-1.jpg
+  assets\img\partnership-2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/05/T--UGM_Indonesia--img--partnership-2.jpg
+    md5: b890432311ee9c0cfb1bb4c625ef1dce
+    upload_filename: T--UGM_Indonesia--img--partnership-2.jpg
+  assets\img\project-logo.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f2/T--UGM_Indonesia--img--project-logo.png
+    md5: 33e4493fff20567d961d5daf9e1c02ac
+    upload_filename: T--UGM_Indonesia--img--project-logo.png
+  assets\img\sponsor-agriculture.png:
+    link_URL: https://2021.igem.org/wiki/images/3/3c/T--UGM_Indonesia--img--sponsor-agriculture.png
+    md5: 38618d91bc8aba3b5e4ee98107b46dc3
+    upload_filename: T--UGM_Indonesia--img--sponsor-agriculture.png
+  assets\img\sponsor-biology.png:
+    link_URL: https://2021.igem.org/wiki/images/6/65/T--UGM_Indonesia--img--sponsor-biology.png
+    md5: 22eb2a201d34ed0053bf0d25a658520b
+    upload_filename: T--UGM_Indonesia--img--sponsor-biology.png
+  assets\img\sponsor-biotek.png:
+    link_URL: https://2021.igem.org/wiki/images/6/67/T--UGM_Indonesia--img--sponsor-biotek.png
+    md5: 045aef4ab0ed088fc60f5a7672a8c14f
+    upload_filename: T--UGM_Indonesia--img--sponsor-biotek.png
+  assets\img\sponsor-engineering.png:
+    link_URL: https://2021.igem.org/wiki/images/2/2c/T--UGM_Indonesia--img--sponsor-engineering.png
+    md5: 43f253b1b01be3d5138508dba3c0d431
+    upload_filename: T--UGM_Indonesia--img--sponsor-engineering.png
+  assets\img\sponsor-feb.png:
+    link_URL: https://2021.igem.org/wiki/images/9/9e/T--UGM_Indonesia--img--sponsor-feb.png
+    md5: d9cfd3238dacaa12967a2682ed73fb21
+    upload_filename: T--UGM_Indonesia--img--sponsor-feb.png
+  assets\img\sponsor-geneious.png:
+    link_URL: https://2021.igem.org/wiki/images/4/44/T--UGM_Indonesia--img--sponsor-geneious.png
+    md5: 53a2c64012ed8e97b7bc6c78506b4416
+    upload_filename: T--UGM_Indonesia--img--sponsor-geneious.png
+  assets\img\sponsor-genscript.png:
+    link_URL: https://2021.igem.org/wiki/images/0/03/T--UGM_Indonesia--img--sponsor-genscript.png
+    md5: 1b6371466bc253eda4fc84b2f13b9fb3
+    upload_filename: T--UGM_Indonesia--img--sponsor-genscript.png
+  assets\img\sponsor-idt.png:
+    link_URL: https://2021.igem.org/wiki/images/7/7a/T--UGM_Indonesia--img--sponsor-idt.png
+    md5: 1bb27868bb7200a4b27bd42fbd547c86
+    upload_filename: T--UGM_Indonesia--img--sponsor-idt.png
+  assets\img\sponsor-its.png:
+    link_URL: https://2021.igem.org/wiki/images/2/28/T--UGM_Indonesia--img--sponsor-its.png
+    md5: 9bf1a843999c98901832c68f17120ac4
+    upload_filename: T--UGM_Indonesia--img--sponsor-its.png
+  assets\img\sponsor-kkmk.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f3/T--UGM_Indonesia--img--sponsor-kkmk.png
+    md5: 74b2fb1915a5a75495f72e52e4c6f31c
+    upload_filename: T--UGM_Indonesia--img--sponsor-kkmk.png
+  assets\img\sponsor-pharmacy.png:
+    link_URL: https://2021.igem.org/wiki/images/1/1f/T--UGM_Indonesia--img--sponsor-pharmacy.png
+    md5: 22aef75074399375b16442ce4400bb4a
+    upload_filename: T--UGM_Indonesia--img--sponsor-pharmacy.png
+  assets\img\sponsor-rentokill.png:
+    link_URL: https://2021.igem.org/wiki/images/1/10/T--UGM_Indonesia--img--sponsor-rentokill.png
+    md5: 2c3f97d72ec75e7bf62a16e4daab3d18
+    upload_filename: T--UGM_Indonesia--img--sponsor-rentokill.png
+  assets\img\sponsor-twistbio.png:
+    link_URL: https://2021.igem.org/wiki/images/d/df/T--UGM_Indonesia--img--sponsor-twistbio.png
+    md5: c21b2d19ecb7a2e23e36f4c0a7017bcb
+    upload_filename: T--UGM_Indonesia--img--sponsor-twistbio.png
+  assets\img\sponsor-ugm.png:
+    link_URL: https://2021.igem.org/wiki/images/1/13/T--UGM_Indonesia--img--sponsor-ugm.png
+    md5: 71fa5b0c1f1f0259f651811037352538
+    upload_filename: T--UGM_Indonesia--img--sponsor-ugm.png
+  assets\img\sustainable-1.png:
+    link_URL: https://2021.igem.org/wiki/images/c/c5/T--UGM_Indonesia--img--sustainable-1.png
+    md5: 3b5be21d221d2c895a48017098cc7697
+    upload_filename: T--UGM_Indonesia--img--sustainable-1.png
+  assets\img\sustainable-weddingcake.png:
+    link_URL: https://2021.igem.org/wiki/images/2/28/T--UGM_Indonesia--img--sustainable-weddingcake.png
+    md5: 545aaa276ed5d6a3341c23570c87dd5f
+    upload_filename: T--UGM_Indonesia--img--sustainable-weddingcake.png
 css:
   css/theme.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/themeCSS?action=raw&ctype=text/css
@@ -486,88 +1162,163 @@ css:
   css/theme.min.css:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/theme-minCSS?action=raw&ctype=text/css
     md5: e49abe74bf2fe72ee75f802ac74c0cf2
+  css\theme.css:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/css/themeCSS?action=raw&ctype=text/css
+    md5: f013669ec2f0ffcf00eaea6d404dd4fd
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Attributions
     md5: 10a9f5c815c87dcb6f6178a9ad0ec1a0
+  Attributions\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Attributions
+    md5: 55daed75104b5520c4b290627207b58a
   Awards/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Awards
     md5: fbe44a4f0504c995a54a9f00e010d661
+  Awards\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Awards
+    md5: bb92b2b690004d766087c65cdc406002
   Bioreactor/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Bioreactor
     md5: e69bc22212f63d1112d5d6fe1724088c
+  Bioreactor\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Bioreactor
+    md5: ''
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Collaborations
     md5: d1d5c43b69200fded29495944bd99aa0
+  Collaborations\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Collaborations
+    md5: 62270df2e7f5023cd9f3ebc7123d8a8a
   Communication/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Communication
     md5: f3ca551e0b5a530d0d2415c00d0bd6b9
+  Communication\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Communication
+    md5: 1a9c04f10f791e67cfd7731540e9b9a5
   Contribution/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Contribution
     md5: 353b205214808123d5844763a13b167e
+  Contribution\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Contribution
+    md5: 6d4cc4a7a485e5abd31b07fd946a1e62
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Description
     md5: 06a9a3770a7a5d65f2822fd8628028be
+  Description\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Description
+    md5: 66b4ba5e38c7449750a7c09eee8116ba
   Design/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Design
     md5: a20a24b2b61746f132d3b9314f8d0d26
-  Education/index.html:
+  Design\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Design
+    md5: c789714af843d53c94d0ddd78e05be19
+  Education\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Education
-    md5: 0e0234bab65e12ae195cc83249afa5e7
+    md5: ''
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Engineering
     md5: f7b652e96c5686bda46f22c87fd3881c
-  Entrepreneurship/index.html:
+  Engineering\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Engineering
+    md5: f9b02fb301203c376c37b5bb8c0025ee
+  Entrepreneurship\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Entrepreneurship
-    md5: ee0f3d55888a7394977916fa190df2e7
+    md5: ''
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Experiments
     md5: e4d8106390493b6d140195d1a61e8716
+  Experiments\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Experiments
+    md5: 5b6fa5376e866f14b187fb52bcdd793e
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Human_Practices
     md5: cb68d05bf94185d799f003fc39eb4d54
+  Human_Practices\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Human_Practices
+    md5: f3097dda65610f01fb308eff71275ad8
   IHP/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/IHP
     md5: 19be75177e84ca90b59d6dc4dfa4493c
+  IHP\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/IHP
+    md5: c245f517591aee967c7a9123a5afa2ee
   Implementation/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Implementation
     md5: 8ee0043c796e32dc83f626c52be4ab4b
+  Implementation\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Implementation
+    md5: f05c48f2cc1f6d4bbf778d208f8a5f39
   Measurement/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Measurement
     md5: 0538b733a80e640e89a4d48e725007cf
+  Measurement\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Measurement
+    md5: 0c7bd0e727f23eb9b486ebc4d89213b2
   Medals/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Medals
     md5: fd3e72a61d7eda01017e93a5afc5de41
+  Medals\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Medals
+    md5: b176bbae0412551cc060839f9fa94551
   Model/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Model
     md5: 6157ac4201e0febeeabee7c494d53385
+  Model\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Model
+    md5: 1a8cfa31e15740dce50a7e94269cde31
   Notebook/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Notebook
     md5: 2bc618d5ed4a6c1844f77633cbc818f2
+  Notebook\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Notebook
+    md5: 3a1d83af538a9a6002281ab0da5814ab
   Partnership/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Partnership
     md5: a536c76f1a68b177e389ad52c3422926
+  Partnership\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Partnership
+    md5: 078a6d6189849f66f645b661c2c428ac
   Parts/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Parts
     md5: cacc1f20b4b09bfc80b56f406a4289dc
+  Parts\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Parts
+    md5: c1f26c31b4fcd302b3925df4cf389cba
   Poster/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Poster
     md5: 378b1cf6ffd9431f964420f41299d10e
   Results/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Results
     md5: de44226f7f9ed6b6fe79a9d26fde0dfa
+  Results\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Results
+    md5: 05460e893cc1ba7b7fc8b9ab467d1ac7
   Safety/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Safety
     md5: bbac0f6fd7f2de7fa44d4d1c658462fb
+  Safety\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Safety
+    md5: 53b82c529309c9c2a59dde7f5c336e1e
+  Sustainable\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Sustainable
+    md5: ''
   Team/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Team
     md5: 4058766ca82bb680b5355390917360bd
+  Team\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Team
+    md5: 929913b27cfc885d47dd5ad5949ef72c
   Template_Testing/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Template_Testing
     md5: 4ebe7b759ec3c8ac64ce4e209d45ba7e
+  Template_Testing\index.html:
+    link_URL: https://2021.igem.org/Team:UGM_Indonesia/Template_Testing
+    md5: 777dc69dcbd05391a0587f552daef489
   index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia
-    md5: 83cc66575d4569efc6eea0863b740909
+    md5: 079bbb63ec4b345f085c20b105e191b3
 js:
   js/bootstrap.bundle.js:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-bundleJS?action=raw&ctype=text/javascript
@@ -807,5 +1558,245 @@ js:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/ui/menuJS?action=raw&ctype=text/javascript
     md5: c4b3220d6fad87ec45dcd8013edad1c8
   js/mathjax/ui/safe.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/ui/safeJS?action=raw&ctype=text/javascript
+    md5: eeba66281cef420dedd0d4ed37ca1dbb
+  js\bootstrap.bundle.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-bundleJS?action=raw&ctype=text/javascript
+    md5: 98a8dcb65e2f27635644d21c0182b3d0
+  js\bootstrap.bundle.min.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-bundle-minJS?action=raw&ctype=text/javascript
+    md5: 9ba32250da070fa7ff78f67f67e35552
+  js\bootstrap.esm.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-esmJS?action=raw&ctype=text/javascript
+    md5: 7fad42b9af3c4b504ca34681cf225f77
+  js\bootstrap.esm.min.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-esm-minJS?action=raw&ctype=text/javascript
+    md5: 8f2478cece03ee61e78e5bfadbe0b12a
+  js\bootstrap.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrapJS?action=raw&ctype=text/javascript
+    md5: 5f4c1dd6ab9fdbc5d1d1a0898afc7f49
+  js\bootstrap.min.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/bootstrap-minJS?action=raw&ctype=text/javascript
+    md5: 53f7f752152ec85a9b53e66e807930aa
+  js\mathjax\a11y\assistive-mml.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/a11y/assistive-mmlJS?action=raw&ctype=text/javascript
+    md5: 4f4c5afe24e6b66fbbd31ba25b8ff22a
+  js\mathjax\a11y\complexity.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/a11y/complexityJS?action=raw&ctype=text/javascript
+    md5: f1559892841e6accdfe5f0404809fde5
+  js\mathjax\a11y\explorer.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/a11y/explorerJS?action=raw&ctype=text/javascript
+    md5: 76a950c23c53463e01d93215e64e252f
+  js\mathjax\a11y\semantic-enrich.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/a11y/semantic-enrichJS?action=raw&ctype=text/javascript
+    md5: d875925e08acfde92d4ff37a4d323d75
+  js\mathjax\adaptors\liteDOM.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/adaptors/liteDOMJS?action=raw&ctype=text/javascript
+    md5: 218adfcc469b6bad843d7670cb85506a
+  js\mathjax\core.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/coreJS?action=raw&ctype=text/javascript
+    md5: e1892a29f1756ae14cfa08e225ff387a
+  js\mathjax\input\asciimath.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/asciimathJS?action=raw&ctype=text/javascript
+    md5: e949b463ac1b9aa5415311ac91285ca0
+  js\mathjax\input\mml.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/mmlJS?action=raw&ctype=text/javascript
+    md5: 413621aa16e64c9f948c3a1c0814821b
+  js\mathjax\input\mml\entities.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/mml/entitiesJS?action=raw&ctype=text/javascript
+    md5: 24ef68b8e87c3a91ac34433428715d40
+  js\mathjax\input\mml\extensions\mml3.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/mml/extensions/mml3JS?action=raw&ctype=text/javascript
+    md5: d03fe4701a8e234cb6df97d1c319fd3e
+  js\mathjax\input\tex-base.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex-baseJS?action=raw&ctype=text/javascript
+    md5: 751ba04542ccdf43b1a09378bd159eb6
+  js\mathjax\input\tex-full.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex-fullJS?action=raw&ctype=text/javascript
+    md5: 8ff63c270981e716c2e61fb803d62228
+  js\mathjax\input\tex.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/texJS?action=raw&ctype=text/javascript
+    md5: bad101734029c2f59275ed0b87e12a11
+  js\mathjax\input\tex\extensions\action.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/actionJS?action=raw&ctype=text/javascript
+    md5: f30d022701fcd02f41e8869aa276cc87
+  js\mathjax\input\tex\extensions\all-packages.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/all-packagesJS?action=raw&ctype=text/javascript
+    md5: 104820b33b010285c43b675ac9de0522
+  js\mathjax\input\tex\extensions\ams.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/amsJS?action=raw&ctype=text/javascript
+    md5: c903b8260298431c07a2990158fe4a63
+  js\mathjax\input\tex\extensions\amscd.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/amscdJS?action=raw&ctype=text/javascript
+    md5: adccef1d178c141927575505a29cca01
+  js\mathjax\input\tex\extensions\autoload.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/autoloadJS?action=raw&ctype=text/javascript
+    md5: ac9cc5ecc22534a6a09d2e568a26526d
+  js\mathjax\input\tex\extensions\bbox.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/bboxJS?action=raw&ctype=text/javascript
+    md5: fc7824e21b74eb1f71b4662a32a9ce1c
+  js\mathjax\input\tex\extensions\boldsymbol.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/boldsymbolJS?action=raw&ctype=text/javascript
+    md5: c57488024da9635bcd42cf877729cd88
+  js\mathjax\input\tex\extensions\braket.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/braketJS?action=raw&ctype=text/javascript
+    md5: 1e840244734f88966cbd597184d5d970
+  js\mathjax\input\tex\extensions\bussproofs.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/bussproofsJS?action=raw&ctype=text/javascript
+    md5: bced3c77b1666d5a3a726056c2464d0a
+  js\mathjax\input\tex\extensions\cancel.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/cancelJS?action=raw&ctype=text/javascript
+    md5: dae4648fdac7f03afb2acc371cddeab8
+  js\mathjax\input\tex\extensions\centernot.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/centernotJS?action=raw&ctype=text/javascript
+    md5: 60278e03b938240eb1a8754b6a249ccf
+  js\mathjax\input\tex\extensions\color.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/colorJS?action=raw&ctype=text/javascript
+    md5: fed801f32f3f6cb16cc7b3f837216df7
+  js\mathjax\input\tex\extensions\colortbl.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/colortblJS?action=raw&ctype=text/javascript
+    md5: c17dbf3dc2fdcaa6bba417a1d75593b9
+  js\mathjax\input\tex\extensions\colorv2.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/colorv2JS?action=raw&ctype=text/javascript
+    md5: 4e57ab60a9c6f7824eb49584b1398d21
+  js\mathjax\input\tex\extensions\configmacros.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/configmacrosJS?action=raw&ctype=text/javascript
+    md5: 0a71b80326337a2273c6d1c96e383f3c
+  js\mathjax\input\tex\extensions\enclose.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/encloseJS?action=raw&ctype=text/javascript
+    md5: 248b3964b4c5eab38bd52ba20edc3c03
+  js\mathjax\input\tex\extensions\extpfeil.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/extpfeilJS?action=raw&ctype=text/javascript
+    md5: 9ceec44445c914857d05696d662e0e26
+  js\mathjax\input\tex\extensions\gensymb.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/gensymbJS?action=raw&ctype=text/javascript
+    md5: 07f6f372d4ff8b047eca0d3709f79729
+  js\mathjax\input\tex\extensions\html.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/htmlJS?action=raw&ctype=text/javascript
+    md5: 1d1b59682a367f03723a84b45924f453
+  js\mathjax\input\tex\extensions\mathtools.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/mathtoolsJS?action=raw&ctype=text/javascript
+    md5: 552e4ced34e4515c36af16652be7a9a0
+  js\mathjax\input\tex\extensions\mhchem.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/mhchemJS?action=raw&ctype=text/javascript
+    md5: a348d016a7a992ae3a0d301dc797a8ab
+  js\mathjax\input\tex\extensions\newcommand.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/newcommandJS?action=raw&ctype=text/javascript
+    md5: 59f65a71d78215e3cf4c541f68fce305
+  js\mathjax\input\tex\extensions\noerrors.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/noerrorsJS?action=raw&ctype=text/javascript
+    md5: c300d0db509cacaf6fca69e17f605607
+  js\mathjax\input\tex\extensions\noundefined.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/noundefinedJS?action=raw&ctype=text/javascript
+    md5: 0990b756fec4bfd92cf5cdbaa17009a4
+  js\mathjax\input\tex\extensions\physics.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/physicsJS?action=raw&ctype=text/javascript
+    md5: 2878754c56164f4259b1a12c289ecb6c
+  js\mathjax\input\tex\extensions\require.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/requireJS?action=raw&ctype=text/javascript
+    md5: d5ee80b1c3d2c22fa9a310d744776bcf
+  js\mathjax\input\tex\extensions\setoptions.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/setoptionsJS?action=raw&ctype=text/javascript
+    md5: 449d226d7564e6336fbc1fbd376df2c4
+  js\mathjax\input\tex\extensions\tagformat.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/tagformatJS?action=raw&ctype=text/javascript
+    md5: 18b4981abd3bc8bbf97d2e2e87cb0f1d
+  js\mathjax\input\tex\extensions\textcomp.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/textcompJS?action=raw&ctype=text/javascript
+    md5: d6d01b645588835bbc7ad79ee8193576
+  js\mathjax\input\tex\extensions\textmacros.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/textmacrosJS?action=raw&ctype=text/javascript
+    md5: e0dd4bd767769bd8004fb69e6d9ad3e5
+  js\mathjax\input\tex\extensions\unicode.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/unicodeJS?action=raw&ctype=text/javascript
+    md5: cdcce322a87cdd778ae5de369fd12b0e
+  js\mathjax\input\tex\extensions\upgreek.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/upgreekJS?action=raw&ctype=text/javascript
+    md5: d7e4ef3109f0496f0b75f69b2aa04784
+  js\mathjax\input\tex\extensions\verb.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/input/tex/extensions/verbJS?action=raw&ctype=text/javascript
+    md5: a24073e974394406ddfb4cfe96837a6e
+  js\mathjax\latest.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/latestJS?action=raw&ctype=text/javascript
+    md5: c071e4e61133a33575c9b898c7b7cfdf
+  js\mathjax\loader.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/loaderJS?action=raw&ctype=text/javascript
+    md5: 724e01990c3fb2dc8941048101eea020
+  js\mathjax\mml-chtml.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/mml-chtmlJS?action=raw&ctype=text/javascript
+    md5: aacad48949d9d8b84b5c60890ab5f51c
+  js\mathjax\mml-svg.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/mml-svgJS?action=raw&ctype=text/javascript
+    md5: 9712816b894324b7f007d4300770c73b
+  js\mathjax\node-main.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/node-mainJS?action=raw&ctype=text/javascript
+    md5: 8db9f8365f6b3161878d6d4d0fd63d28
+  js\mathjax\output\chtml.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/output/chtmlJS?action=raw&ctype=text/javascript
+    md5: d8ed9cd91e5fdf7236920f38e3d8f8df
+  js\mathjax\output\chtml\fonts\tex.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/output/chtml/fonts/texJS?action=raw&ctype=text/javascript
+    md5: 2d17b60a4b2cf3d5e633e4d417f71ee1
+  js\mathjax\output\svg.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/output/svgJS?action=raw&ctype=text/javascript
+    md5: 6262f204663830b07ea9ca54fc6ec538
+  js\mathjax\output\svg\fonts\tex.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/output/svg/fonts/texJS?action=raw&ctype=text/javascript
+    md5: 00bff482f8cbadf30d65682865906614
+  js\mathjax\sre\mathmaps\de.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/mathmaps/deJS?action=raw&ctype=text/javascript
+    md5: ''
+  js\mathjax\sre\mathmaps\en.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/mathmaps/enJS?action=raw&ctype=text/javascript
+    md5: ''
+  js\mathjax\sre\mathmaps\es.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/mathmaps/esJS?action=raw&ctype=text/javascript
+    md5: ''
+  js\mathjax\sre\mathmaps\fr.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/mathmaps/frJS?action=raw&ctype=text/javascript
+    md5: ''
+  js\mathjax\sre\mathmaps\hi.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/mathmaps/hiJS?action=raw&ctype=text/javascript
+    md5: ''
+  js\mathjax\sre\mathmaps\it.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/mathmaps/itJS?action=raw&ctype=text/javascript
+    md5: ''
+  js\mathjax\sre\mathmaps\nemeth.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/mathmaps/nemethJS?action=raw&ctype=text/javascript
+    md5: ''
+  js\mathjax\sre\sre-node.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/sre-nodeJS?action=raw&ctype=text/javascript
+    md5: ae399bb097330eba357d96b857df747a
+  js\mathjax\sre\sre_browser.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/sre/sre_browserJS?action=raw&ctype=text/javascript
+    md5: 3f30ee625fddbe867e94b432b25eea26
+  js\mathjax\startup.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/startupJS?action=raw&ctype=text/javascript
+    md5: 20ef89f46bff665fe46761bc5fa2f4aa
+  js\mathjax\tex-chtml-full.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/tex-chtml-fullJS?action=raw&ctype=text/javascript
+    md5: e3738479e26b98e3e28fbd63ab1f6ee0
+  js\mathjax\tex-chtml.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/tex-chtmlJS?action=raw&ctype=text/javascript
+    md5: 1d75f965e398e9708620ed9fb1661a1a
+  js\mathjax\tex-mml-chtml.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/tex-mml-chtmlJS?action=raw&ctype=text/javascript
+    md5: 7dce8b093c42229289ad59df6e8f5ac6
+  js\mathjax\tex-mml-svg.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/tex-mml-svgJS?action=raw&ctype=text/javascript
+    md5: 2f6bc0e6697bedc1e45c4767eac07193
+  js\mathjax\tex-svg-full.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/tex-svg-fullJS?action=raw&ctype=text/javascript
+    md5: 9c6c80d090ea2ff1c7b6a26bb95978e3
+  js\mathjax\tex-svg.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/tex-svgJS?action=raw&ctype=text/javascript
+    md5: 904e0d43932bdc9df71d71eb22c1a5c7
+  js\mathjax\ui\lazy.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/ui/lazyJS?action=raw&ctype=text/javascript
+    md5: bc4d4d12da8017e51a56d7980f89e37c
+  js\mathjax\ui\menu.js:
+    link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/ui/menuJS?action=raw&ctype=text/javascript
+    md5: c4b3220d6fad87ec45dcd8013edad1c8
+  js\mathjax\ui\safe.js:
     link_URL: https://2021.igem.org/Template:UGM_Indonesia/js/mathjax/ui/safeJS?action=raw&ctype=text/javascript
     md5: eeba66281cef420dedd0d4ed37ca1dbb

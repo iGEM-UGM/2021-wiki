@@ -1,0 +1,425 @@
+---
+layout: layouts/default.njk
+title: Model
+heroImage: /assets/img/hero-model.jpg
+dataSidebar: [
+    {"href" : "#model", "name" : "Model"}
+]
+---
+
+p Modelled the reaction (concentration vs time) graph in the designed on/off system:
+ol
+  li HCN production with inserted arabinose regulated hcnABC operone
+  li HCN degradation by rhodanese, regulated by arabinose & TetR:
+    ol(style="list-style: lower-alpha;")
+      li Rhodanese expression regulation by arabinose & TetR
+      li CN reaction into thiocyanate by rhodanese
+  li Arabinose conversion by L-AI (L-Arabinose Isomerase), a weak Anderson promoter:
+    ol(style="list-style: lower-alpha;")
+      li L-AI expression with weak Anderson promoter
+      li Arabinose conversion to ribulose by L-AI
+  li Au extraction with HCN
+figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-figure-1.png" style="max-width:70%; width:70%")
+section#hcn-production
+  h4.display-4.text-primary HCN Production with insert arabinose-regulated hcnABC operone
+  #condition-plus-arabinose
+    h5.display-5.text-primary Condition (+) arabinose
+    p In the present of arabinose, tetR will inhibit rhodanese synthesis, thus preventing CN conversion to thiocyanate. This represents the “ON” condition of gold cyanidation.
+    ol
+      li
+        h6 #[b Diffusion]
+        h6 #[b Transcription Factor Complex formation (Arabinose-AraC complex).]
+        p Reaction scheme:
+        figure.text-center
+          img.figure-img.img-fluid.rounded(src="/assets/img/model-condition-plus-arabinose-1.png" style="max-width:50%; width:50%")
+        p ODE:
+        p \[ \frac{d}{dt} [A_1] = k_{diff} [ A_0 – A_1 ] – k_{A1} [ A_1 ] [ AraC ] + k_{A2} [ A_1 . AraC ] – \gamma_{A1} A_1 \] \[ \frac{d}{dt} [AraC] = -k_{A1} [ A_1][AraC]+ k_{A2} [ A_1 ] [ AraC ]  \] \[ \frac{d}{dt} [A_1.AraC] = -k_{A1} [ A_1][AraC]+ k_{A2} [ A_1 ] [ AraC ]  \]
+        p Notes:
+        ul
+          li \(A_0\) = L-Arabinose outside cell
+          li \(A_1\) = L-Arabinose inside cell
+          li \(k_{diff}\) = L-arabinose diffusion rate
+        p Assumption:
+        ol
+          li AraC in cell is constant
+          li Binding of A_1 A1 and AraC is a spontaneous reaction
+          li Binding of A_1AraC A1.AraC complex to operator is a spontaneous reaction
+      li
+        h6 #[b Transcription]
+        p Transcription and translation reaction scheme:
+        figure.text-center
+          img.figure-img.img-fluid.rounded(src="/assets/img/model-condition-plus-arabinose-2.png" style="max-width:50%; width:50%")
+          img.figure-img.img-fluid.rounded(src="/assets/img/model-condition-plus-arabinose-3.png" style="max-width:50%; width:50%")          
+        p The mRNA and protein decay is taken into account in this reaction. We assume that the decay constant for all mRNA and all protein would be the same. 
+        p We can calculate the rate of total activated transcription in relation with promoter occupancy and basal transcription rate. To describe promoter occupancy, we must define the binding-releasing of protein complex with operator in the same manner as chemical reaction.
+        figure.text-center
+          img.figure-img.img-fluid.rounded(src="/assets/img/model-condition-plus-arabinose-4.png" style="max-width:50%; width:50%")
+        p Notes:
+        ul
+          li \( O \) = Operator
+          li \( P \) = [\(A_1.AraC\)] protein complex
+          li \( a \) = binding constant of protein complex with operator
+          li \( d \) = releasing constant of protein complex from operator
+        p We defined the concentration occupying half of the binding sites as K = d/a. Thus, promoter occupancy can be expressed as:
+        p \[ Promoter\ occupancy\ = \frac{[OP]}{[O] + [OP]} \] \[ = \frac{[O]([P]/K)^n}{[O]+[O]([P]/K)^n} \] \[ = \frac{([P]/K)^n}{1+([P]/K)^n} \] \[ = \frac{[P]^n}{K^n+[P]^n} \] 
+        p With u as maximum metabolic rate, we can described the rate of activated transcription as:
+        p \[ Rate\ of\ activated\ transcription\ = u\frac{[P]^n}{K^n+[P]^n} \] 
+        p Due to pBAD-AraC complex leakiness, we must account the basal transcription rate in the equation. Then, the rate of activated transcription would be:
+        p \[ Rate\ of\ activated\ transcription\ = u_0 + u\frac{[P]^n}{K^n+[P]^n} \]
+        p So, the final ODE for transcription can be written as:
+        p \[ \frac{d}{dt} = k_{transcription} - \gamma_m[m] \] \[ \frac{d}{dt} = u_0 + u \frac{[P]^n}{[K_m]^n + [A_1.AraC]^n} - \gamma_m[m] \] \[ \frac{d}{dt} = u_0 + u \frac{[A_1.AraC]^n}{[K_m]^n + [A_1.AraC]^n} - \gamma_m[m] \] 
+        p Notes:
+        ul
+          li \( u \) = maximal transcription rate (due to bound A_1.AraC A1.AraC complex to the operator)
+          li \( u_0 \) = basal transcription rate
+          li \( n \) = hill coefficient - if TF binding involves cooperative process
+          li \( K_m \) = A_1.AraC A1.AraC complex concentration occupying half of the binding sites
+      li
+        h6 #[b Translation:]
+        p The equation for HCN synthase concentration over time is described as ODE involving translation constant and HCN synthase decay constant.
+        p \[ \frac{d}{dt} [E] = k_{translation}[m] - \gamma_E[E] \] \[ \frac{d}{dt} = u_0 + u \frac{[A_1.AraC]^n}{[K_m]^n + [A_1.AraC]^n} - \gamma_m[m] \]
+        p Notes:
+        ul
+          li \( E \) = HCN Synthase
+        p HCN Synthase will attached to membrane and react with HCN outside the cell. We assumed that the transportation of HCN Synthase from intracellular to membrane is spontaneous and obey the law of mass balance. Therefore, the concentration of enzymes in membrane and intracellular will depend on each other and reach equilibrium at a particular time.
+        figure.text-center
+          img.figure-img.img-fluid.rounded(src="/assets/img/model-condition-plus-arabinose-5.png" style="max-width:50%; width:50%")
+        p Notes:
+        ul
+          li \( E_{InC} \) = Intracellular HCN Synthase
+          li \( E_{mem} \) = Membrane HCN Synthase
+          li \( k_{Eon} \) = Intracellular to membrane transport constant
+          li \( k_{Eoff} \) = Membrane to intracellular transport constant
+        p We can expand the intracellular HCN Synthase ODE with equilibrium constant
+        p \[ \frac{d}{dt} [E_{InC}] = u_0 + u \frac{[A_1.AraC]^n}{[K_m]^n + [A_1.AraC]^n} - \gamma_{E_{InC}}[E_{InC}] – k_{E_{on}}[E_{InC}]+ k_{E_{off}}[E_{Mem}] \] 
+        p Then, membrane HCN Synthase ODE expressed solely on equilibrium constant
+        p \[ \frac{d}{dt} [E_{Mem}] = k_{E_{on}}[E_{InC}]- k_{E_{off}}[E_{Mem}] \]
+        p Notes:
+        ul
+          li \( u \) = maximal transcription rate (due to bound A_1.AraC A1.AraC complex to the operator)
+          li \( u_0 \) = basal transcription rate
+          li \( n \) = hill coefficient - if TF binding involves cooperative process
+          li \( K_m \)  = A_1.AraC A1.AraC complex concentration occupying half of the binding sites
+          li \( E_{InC} \) = Intracellular HCN Synthase
+          li \( E_{mem} \) = Membrane HCN Synthase
+          li \( k_{Eon} \) = Intracellular to membrane transport constant
+          li \( k_{Eoff} \) = Membrane to intracellular transport constant
+section#hcn-degradation
+  h4.display-4.text-primary HCN Degradation by Rhodanese
+  #rhodanese-expression
+    h5.display-5.text-primary Rhodanese Expression Regulated by Arabinose and TetR
+    p #[b Condition (+) arabinose]
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-degradation-1.png" style="max-width:50%; width:50%")
+    p In the present of arabinose, tetR will inhibit rhodanese synthesis, thus preventing CN conversion to thiocyanate. This represents the “ON” condition of gold cyanidation.
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-degradation-2.png" style="max-width:50%; width:50%")
+    p Expression of tetR is regulated by Arabinose-AraC complex (A1.AraC).
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-degradation-3.png" style="max-width:50%; width:50%")
+    p The decay of mRNA and tetR reaction expressed as follows:
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-degradation-4.png" style="max-width:50%; width:50%")
+    p Thus, the ordinary differential equations for mRNA and protein are:
+    p \[ \frac{d}{dt} [m] = k_{transcription}[m] - \gamma_m[m] \] \[ \frac{d}{dt} [p] = k_{translation}[m] - \gamma_p[p] \]
+    p Using the same derivation as HCN synthase expression, then we can obtain the complete ODE:
+    p \[ \frac{d}{dt} [m] = \alpha_0 + \alpha \frac{[A_1.AraC]^n}{[K_m]^n + [A_1.AraC]^n} - \gamma_m[m] \] \[ \frac{d}{dt} [p] = \alpha_0 + \alpha \frac{[A_1.AraC]^n}{[K_m]^n + [A_1.AraC]^n} - \gamma_p[p] \] 
+    p Notes:
+    ul
+      li \( m \) = mRNA
+      li \( p \) = tetR
+      li \( αo \) = Basal transcription rate
+      li \( α \) = Maximal transcription rate 
+      li \( Km \) = A1.AraC complex concentration occupying half of the binding sites
+      li \( k_{transcription} \) = transcription constant
+      li \( k_{translation} \) = translation constant
+      li \( \gamma_m \) = mRNA decay constant
+      li \( \gamma_p \) = tetR decay constant
+    p These are the assumptions that applied for tetR synthesis:
+    ol
+      li The concentration of tetR is constant in presence of L-arabinose
+      li Dimerization of tetR into tetR2 is spontaneous, so the reaction is negligible
+      li The binding of tetR2 to tetO is spontaneous, so the reaction is negligible
+    p #[b Condition (-) arabinose]
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-degradation-5.png" style="max-width:50%; width:50%")
+    p Absence of arabinose will activate araC, which binds to araO and inhibits tetR production. This condition will trigger rhodanese production, thus reducing the amount of HCN synthase. It represents the “OFF” condition of gold cyanidation.
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-degradation-6.png" style="max-width:50%; width:50%")
+    p The decay of mRNA and rhodanese reaction expressed as follows:
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-degradation-7.png" style="max-width:50%; width:50%")
+    p Hence, the ordinary differential equations for mRNA and rhodanese are:
+    p \[ \frac{d}{dt} [m] = k_{transcription}[m] - \gamma_m[m] \] \[ \frac{d}{dt} [Rho] = k_{translation}[m] - \gamma_p[Rho] \]
+    p Using the same derivation as HCN synthase and tetR expression, then we can obtain the complete ODE:
+    p \[ \frac{d}{dt} [m] = \theta_0 + \theta \frac{K_r^n}{[K_r^n + [TetR2]^n} - \gamma_m[m] \] \[ \frac{d}{dt} [m] = \theta_0 + \theta \frac{K_r^n}{[K_r^n + [TetR2]^n} - \gamma_p[Rho] \] 
+    p Because [\(TetR_2\)] = 0, then
+    p \[ \frac{d}{dt} [Rho] = \theta_0 + \theta  - \gamma_p[Rho] \] 
+    p Notes:
+    ul
+      li \( m \) = mRNA
+      li \( Rho \) = Rhodanese
+      li \( θo \) = Basal transcription rate
+      li \( θ \) = Maximal transcription rate 
+      li \( K_r \) = A1.AraC complex concentration occupying half of the binding sites
+      li \( k_{transcription} \) = transcription constant
+      li \( k_{translation} \) = translation constant
+      li \( TetR_2 \) = Dimer TetR
+      li \( \gamma_m \) = mRNA decay constant
+      li \( \gamma_p \) = Rhodanese decay constant
+  #thiocyanate
+    h5.display-5.text-primary HCN Degradation into Thiocyanate
+    p Rhodanese is expressed to degrade HCN from system to a less harmful substance, thiocyanate. We assumed the reaction is running in steady state, so we used Michaelis-Menten equation. The reaction for HCN degradation is modelled with ping-pong mechanism, a modified Michaelis-Menten equation.
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-degradation-8.png" style="max-width:50%; width:50%")
+    p Hence, the ODEs for this reaction are stated as follows:
+    p \[ \frac{d[E]}{dt} = -k_f [E][S] + kr[ES1] + k_{cat1}[ES1] \] \[ \frac{d[S1]}{dt} = -k_f [E][S1] + kr[ES1]  \] \[ \frac{d[ES1]}{dt} = k_f [E][S1] - kr[ES1] - k_{cat1}[ES1] \] \[ \frac{d[E’]}{dt} = k_{cat1} [ES1] + k_{cat2}[E’][S2]  \] \[ \frac{d[P1]}{dt} = k_{cat1} [ES1]  \] \[ \frac{d[P2]}{dt} = k_{cat1} [ES2]  \]
+    p We assumed the value of \( k_{cat1} \) and \( k_{cat2} \) to be very large in comparison of other reaction constant.
+    p Notes:
+      li \( [E] \) 	= Rhodanese
+      li \( [S1] \) 	= S2O3-
+      li \( [ES1] \) 	= Rhodanese-S2O3- Complex
+      li \( [E’] \) 	= Sulphur-Rhodanese
+      li \( [S2] \) 	= CN-
+      li \( [P2] \) 	= SCN-
+      li \( kf \) 	= Konstanta forward [ES1]
+      li \( kr \) 	= Konstanta reverse [ES1]
+      li \( k_{cat1} \) 	= Konstanta forward [P1]
+      li \( k_{cat2} \) 	= Konstanta forward [P2]
+section#arabinose-conversion
+  h4.display-4.text-primary Arabinose conversion by L-AI (L-Arabinose Isomerase), a weak Anderson promoter
+  #anderson-promoter
+    h5.display-5.text-primary L-AI expression with weak Anderson promoter J231076
+    p L-Al or L-Arabinose isomerase is an enzyme that responsible for converting L-arabinose to ribulose. We utilize weak promoter to create a slow ribulose biosynthesis. There will be a certain threshold of L-arabinose that induce rhodanese production and start degrading HCN into thiocyanate. The expression of Li-AI from gene and their degradation would be expressed as following reaction:
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-arabinose-conversion-1.png" style="max-width:50%; width:50%")
+    p Thus, the ordinary differential equations for mRNA and Li-AI are:
+    p \[ \frac{d}{dt} [m] = k_{transcription}[m] - \gamma_m[m] \] \[ \frac{d}{dt} [Ai] = k_{translation}[m] - \gamma_p[Ai] \] \[ \frac{d}{dt} [m] = \alpha - \gamma_m[m] \] \[ \frac{d}{dt} [Ai] = \alpha - \gamma_p[Ai] \] \[ \alpha = \frac{k_1 k_0}{\gamma_m} \]
+    p Notes:
+    ul
+      li \( m \) = mRNA
+      li \( Ai \) = Li-AI
+      li \( α \) = expression rate of J23106 constitutive
+      li \( k_1 \) = the per-mRNA translation rate 
+      li \( k_0 \) = population-averaged transcription rate
+      li \( \gamma_m \) = mRNA decay constant
+      li \( \gamma_p \) = Li-AI  decay constant
+  #arabinose-conversion-li-ai
+    h5.display-5.text-primary Arabinose to Ribulose Reaction by Li-AI
+    p The reaction of L-arabinose to L-ribulose is depicted as following diagram:
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-arabinose-conversion-li-ai-1.png" style="max-width:50%; width:50%")
+    p Using a modified Michaelis-Menten equation, we can define the relation of Li-AI with conversion of L-arabinose to L-ribulose:
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-arabinose-conversion-li-ai-2.png" style="max-width:50%; width:50%")
+    p Therefore, the ordinary differential equations for this reaction are:
+    p \[ \frac{d[E]}{dt} = -k_{f1}[E][A_1] + k_{r1}[EA1] + k_{cat1}[EA1]-k_{f2}[E][R] + k_{r2}[ER]+k_{cat2}[ER] \] \[ \frac{d[A_1]}{dt} = -k_{f1} [E][A_1] + k_{r1}[EA_1] + k_{cat2}[ER]  \] \[ \frac{d[EA_1]}{dt} = k_{f1} [E][A_1] – k_{r1}[EA_1] - k_{cat1}[EA_1] \] \[ \frac{d[R]}{dt} = -k_{f2} [E][R] + k_{r2}[ER] + k_{cat1}[EA_1] \] \[ \frac{d[ER]}{dt} = k_{f2} [E][R] – k_{r2}[ER] - k_{cat2}[ER] \]
+    p Notes:
+    ul
+      li \( k_f \) = constant of forward reaction
+      li \( k_r \) = constant of reverse reaction 
+      li \( k_{catR} \) = constant of catalytic
+      li \( E \) = L-arabinose isomerase
+      li \( A1 \) = L-arabinose inside cell
+      li \( R \) = L-Ribulose 
+    p The modelling was done using Python on Jupyter with Tellurium package. This package allows users to combine a large quantity of reaction equations, hence it is very useful for modelling the kinetics of the biosynthesis pathway. 
+    p After running through engineering cycle, we finally gained the final parameter that would be optimum comprehensively for modelling the whole kinetics of gold cyanidation. Those optimum parameters are:
+    table.table.table-bordered.text-center
+      thead
+        tr
+          th Parameter
+          th Description
+          th Value
+          th Units
+      tbody
+        tr
+          td \( A_0 \)
+          td Product concentration (grams/liter)
+          td 1 x 10#[sup -5]
+          td M
+        tr
+          td \( A_1 \)
+          td Substrate concentration (grams/liter)
+          td 1 x 10#[sup -5]
+          td M
+        tr
+          td \( k_{diff} \)
+          td Feed substrate concentration (grams/liter)
+          td 7 x 10#[sup -18]
+          td Mole/cell/30 mins
+        tr
+          td \( k_1 \)
+          td Rate of cell or biomass growth (grams/liter/hr)
+          td 1.2 x 10#[sup -4]
+          td s#[sup -1]
+        tr
+          td \( k_2 \)
+          td Rate of product formation (grams/liter/hr)
+          td 1.2 x 10#[sup -4]
+          td s#[sup -1]
+        tr
+          td \( \gamma_1 \)
+          td Product yield coefficient
+          td 1.49 x 10#[sup -3]
+          td min#[sup -1]
+        tr
+          td \( \gamma_m \)
+          td Rate of mRNA degradation (in general)
+          td 1.7 x 10#[sup -3]
+          td s#[sup -1]
+        tr
+          td \( \gamma_p , \gamma_E \)
+          td Rate of protein degradation (assumed to have the same value)
+          td 5.6 x 10#[sup -5]
+          td s#[sup -1]
+        tr
+          td \( \gamma_A1 \)
+          td Rate of L-arabinose degradation
+          td 1 x 10#[sup -5]
+          td s#[sup -1]
+        tr
+          td \( k_{A1} \)
+          td A1.AraC forward reaction rate
+          td 1.2 x 10#[sup -4]
+          td s#[sup -1]
+        tr
+          td \( k_{A2} \)
+          td A1AraC reverse reaction rate
+          td 1.2 x 10#[sup -4]
+          td s#[sup -1]
+        tr
+          td \( k_{cat1} \)
+          td Rate of Rhodanese-S2O3 complex synthesis
+          td 48
+          td s#[sup -1]
+        tr
+          td \( k_{cat2} \)
+          td Rate of thiocyanate (SCN) biosynthesis
+          td 5.5
+          td s#[sup -1]
+        tr
+          td \( k_{f1} \)
+          td Rate of Li-A1 - Arabinose complex formation
+          td 1.2 x 10#[sup -4]
+          td s#[sup -1]
+        tr
+          td \( k_{r1} \)
+          td Rate of Li-A1 - Arabinose complex degradation
+          td 1.2 x 10#[sup -4]
+          td s#[sup -1]
+        tr
+          td \( k_{catR} \)
+          td Rate of L-ribulose catalytic formation
+          td 8.167&nbsp;
+          td s#[sup -1]
+        tr
+          td \( p \)
+          td Rhodanese synthesis starting point
+          td 50% of initial L-arabinose concentration
+          td M&nbsp;
+    p These are the results for HCN production and degradation:
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-arabinose-conversion-li-ai-3.jpg" style="max-width:50%; width:50%")
+section#au-extraction
+  h4.display-4.text-primary Au Extraction with HCN
+  p Gold (Au) cyanidation is a process where liberated solid gold particles are converted into dicyanoaurate or Au(CN)2-. It is the final and mostly considered as the most crucial process for the mineral processing industry.
+  p Accurately modelling this reaction in a bioreactor is very complex and time consuming. It needs a lot of additional research on the fundamental theory, such as the heterogeneous reaction kinetics and process transfer involving fluid mechanics. The equation and modelling will vary for gold ore type. Each location possesses a unique type(s) of gold ore, hence it demands a different modelling approach for every mining site.
+  p Due to lack of data from Kulon Progo gold ore, we used estimated parameters and simplified equations. The complex reaction modelling is beyond our scope.
+  p The general chemical reaction for gold cyanidation is expressed as:
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-au-extraction-1.png" style="max-width:50%; width:50%")
+  p The HCN dissociation reaction is:
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-au-extraction-2.png" style="max-width:50%; width:50%")
+  p The HCN conversion to hydrogen and cyanide is a very fast reaction, compared to the rest of reaction in the gold cyanidation system. Therefore, this reaction is assumed to be negligible in this model
+  p It is important to have a reaction equation based on experiment. The reaction rate equation for gold and cyanide were obtained from Srithammavut et al, 2011. Those reactions stated as follows:
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-au-extraction-3.png" style="max-width:50%; width:50%")
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-au-extraction-4.png" style="max-width:50%; width:50%")
+  p Notes:
+  ul
+    li \( k_1 \) = overall gold rate constant 
+    li \( a_1 \) = rAu reaction order for cyanide
+    li \( a_2 \) = rAu reaction order for oxygen 
+    li \( a_3 \) = rAu reaction order for gold mass fraction
+    li \( b_1 \) = rCN reaction order for cyanide
+    li \( b_2 \) = rCN reaction order for oxygen
+    li \( C_{CN-} \) = cyanide concentration
+    li \( C_{O2} \) = oxygen concentration
+    li \( C_{CN-.m} \) = mean cyanide concentration
+    li \( C_{O2.m} \) = mean oxygen concentration
+    li \( X_{au} \) = Gold
+    li \( X_{au,m} \) = Gold mass fraction
+    li \( k_2 \) = overall cyanide rate constant
+  p The assumptions for gold cyanidation are:
+  ol
+    li The particles shape are spheres with sphericity =1
+    li Gold atoms spread homogenously on the surface of particle
+    li Reaction happens at surface
+    li The particle size reduction described with shrinking core model
+  p By applying assumptions, we can develop the ODE to describe the concentration of gold and cyanide vs time with each respective reaction rate:
+  p \[ \frac{dC_{Au}}{dt} = r_{Au}A_i \frac{n}{e_L} \] \[ \frac{dC_{CN^-}}{dt} = -r_{CN}A_i \frac{n}{e_L} \]
+  p Notes:
+  ul
+    li \( r_{Au} \) = reaction rate of gold, mol/(m2h)
+    li \( r_{CN} \) = reaction rate of cyanide, mol/(m2h)
+    li \( A_i \) = surface area of one particle, m2
+    li \( n \) = number of particles per volume
+    li \( e_L \) = liquid volume fractions
+  p Gold cyanidation modelling was done using Python on Jupyter. The parameters that used in gold cyanidations are:
+  table.table.table-bordered.text-center
+    thead
+      tr
+        th Parameters
+        th Values
+        th Units
+    tbody
+      tr
+        td \( k_1 \)
+        td 1.94 x 10-5
+        td mol/m#[sup 2]/h
+      tr
+        td \( k_2 \)
+        td 1.35 x 10-3
+        td mol/m#[sup 2]/h
+      tr
+        td \( a_1 \)
+        td 0.507
+        td &nbsp;
+      tr
+        td \( a_2 \)
+        td 0.204
+        td &nbsp;
+      tr
+        td \( a_3 \)
+        td 1.66
+        td &nbsp;
+      tr
+        td \( b_1 \)
+        td 0.951
+        td &nbsp;
+      tr
+        td \( b_2 \)
+        td 0.248
+        td &nbsp;
+      tr
+        td \( X_{au,mi} \)
+        td 70
+        td mg/kg
+      tr
+        td \( C_{CN,M} \)
+        td 6000
+        td mg/dm#[sup 3]
+      tr
+        td \( C_{O2,m} \)
+        td 200
+        td mg/dm#[sup 3]
+      tr
+        td \( C_{O2} \)
+        td 400
+        td mg/dm#[sup 3]
+  p All of the parameter values were collected from Srithammavut #[i et al.], 2011.
+  p The results of gold cyanidation modelling are presented as gold (Au) and CN#[sup -] concentration vs time. The ideal batch time would be 20 hours and above.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-au-extraction-5.png" style="max-width:50%; width:50%")

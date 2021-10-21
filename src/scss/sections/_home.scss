@@ -2,6 +2,425 @@
 @use '../components/typography' as *;
 @use '../components/mixins' as *;
 
-#hero-home .hero-home {
+section#home-1 {
+  background-image: url("/assets/img/home-background-1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 
+  overflow: hidden;
+  min-height: 200vh;
+
+  .typo-1{
+    h1 {
+      text-align: center;
+      font-family: "Montserrat Bold";
+      font-size: 5rem;
+      color: $secondary;
+    }
+    p {
+      text-align: center;
+      font-family: "Montserrat Regular";
+      font-size: 2rem;
+      color: $white;
+    }
+  }
+}
+
+section#home-2 {
+  background-color: #141300;
+
+  overflow: hidden;
+  .typo-2 {
+    padding: 0 6rem;
+
+    h1 {
+      text-align: left;
+      font-family: "Montserrat Regular";
+      font-size: 4rem;
+      color: $white;
+
+      b {
+        font-family: "Montserrat Bold"
+      }
+    }
+
+    p {
+      text-align: left;
+      font-family: "Montserrat Regular";
+      font-size: 1.75rem;
+      color: $white;
+    }
+  }
+
+  .figure-2 {
+    padding: 2rem;
+  }
+}
+section#spacing-2-3 {
+  background-color: #141300;
+  min-height: 10vh;
+}
+section#home-3 {
+  background-image: url("/assets/img/home-background-3.png");
+  background-color: #FDD734;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+
+  overflow: hidden;
+  min-height: 200vh;
+
+  #home-3-1 {
+    min-height: 80vh;
+  }
+  #home-3-2 {
+    min-height: 20vh;
+  }
+  #home-3-3 {
+    min-height: 50vh;
+  }
+
+  .typo-3 {
+    h1 {
+      text-align: center;
+      font-family: "Montserrat Regular";
+      font-size: 4rem;
+      color: $primary;
+
+      &.bold{
+        font-family: "Montserrat Bold";
+      }
+    }
+    p {
+      padding: 0 7.5vw;
+      text-align: right;
+      font-family: "Montserrat Regular";
+      font-size: 1.75rem;
+      color: $primary;
+    }
+  }
+
+  .figure-3 {
+    padding: 0 12.5vw;
+  }
+}
+section#home-4 {
+  background-color: #FDD734;
+
+  overflow: hidden;
+  min-height: 100vh;
+
+  .typo-4 {
+    padding: 2rem 6rem;
+
+    p {
+      text-align: left;
+      font-family: "Montserrat Regular";
+      font-size: 1.75rem;
+      color: $primary;
+    }
+  }
+
+  .figure-4 {
+    padding: 4rem 8rem;
+  }
+}
+
+section#home-5-intro{
+  padding-top: 4rem;
+  background-color: $white;
+  overflow: hidden;
+  min-height: 50vh;
+
+  .typo-5 {
+    h1 {
+      font-family: "Montserrat Regular";
+      font-size: 5rem;
+      text-align: center;
+
+      color: $primary;
+
+      b {
+        font-family: "Montserrat Bold";
+      }
+    }
+  }
+}
+
+section#home-5{
+  padding-top: 2rem;
+  background-color: $white;
+  overflow: hidden;
+  min-height: 100vh;
+
+  .typo-5 {
+    padding: 2rem 15vw 2rem 5vw;
+
+    h1 {
+      text-align: right;
+      font-family: "Montserrat Regular";
+      font-size: 4rem;
+      color: $primary;
+    }
+
+    p {
+      text-align: right;
+      font-family: "Montserrat Regular";
+      font-size: 1.75rem;
+      color: $primary;
+    }
+  }
+
+  .figure-5 {
+
+    img {
+      padding: 0 17.5vw;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 35vw;
+    }
+    }
+  }
+}
+
+
+section#home-5-outro{
+  padding-top: 2rem;
+  background-color: $white;
+  overflow: hidden;
+  min-height: 100vh;
+
+  .typo-5 {
+    padding: 2rem 7.5vw;
+
+    p {
+      text-align: left;
+      font-family: "Montserrat Regular";
+      font-size: 2.5rem;
+      color: $primary;
+    }
+  }
+
+  .figure-5 {
+
+    img {
+      padding: 0 10vw;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 35vw;
+    }
+    }
+  }
+}
+
+section#home-6-intro {
+  padding-top: 2rem;
+  background-color: #1E053F;
+  overflow: hidden;
+  min-height: 120vh;
+  
+  .typo-6 {
+    h1 {
+      text-align: center;
+      font-family: "Montserrat Regular";
+      font-size: 4rem;
+      color: $white;
+
+      b {
+        font-family: "Montserrat Bold";
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: "Montserrat Regular";
+      font-size: 1.75rem;
+      color: $white;
+
+      span.yellow {
+        color: $secondary;
+      }
+    }
+  }
+
+  #biohydrometallurgy-container {
+    min-height: 20vh;
+    margin-top: 30vh;
+  }
+
+  #biohydrometallurgy {
+    position: relative;
+
+    p {
+      z-index: 10;
+      position: absolute;
+      padding: 8rem;
+    }
+
+    img {
+      z-index: 5;
+      overflow: hidden;
+
+      position: absolute;
+
+      min-height: 20vh;
+      object-fit: contain;
+    }
+  }
+
+  .figure-6 {
+    img {
+      max-width: 10vw;
+    }
+  }
+
+  .row {
+    margin: 4rem 0;
+  }
+}
+
+section#home-6-outro{
+  padding-top: 2rem;
+  background-color: #1E053F;
+  overflow: hidden;
+  min-height: 130vh;
+
+  .typo-6 {
+    padding: 2rem 2.5vw 2rem 10vw;
+
+    h1 {
+      text-align: left;
+      font-family: "Montserrat Regular";
+      font-size: 4rem;
+      color: $secondary;
+    }
+
+    p {
+      font-family: "Montserrat Regular";
+      font-size: 1.75rem;
+      color: $white;
+    }
+  }
+
+  .figure-6 {
+
+    img {
+      padding: 0 10vw;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 35vw;
+    }
+    }
+  }
+}
+
+section#home-7 {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  background-color: $white;
+  overflow: hidden;
+  min-height: 300vh;
+  
+  .typo-7 {
+    padding: 4rem;
+    h1 {
+      text-align: center;
+      font-family: "Montserrat Regular";
+      font-size: 4rem;
+      color: $primary;
+
+      b {
+        font-family: "Montserrat Bold";
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: "Montserrat Regular";
+      font-size: 1.75rem;
+      color: $primary;
+    }
+  }
+  .figure-7 {
+    padding: 2rem;
+  }
+
+  #video{
+    min-height: 60vh;
+    
+    overflow: hidden;
+    .video-container {
+      position: relative;
+      min-width: 50vw;
+      min-height: 50vh;
+      iframe{
+        position: absolute;
+        z-index: 100;
+        top: 15%;
+  
+        width: 90%;
+        height: 80%;
+      }
+  
+      img {
+        position: absolute;
+        z-index: 10;
+        
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .min-vh-70{
+    min-height: 70vh;
+  }
+}
+
+section#spacing-7-8 {
+  background-image: url("/assets/img/home-spacing-7-8.png");
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+section#home-8{
+  padding-top: 2rem;
+  background-color: #141300;
+  overflow: hidden;
+  min-height: 100vh;
+
+  .typo-8 {
+    padding: 2rem 5vw;
+
+    h1 {
+      text-align: left;
+      font-family: "Montserrat Regular";
+      font-size: 4rem;
+      color: $white;
+
+      b {
+        font-family: "Montserrat Bold";
+      }
+    }
+
+    p {
+      font-family: "Montserrat Regular";
+      font-size: 1.75rem;
+      color: $white;
+
+      span.yellow {
+        color: $secondary;
+      }
+    }
+  }
+
+  .min-vh-50 {
+    min-height: 50vh;
+  }
 }

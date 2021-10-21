@@ -11,12 +11,16 @@
     "sync": "gulp browser-sync",
     "watch-dev": "npm run build-dev && npm run sync",
     "postinstall": "gulp copy-assets",
-    "scss": "node-sass --output-style compressed -o dev/css/ src/scss/theme.scss",
+    "scss": "node-sass --output-style compressed -o dev/css src/scss/theme.scss",
     "watch:all": "onchange 'src/' -- npm run build-dev",
+    "watch:all-windows": "onchange \"src/\" -- npm run build-dev",
     "serve": "eleventy --serve",
     "watch": "npm run clean && npm run build-dev && run-p sync watch:all",
+    "watch-windows": "npm run clean-windows && npm run build-dev && run-p sync watch:all-windows",
     "clean": "rm -rf dev/*",
-    "clean-prod": "rm -rf public/*"
+    "clean-prod": "rm -rf public/*",
+    "clean-windows": "if exist dev ( rd /s /q dev )",
+    "clean-prod-windows": "if exist public ( rd /s /q public )"
   },
   "keywords": [
     "iGEM",
