@@ -9,8 +9,116 @@ dataSidebar: [
 
 section#bioreactor
   h4.display-4.text-primary
-    | Bioreactor for the Auviola System
+    | Proposed Implementation of the project
   p
-    | Implementing Auviola in the real world will require several considerations. Several factors contributing to the success of the introduction of iGEMs are at the same time possible risk factors. This includes the effect, survival, growth, competitive ability and spread (transport) of the introduced iGEM in the natural environment, and the persistence, spread, and proliferation of the DNA sequences and also horizontal gene transfer. To minimize any of the risk, we are planning to implement Auviola in a closed bioreactor. This enables us to have more control over the environment that the bacteria will live in, the growth, and also the proliferation of the bacteria.
+    | Implementing Auviola in the real world will require several considerations. Several factors contributing to the success of the introduction of iGEMs are at the same time possible risk factors. This includes the effect, survival, growth, competitive ability and spread (transport) of the introduced iGEM in the natural environment, and the persistence, spread, and proliferation of the DNA sequences and also horizontal gene transfer. To minimize any of the risk, we are planning to implement Auviola in a #[b closed bioreactor]. This enables us to have more control over the environment that the bacteria will live in, the growth, and also the proliferation of the bacteria.
   p
-    | In the bioreactor the bacteria will be mixed with the gold ore. This process needs proper planning to make sure that the bacteria will be able to survive and function as we expected inside the environment which is also an optimum environment for the gold bioleaching process. This includes pH adjustments, substances used during the gold bioleaching, and also the waste products management. In the future, we are planning to do research to optimize the Chromobacterium violaceum and the bioreactor environment to create the best adjustments that can produce the best yield of gold yet minimum waste products.
+    | In the bioreactor the bacteria will be mixed with the gold ore. This process needs proper planning to make sure that the bacteria will be able to survive and function as we expected inside the environment which is also an optimum environment for the gold bioleaching process. This includes pH adjustments, substances used during the gold bioleaching, and also the waste products management. In the future, we are planning to do research to optimize the #[i Chromobacterium violaceum] and the bioreactor environment to create the best adjustments that can produce the best yield of gold yet minimum waste products. We also consider #[b operational costs], so we create an economic measurement model to ensure this method is profitable for Artisanal and Small-scale Gold Mining.
+  p 
+    | There are two variables that should be measured in a simplified techno-economic analysis. First is #[b CAPEX] (Capital Expenditure) and #[b OPEX] (Operational Expenditure). CAPEX refers to the expenditure of funds for an asset that is expected to provide utility to a business for more than one reporting period. In this case CAPEX includes the cost of reactor, blower, heater, and bacteria. Meanwhile, OPEX refers to the costs required for the day-to-day functioning of a business. In this case it includes the cost of substrate (L-arabinose), medium, and cyanide salts (KCN, NaCN).
+  p
+    | #[b Figure 1] illustrates the process flow diagram for conventional gold bioleaching. The bioreactor consists of one mixing tank and one furnace as illustrated below.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/implementation-figure-1.jpg" style="max-width:60%; width:60%" alt='Figure 1. The process flow diagram for conventional gold bioleaching (T-01: Mixing tank; F = Furnace).')
+    figcaption.figure-caption
+      b Figure 1.
+      |  The process flow diagram for conventional gold bioleaching (T-01: Mixing tank; F = Furnace).
+  p 
+    | #[b Figure 2] illustrates the process flow diagram for bioleaching of refractory gold. The design is based on Kulon Progo gold ore, where the gold atom is trapped within pyrite. Thus, the pyrite must be separated before the gold cyanidation process occurs.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/implementation-figure-2.jpg" style="max-width:90%; width:90%" alt='Figure 2. The process flow diagram for bioleaching of refractory gold (R-01: Pyrite dissolution reactor; T-01: Heating tank 1; R-02: Gold cyanidation reactor; T-02: Heating tank 2).')
+    figcaption.figure-caption
+      b Figure 2.
+      |  The process flow diagram for bioleaching of refractory gold (R-01: Pyrite dissolution reactor; T-01: Heating tank 1; R-02: Gold cyanidation reactor; T-02: Heating tank 2).
+  p 
+    | #[b Figure 3] illustrates the process flow diagram for bioleaching of non-refractory gold. The gold atoms are relatively easy to liberate by utilizing this bioreactor.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/implementation-figure-3.jpg" style="max-width:55%; width 55%" alt='Figure 3. The process flow diagram for bioleaching of non-refractory gold (R-02: Gold cyanidation reactor; T-02: Heating tank 2).')
+    figcaption.figure-caption
+      b Figure 3.
+      |  The process flow diagram for bioleaching of non-refractory gold (R-02: Gold cyanidation reactor; T-02: Heating tank 2).
+  p 
+    | Here, we tried to compare the #[b energy cost] of the existing #[b conventional] (hydrometallurgy + pyrometallurgy) method that is currently implemented in small-scale gold mining in Yogyakarta with our #[b biohydrometallurgy] method to predict the economic cost for each method (#[b Table 1]).
+  p
+  table.table.table-bordered.text-center
+    caption.text-center #[b Table 1.] Comparison of the energy cost of the existing conventional method with our biohydrometallurgy method.
+    thead
+      th(scope="col") Variable
+      th(scope="col") Conventional
+      th(scope="col") Biohydrometallurgy
+    tbody
+      tr 
+        td CAPEX
+        td Negligible
+        td Negligible 
+      tr 
+        td OPEX
+        td NaCN: #[b 20 kg] NaCN per 1 kg gold leached
+          p 
+            | LPG for 600 C heat: #[b 468 kg] per 1 kg gold leached
+        td Substrate (L-arabinose)
+          p 
+            | Medium: neglected. we used medium from the byproduct of local soy-based food industries, thus the price assumed to be 0
+          p 
+            | LPG for 80 C heat for each tank: 7 tanks of Refractory gold; 1 tank of Non-refractory gold. #[b 365 kg] LPG per 1 kg gold for non-refractory gold; #[b 430 kg] LPG per 1 kg gold for refractory gold
+  p 
+    | Due to the batch time difference in each process, we measured the needs of each component per 1 kg of product. The price for each component showed in #[b Table 2].
+  table.table.table-bordered.text-center
+    caption.text-center #[b Table 2.] The price of each component used in conventional and/or biohydrometallurgy methods.
+    thead
+      th(scope="col") Component
+      th(scope="col") Price (USD/kg)
+      th(scope="col") Source
+    tbody
+      tr 
+        td NaCN
+        td 576
+        td Alfa Aesar
+      tr 
+        td L-arabinose
+        td 2692.13
+        td Sigma Aldrich
+      tr
+        td LPG
+        td 0.47
+        td Indonesia market price
+  p 
+    | Hence, the calculation of operational expenditure per 1 kg of product are:
+  p
+    | OPEX of #[b conventional process] 
+  p
+    | = (NaCN mass x NaCN price) + (LPG mass x LPG price)
+  p 
+    | = (20 kg x $ 576) + (468 kg x $ 0.47)
+  p 
+    | = #[b $ 11739.96] per 1 kg gold
+  p 
+    |
+  p
+    | OPEX of #[b biohydrometallurgy, non-refractory gold] 	
+  p 
+    | = (L-arabinose mass x L-arabinose price) + (LPG mass x LPG price)
+  p 
+    | = (4.08e-4 kg x $ 2692,13) + (365 kg x $ 0.47)
+  p 
+    | = #[b $ 172.65] per 1 kg gold
+  p 
+    |
+  p
+    | OPEX of #[b biohydrometallurgy, refractory gold] 	
+  p 
+    | = (L-arabinose mass x L-arabinose price) + (LPG mass x LPG price)
+  p 
+    | = (4.08e-4 kg x $ 2692,13) + (430 kg x $ 0.47)
+  p 
+    | = #[b $ 203.19] per 1 kg gold
+  p 
+    | By comparing the OPEX values, #[b biohydrometallurgy] processes for both non-refractory and refractory gold are #[b more feasible] than the conventional one.
+  p
+    | In general, there are two types of gold ore; refractory and non-refractory. The refractory gold, which is available in Yogyakarta, requires an additional process using #[i Thiobacillus ferrooxidans] because the gold ore is surrounded by pyrite (FeS#[sub 2]), a hard material that is hard to break. Thus, to extract the gold, it needs two bioreactors. Meanwhile, non-refractory gold, a type of gold that is available in Nusa tenggara, does not require pyrite dissolution and only needs one bioreactor.
+  p 
+    | In the existing method, there are two general steps to extract gold; leaching process and pyrometallurgy. The weakness of the existing leaching process is that it has a high import (transport) cost of leaching agent (NaCN) and handling hazard, while the weakness of pyrometallurgy method is that it needs a high operational temperature (600#[sup o] C) thus requiring more energy, more LPG, and more money. Meanwhile, our proposed biometallurgy method does not need a leaching agent, omitting the transport cost and handling hazard, and needs less temperature (60-100#[sup o] C) for the heating tank used to kill the afterused bacteria thus requiring less energy, less LPG, and less money.
+  h4.display-4.text-primary
+    | Future Improvement
+  p 
+    | Implementing Auviola in the real world will take a long journey. We realized that we were unable to complete all sections of this research at this time. In the future, we are planning to divide this research into 4 phases. At this moment, we have taken the initial steps in gene construction, dry lab modeling, and testing HCN production. We consider this as the first phase. In the second phase, we are planning to optimize HCN production of #[i Chromobacterium violaceum]. In the third phase, our focus will be on the HCN degradation system. For the last phase, we are planning to build a real bioreactor and create the best adjustments that can produce the best yield of gold yet minimum waste products. To make it easier to operate, we are planning to make a practical guide book so that it can be used independently by ASGM. However, according to advice by #[b Professor Doctor Suhadi], the solution that we offer needs to be integrated with various stakeholders. So we are planning to cooperate with stakeholders, NGOs, industry and open up opportunities for research collaboration in the future.

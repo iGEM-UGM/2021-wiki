@@ -5,6 +5,22 @@ heroImage: /assets/img/hero-contribution.jpg
 dataSidebar: [
     {"href" : "#experimental", "name" : "Experimental Data"}
 ]
+dataReferences: [
+    {
+      "reference" : "Anonymous, 2020, <i>Part:BBa_E0040</i>",
+      "online" : "true",
+      "link" : "http://parts.igem.org/Part:BBa_E0040",
+      "accessed" : "October 20, 2021 at 16.36 WIT"
+    },
+    {
+      "reference" : "Shariarti, F.S., Keramati, M., Valzadeh, V., Cohan, R.A., Norouzian, D., 2021, Comparison of <i>E. coli</i> based self‑inducible expression systems containing different human heat shock proteins,<i>Scientific Report</i>, vol. 11, no. 4576.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Phue, J.N., Lee, S.J., Trinch, L., Shiloach, J., 2008, Modified <i>Escherichia coli</i> B (BL21), a Superior Producer of Plasmid DNA Compared with <i>Escherichia coli</i> K (DH5-alpha), <i>Biotechnology and Bioengineering</i>, vol. 101, no. 4, pp. 831 – 836.",
+      "online" : "false",
+    },
+]
 ---
 
 //- section#escher
@@ -12,13 +28,54 @@ dataSidebar: [
 //-     | Escher Model and Map for C. violaceum Metabolic Pathway
 //-   p
 //-     | We provided a model and map for the main metabolic pathway engineering of C. violaceum bacterium. Moreover, we also provided another one related to cyanide metabolic pathway. This model can be referred to by other iGEM teams in the future for conducting their project related to C. violaceum metabolic pathway.
+
 section#experimental
   h4.display-4.text-primary
     | Experimental Data
   p
-    | We added experimental data of BBa_K1602055 that demonstrates a comparison of the part's efficacy in three different chassis; i.e., \(DH5\alpha\) and \(BL21(DE3)\)-strains of #[i E. coli] and \(ATCC 12472\)-strain of #[i C. violaceum].
+    | We conducted experiments toward the construction of BBa_K1602055 encoding the AraC-pBAD promoter into the pSB1C3 vector in the #[i E. coli] expression system. In this study, the level of its expression was compared within two strains of #[i E. coli], \(BL21(DE3)\) and \(DH5α\), to investigate the expression profile. Several putative transformant colonies selected on LB agar medium supplemented with Chloramphenicol antibiotic and verified by colony PCR using VF2 VR primers (#[b Table 1]).
   p 
-    | Kindly visit our
-    |
-    a(href="/Results") Results
-    |  page for the details!
+  table.table.table-bordered.text-center
+    caption.text-center #[b Table 1.] Sequence of VF2 and VR Primers.
+    thead
+      th(scope="col") Primer
+      th(scope="col") Sequence
+    tbody
+      tr 
+        td VF2
+        td TGCCACCTGACGTCTAAGAA
+      tr 
+        td VR
+        td GCTCACTCAAAGGCGGTAAT
+  p 
+    | Overnight cultures from positive clones were used as inoculum (1% v/v) to make the working cultures. Additionally, #[i E. coli] strains, \(BL21(DE3)\) and \(DH5α\), without carrying targeted genes were cultivated as the control. The working cultures (LB broth supplemented with chloramphenicol) were incubated at 37oC and 200 rpm agitation. When the OD reached 0.1, 2mM L-arabinose was added to the medium as the inducer. For the control, we use a non-transformed culture of #[i E. coli] \(BL21(DE3)\) and \(DH5α\). The cell growth is measured using spectrophotometer OD 600 and the fluorescence intensity is measured using fluorometer with excitation and emission at 504 nm and 515 nm wavelength respectively.
+    a(href='#reference-1')
+      sup 1
+  p 
+    | All the #[i E. coli] transformant strain \(BL21(DE3)\) and \(DH5α\) showed lower exponential growth compared to control (#[b Figure 1]). Thus, it indicated that the cells were in fact growing slowly. This result suggested a higher metabolic burden of transformed strain. The foreign genetic part (BBa_K1602055) expression demands more cellular resources and energy,  which competes with native host metabolism.
+    a(href='#reference-2')
+      sup 2
+    | Hence, the host cells may suffer from delayed growth at the beginning. The lag phase of #[i E. coli] \(BL21(DE3)\) clones from both transformant and control showed a shorter lag phase compared to the \(DH5α\). It indicated that \(BL21(DE3)\) has a better metabolic profile and less sensitive to metabolic stress.
+    a(href='#reference-3')
+      sup 3
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/contribution-figure-1.jpg" alt='Figure 1. Comparison of the growth curve between (a) the transformant (BL18P) and control (BLCTRL) in E. coli strain BL21(DE3), and (b) transformant (DH18P) and control (DHCTRL) in E. coli strain DH5α. The measurement was carried out by spectrophotometry at 600 nm.')
+    figcaption.figure-caption
+      b Figure 1.
+      |  Comparison of the growth curve between (a) the transformant (BL18P) and control (BLCTRL) in E. coli strain BL21(DE3), and (b) transformant (DH18P) and control (DHCTRL) in E. coli strain DH5α. The measurement was carried out by spectrophotometry at 600 nm.
+  p 
+    | The fluorescence protein was expressed in the transformant cells from both #[i E. coli] strains after the induction of L-arabinose. Both \(BL21(DE3)\) and \(DH5α\) clones were induced after approximately three hours of cultivation. As we expected, the fluorescence excitation depicted that expression of GFP was significantly higher in \(BL21(DE3)\) clones compared to \(DH5α\) clones. It revealed that the DH5α strain is not specialized for heterologous protein expression (#[b Figure 2]).
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/contribution-figure-2.jpg" alt='Figure 2. Result of fluorescence measurement: (a) BL21(DE3) transformed and the control, (b) DH5α transformed and the control.')
+    figcaption.figure-caption
+      b Figure 2.
+      |  Result of fluorescence measurement: (a) BL21(DE3) transformed and the control, (b) DH5α transformed and the control.
+  p 
+    | After 6 hours of culture, the remaining cells were harvested by centrifugation at 6,800 rpm for 3 minutes and observed under UV transillumination. The fluorescence of the \(DH5α\) clones was very low to be seen, the GFP expression in \(BL21(DE3)\) showed remarkably high. It can be noticed by the greenish luminescence of the cell pellet (#[b Figure 3]).
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/contribution-figure-3.jpg" style="max-width:25%; width:25%;" alt='Figure 3. GFP luminescence under the UV light of each cell pellet for BL21(DE3) clone (left) and DH5α clone (right) after centrifugation')
+    figcaption.figure-caption
+      b Figure 3.
+      |  GFP luminescence under the UV light of each cell pellet for BL21(DE3) clone (left) and DH5α clone (right) after centrifugation.
+
+

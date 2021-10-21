@@ -5,10 +5,127 @@ heroImage: /assets/img/hero-human_practice.jpg
 dataSidebar: [
     {"href" : "#design", "name" : "Integrated Human Practice Design"}
 ]
+
+dataReferences: [
+    {
+      "reference" : "Yang, C. and Li, Y., 2011, Chromobacterium violaceum infection: A clinical review of an important but neglected infection, <i>Journal of the Chinese Medical Association</i>, vol. 74, no. 10, pp. 435-441.",
+      "online" : "false",
+    },
+    {
+      "reference" : "Lysenko, O., 1960, Pseudomonas-An Attempt at a General Classification, <i>Journal of General Microbiology</i>, vol. 25, no. 3, pp. 379-408.",
+      "online" : "false",
+    },
+    {
+      "reference" : "Patel, A., 2010. Isolation and Characterization of Thiobacillus ferooxidans from Coal Acid Mine Drainage, <i>International Journal of Applied Agricultural Research</i>, vol. 5, no. 1, pp.73-85.",
+      "online" : "false",
+    },
+]
 ---
 
-section#design
+section#ihp-design
   h4.display-4.text-primary
     | Integrated Human Practice Design
   p
-    | Integrated Human Practice is a crucial aspect in the iGEM UGM AUVIOLA journey. Thus, we tried our best to create a human practice design. We know that gold mining has been an important part of many Indonesians. They hang their life through collecting rocks and soil and hope to turn it into gold which they can exchange with money for them to eat. However, many did not know the danger of using chemical substances like cyanide without proper personal protective equipment and dumping the waste without further processing. Therefore, it is very important that our human practice approach could gather the public needs, stakeholder values, and expert opinion to be the basis of AUVIOLA project development. This approach also makes AUVIOLA  a problem-driven solution that follows what people need.
+    | Integrated Human Practices is a crucial aspect in our Auviola journey. Thus, we tried our best to create a human practices design. We know that gold mining has been an important part of many Indonesians. They hang their life through collecting rocks and soil and hope to turn it into gold which they can exchange with money for them to eat. However, many did not know the danger of using chemical substances like cyanide without proper personal protective equipment and dumping the waste without further processing. Therefore, it is very important that our human practices approach could gather the public needs, stakeholder values, and expert opinion to be the basis of Auviola project development. This approach will also make Auviola a problem-driven solution that follows what people need.
+section#framework  
+  h4.display-4.text-primary
+    | Our Integrated Human Practices Framework
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/ihp-framework.jpg" style="max-width:90%; width:100%;")
+  p 
+    | Our integrated human practices framework reflects on our activities such as literature review, interviews, and the sharing session, presented on the 
+    |
+    a(href="/Human_Practices") Human Practices
+    |
+    | page, to understand current problems in gold mining activities. From those problems, we created some reflections as our guide to formulate and build the solutions. Furthermore, we aimed to propose implementation and future improvement, presented on the 
+    |
+    a(href="/Proposed_Implementation") Proposed Implementation
+    |
+    | page, that can be initiated from our project.
+  #formulating-solution
+    h5.display-5.text-primary
+      | Formulating the solution
+    p 
+      | From several interviews, we collected many values that support our literature reviews regarding the cyanide waste problem in Artisanal Small-scale Gold Mining (ASGM) and helped us to map our steps ahead in creating ideas and solutions to this problem.
+    ol 
+      li Our conversation with #[b Eko Suryanto], one of the ASGM, provided us with precious information that ASGM is now #[b shifting from mercury to cyanide] because the government started to ban the use of mercury in 2019. However, even though cyanide is safer than mercury, it can still harm the environment and even kill humans if not disposed of properly. Mr. Eko explained that cyanide can only be used once and has a difficult waste management. So, the #[b gold miners tend to dispose of it directly] to the environment.
+      li Our discussion with environmental expert, #[b Professor Suhadi], gave us many insights about the facts that #[b cyanide had been found in the water, soil, and even detected in the plants surrounding the mine]. Moreover, according to the description given by the local miners, there were several occasions when a cow died after drinking from a polluted water source and also one of the miners died because he forgot to wash his hands after using cyanide. At some gold mining areas, there has not been any effort to educate people about the dangers of cyanide or how to properly dispose of the cyanide waste. It was observed that the miners do not have awareness regarding the problem. Professor Suhadi said that a new practical alternative approach is needed in order to save the environment.
+      li Our #[b interview with GOLD-ISMIA] provided us with technical information about how gold ore is processed using cyanide. From the discussion, we understand that the #[b cyanidation process is not that simple]. There must be several adjustments like the pH, or the addition of several other chemicals like aluminum. This can be the things that we should consider before creating a tool that will make small scale gold mining more practical and safe.
+    p 
+      | From the values we collected above, we concluded that cyanide waste is a huge problem requiring major intervention. In order to be successful, this kind of intervention needs many contributions from the stakeholder, the community, and also science. We were also sure that synthetic biology can fill the gap of cyanide waste problem in artisanal small scale gold mining. However, due to limited time and human resources, we are aware that we need to prioritize the things that we need to be focused on this year.
+    ol 
+      li #[b Dividing the research into 4 step process]
+      p
+        | Our plan to implement our project consists of 4 steps as mentioned below.
+      figure.text-center
+        img.figure-img.img-fluid.rounded(src="/assets/img/ihp-step.png" style="max-width:90%; width:100%;")
+      p 
+        | This year, due to COVID-19 restrictions and a change in laboratory regulations, we were focusing on step 1 which consists of literature review, community engagement, expert consultation, idea formulation, gene construction, kinetic modelling, and genome scale modelling. This step is the most crucial step as it determines the successfulness of the following steps.
+      p 
+        | From the literature review, community engagement, expert consultation, and brainstorming, we got the idea to make a tool using #[b synthetic biology] which can produce #[b measured amounts of cyanide and eventually degrade it into less toxic materials]. The chassis we chose is #[b #[i Chromobacterium violaceum]], a Gram-negative bacteria which naturally produce cyanide. We tried to construct an on and off system between HCN production and HCN degradation and transform it to #[i C. violaceum].
+      li Making sure #[b our intervention is safe] for the environment and the people
+      p
+        | Safety is one of our major concerns in formulating the solution as #[i C. violaceum] is considered quite harmful not only because it can produce cyanide, but also it may cause a spectrum of disease from localized skin and soft tissue infection to systemic or invasive infection including necrotizing fasciitis.
+        a(href='#reference-1')
+          sup 1
+        | Thus, a system should be built to prevent #[i C. violaceum] leak into the environment.
+      p 
+        | We designed a system which is able to kill the bacteria after it is used. This system uses heat and will be incorporated inside the bioreactor and called a #[b heating tank]. The heat is set based on the thermal death point and time of the #[i C. violaceum].  However, there is still very limited research about the thermal death point of #[i C. violaceum], so we use the thermal death point of #[i Pseudomonas] which is closely related to #[i Chromobacterium sp.]; i.e. 10 minutes at 56
+        sup o
+        | C.
+        a(href='#reference-2')
+          sup 2 
+        | Besides #[i C. violaceum], we will also use #[i Thiobacillus ferrooxidans]  to extract refractory gold which is embedded inside pyrite mineral. #[i T. ferrooxidans]  have a thermal death time of 45 minutes at 60
+        sup o
+        | C in heterotrophic culture conditions.
+        a(href='#reference-3')
+          sup 3
+      li Making sure our solution is #[b problem-centered]
+      p 
+        | By engaging with the community of artisanal small-scale gold mining, we tried to dig deep and focus on the problems that #[b exist in the ASGM community], addressing their needs that are currently unmet. 
+      li Making sure our solution is #[b financially feasible]
+      p 
+        | To be realistic, we should ensure that our solution is scalable and financially feasible. This way, we can make #[b financial planning] and decide what kind of realistic implementation that can be organized.
+    #formulating-solution
+      h5.display-5.text-primary
+        | Building the Solution
+        h6.display-6.text-primary
+          | Wet Lab Expert (each specific scope) e.g. building and testing
+        ol
+          li #[b Design the gene construct]
+          p 
+            | Our project aimed to optimize the cyanide production of #[i C. violaceum] with synthetic biology as the main approach. Our wet lab team has consulted to many experts in order to get the best and feasible solution to construct or modify the organism, resulting in cyanide overproduction. #[b Prof. Ir. Irfan Dwidya Prijambada, M.Eng., Ph.D.] suggested the approach of blocking certain metabolic pathways to restrict the conversion of glycine, the cyanide precursor, to become the other metabolic product. Thus, glycine will be fully utilized by the bacteria as the precursor to produce cyanide. However, this method was too difficult to work with because it needs deeper understanding with metabolomics methods which are still poorly well known in Indonesia.
+          p 
+            | Aware of the limitations and difficulties, #[b Imam Bagus Nugroho, S.Si., M.Sc.] suggested us to make a simpler approach by coupling the cyanide production operon, namely hcnABC into the chassis, so that the #[i C. violaceum] will have double HCN production operons which are expected to overproduce the cyanide. The on-off systems will be used to switch on the cyanide production and switch off when the desirable time and concentration of cyanide have been reached, followed with the activation of cyanide degradation gene.
+          p 
+            | With further discussion with #[b Afif Pranaya Jati, S.P., M.Sc.], he suggested that the arabinose will be a suitable inducer for the gene construct because #[i C. violaceum] are unable to produce/ ferment the arabinose. The usage of arabinose as an inducer will minimize the bias and leakage of our gene construct. In order to standardize our experiment, #[b Matin Nuhamunada, S.Si., M.Sc.] as our instructor suggested that we use standard strains from #[i C. violaceum] based on similar-filed journals. Thus, we use #[i C. violaceum] \(ATCC 12472\) as our main chassis aside from #[i E. coli] \(BL21(DE3)\) and #[i E. coli] \(DH5α\).
+        h6.display-6.text-primary
+          | Dry Lab Expert
+          p 
+            | There are lots of literature that can be used to model gold bioleaching systems with #[i Chromobacterium violaceum]. However, the complexity of our novel genetically-engineered #[i C. violaceum], variations of gold ore across Indonesia, and limited access for some physical data hinder our team to complete the modelling instantly.
+        ol
+          li #[b Kinetic Modelling]
+          p
+            | The model for intracellular reaction such HCN production, HCN degradation, and arabinose conversion were modelled with Tellurium, an open source python modelling environment by #[b Jayit B, Tottle K, Matthias K, and other 12 contributors] with help from external contributors. Our instructors and advisor, #[b Matin Nuhamunada, Afif Pranaya Jati, Imam Bagus Nugroho, and Ahmad Ardi] helped us to set the assumption, determine the kinetics equation, and search for kinetic constant.
+          p 
+            | For the gold cyanidation equation, we got help from other advisors, #[b Himawan Tri Bayu Murti Petrus] and #[b Agus Prasetya] from sustainable mineral processing research group UGM (SMinPro UGM) who have expertise in mineral processing, especially hydrometallurgy.
+            li #[b Genome Scale Modelling]
+          p
+            | We decided to map #[i Chromobacterium violaceum] metabolic pathways with Escher on Jupyter. Escher itself is an open source python package developed by #[b Zachary AK, Andreas D, Ali E, Nikolaus S, Nathan EL, and Bernhard OP] to create metabolic pathways and modelled flux balance analysis.
+          p 
+            | The model for #[i C. violaceum] is not available on the website. However, we came across a paper titled "A scalable metabolite supplementation strategy against antibiotic resistant pathogen Chromobacterium violaceum induced by NAD
+            sup +
+            | /NADH
+            sup + 
+            | imbalance". We suspected that the author used escher in one of the metabolite maps. Hence, we asked #[b Deepanwita Banerjee] as one of the authors for the json file of #[i C. violaceum] pathway and then sent it to us.
+          p 
+            | For the flux balance analysis, our advisor #[b Matin Nuhamunada] coached and helped us to build the metabolite model.
+          li #[b Bioreactor]
+          p 
+            | The gold bioleaching reactor design is based on the content of the gold ore. Our advisor, #[b Himawan Tri Bayu Murti Petrus], divided it into two categories: non-refractory gold and refractory gold. For the refractory gold, there will be 2 reactors, one for mineral dissolution and one for gold cyanidation. The refractory gold is based on gold ore from Kulonprogo, where the gold atoms are trapped in pyrite. Thus, we designed the pyrite dissolution bioreactor from #[i Thiobacillus ferrooxidans] based on his advice too.
+          p
+            | We designed the gold cyanidation bioreactor based on out meetings with #[b Dewi Baiq Krisnayanti] from GOLD-ISMIA and the current technology in Kulonprogo gold cyanidation facility from GOLD-ISMIA, UNDP, Agency for the Assessment and Application of Technology, and Ministry of Environment and Forestry.
+
+
+
+
