@@ -1,0 +1,133 @@
+---
+layout: layouts/default.njk
+title: Results
+heroImage: /assets/img/hero-results.jpg
+dataSidebar: [
+    {"href" : "#geneconstruct", "name" : "Gene construction of for HCN production"},
+    {"href" : "#assembly", "name" : "Assembly"},
+    {"href" : "#transformation", "name" : "Genetic Transformation"},
+    {"href" : "#future", "name" : "Future Work"},
+]
+---
+
+p 
+  | We tried to create an on-off system for HCN production and HCN degradation for #[i C. violaceum]. We engineered 3 plasmids which consist of the hcnABC operon (the HCN production plasmid combined with AraC-pBAD promoter), the rhodanese gene (HCN degradation gene with AraC repressible promoter), and L-arabinose isomerase (responsible to transform the Arabinose to shut down the HCN production). The overview of our gene construct depicted in #[b Figure 1]. Due to the complexity of the project and the construct itself, we divided our project into 3 sub-projects and for this time we are focusing to create the first construct, which is the HCN production circuit.
+figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-1.jpg" style="max-width:80%; width:80%;")
+    figcaption.figure-caption #[b Figure 1.] Circuitry design of #[i Auviola].
+section#geneconstruct
+  h4.display-4.text-primary
+    | Gene construction of for HCN production
+  p
+    | To construct the HCN production gene, we needed several biobrick parts. Gene construction for HCN production consists of several parts:
+  ol 
+    li AraC-pBAD promoter (#[b BBa_K1602055]) 
+    li RBS (#[b BBa_B0034])
+    li hcnABC operon (synthesized by Twist Bioscience)
+    li hcnC from extracted genome #[i C. violaceum]
+    li Double terminator (#[b BBa_B0015])
+    li BBa_B0034 (strong RBS)
+    li Origin of replication from pBBR1-MCS2 (obtained from colleague)
+  p 
+    | The total legth of the overal construct with the backbone is around 7000s bp (#[b Figure 2]). During the first step of the assembly, we used the native origin of replication from pSB1C3.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-2.jpg" style="max-width:80%; width:80%;")
+    figcaption.figure-caption #[b Figure 2.] Plasmid Design of the Circuit.
+  p 
+    | Each of the required part was amplified by Phusion High-Fidelity PCR Kit with the specific primers as shown in #[b Table 1]. The gene amplification was visualized by gel electrophoresis under UV-light (#[b Figure 3]) and purified by gel purification system in order to obtain the desirable gene sequence. The DNA concentration of each product were quantified using Nanodrop (#[b Table 2]).
+  
+  //- masukin table 1
+
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-3.jpg" style="max-width:80%; width:80%;")
+    figcaption.figure-caption #[b Figure 3.] Electrophoresis result of all needed parts.
+  p 
+    | Gel purification was performed for sample 1, 2, 5, 6, 8, 9, 10, and 11. The rest samples were purified using PCR clean-up purification protocol.
+  table.table.table-bordered.text-center
+    caption.text-center #[b Table 2.] DNA Concentration Result after PCR product and Gel Purification.
+    thead
+      th(scope="col") Tube
+      th(scope="col") DNA Concentration (ng/uL)
+    tbody
+      tr
+        td 1
+        td 13.154
+      tr
+        td 2
+        td 16.277
+      tr
+        td 3
+        td 12.196
+      tr
+        td 4
+        td 40.619
+      tr
+        td 5
+        td 33.277
+      tr
+        td 6
+        td 89.711
+      tr
+        td 7
+        td 35.234
+      tr
+        td 8
+        td 37.004
+      tr
+        td 9
+        td 26.598
+      tr
+        td 10
+        td 19.461
+      tr
+        td 11
+        td 28.206
+      tr
+        td 12
+        td 18.477
+section#assembly
+  h4.display-4.text-primary
+    | Assembly
+  p 
+    | After all of the constructs with the overhang sites (elongated through PCR system) were obtained, then we continued the process for the assembly. Some constructs that we assembled consist of:
+  ol
+    li P1: BBa_ K1602055 (Biobrick Parts)
+    li P2: hcnAB (Twist Bioscience)
+    li P3: hcnC-1#[sup st] fragment (isolated from #[i C. violaceum] WT genome; before the illegal site)
+    li P4: hcnC-2#[sup nd] fragment (isolated from #[i C. violaceum] WT genome; after the illegal site)
+    li P5: BBa_B0015 double terminator, together with the backbone
+  p 
+    | These parts were all assembled using the Gibson assembly method. The reaction mix are incubated in 50#[sup o]C for 1 hour in a thermal cycler.
+section#transformation
+  h4.display-4.text-primary
+    | Genetic Transformation
+  p 
+    | We transformed the construct to #[i E. coli] \(BL21(DE3)\) and \(DH5α\) using a strandard heat shock transformation protocol. LB agar plate supplemented with chloramphenicole was used to select the transformants. After an overnight incubation, we did the colony PCR, using VF2 VR primers (#[b Table 3]), to the randomly picked the colonies and directly subcultured the colonies and subcultured them in the LB broth with antibiotic. The following figure (#[b Figure 4]) depicts the results.
+  table.table.table-bordered.text-center
+    caption.text-center #[b Table 3.] The Sequence of VF2 and VR Primer.
+    thead
+      th(scope="col") Primer
+      th(scope="col") Sequence
+    tbody
+      tr
+        td VF2
+        td TGCCACCTGACGTCTAAGAA
+      tr 
+        td VR 
+        td GCTCACTCAAAGGCGGTAAT
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-4.jpg" style="max-width:80%; width:80%;")
+    figcaption.figure-caption #[b Figure 4.] Colony PCR Result of the Random-picked Transformants.
+  p 
+    | The elctropherogram showed that the DNA size were merely under 1500 bp, however, there were some bands appears with the size of arround 4600 bp. We suspected that the PCR mix was not robust to amplify our construct. Therefore, we directly subcultured the first colony (ColA) for plasmid extraction, obtaining the concentration of #[b ColA: 146.20 ng/uL].
+  p 
+    | Another PCR cycle was conducted using hcnABC primers to confirm whether the construct is fully inserted to the vector (#[b Figure 5]).
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-5.jpg" style="max-width:80%; width:80%;")
+    figcaption.figure-caption #[b Figure 5.] Electrophoresis Result for ColA.
+  p 
+    | Additional bands were shown on the gel electrophoresis result with the size of around 5000 bp and 1500 bp. Although the desired band (~4600s bp) have been obtained, further investigation is necessary in order to confirm that the construct is correct. Therefore, we send the extracted plasmid and some primers for Sanger sequencing analysis.
+  p
+    | This time we still waiting for the sequenced plasmid. The sequencing result will be reported soon.
+
+section#future
