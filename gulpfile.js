@@ -21,6 +21,7 @@ gulp.task("dist-assets", function (done) {
   gulp.src("./src/assets/js/**/*.*").pipe(gulp.dest("./dev/js"));
   gulp.src("./src/assets/img/**.*").pipe(gulp.dest("./dev/assets/img"));
   gulp.src("./src/assets/font/**.*").pipe(gulp.dest("./dev/assets/font"));
+  gulp.src("./src/assets/others/**.*").pipe(gulp.dest("./dev/assets/others"));
   done();
 });
 

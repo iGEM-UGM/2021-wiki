@@ -7,6 +7,8 @@ dataSidebar: [
 ]
 ---
 
+#kinetic-modelling
+  h3.display-3.text-primary Kinetic Modelling
 p Modelled the reaction (concentration vs time) graph in the designed on/off system:
 ol
   li HCN production with inserted arabinose regulated hcnABC operone
@@ -20,7 +22,7 @@ ol
       li Arabinose conversion to ribulose by L-AI
   li Au extraction with HCN
 figure.text-center
-    img.figure-img.img-fluid.rounded(src="/assets/img/model-figure-1.png" style="max-width:70%; width:70%")
+    img.figure-img.img-fluid.rounded(src="/assets/img/design-figure-3.jpg" style="max-width:70%; width:70%")
 section#hcn-production
   h4.display-4.text-primary HCN Production with insert arabinose-regulated hcnABC operone
   #condition-plus-arabinose
@@ -423,3 +425,605 @@ section#au-extraction
   p The results of gold cyanidation modelling are presented as gold (Au) and CN#[sup -] concentration vs time. The ideal batch time would be 20 hours and above.
   figure.text-center
     img.figure-img.img-fluid.rounded(src="/assets/img/model-au-extraction-5.png" style="max-width:50%; width:50%")
+
+#kinetic-modelling
+  h3.display-3.text-primary Genome Scale Modelling
+  p #[b Gene knockout for enhancing cyanide production flux]
+
+section#introduction-genome
+  h4.display-4.text-primary Introduction
+  p Genome-Scale Model (GEMs) are commonly used as the representative of complex metabolic function in a cell [1]. This method enables researchers to explore and describe the #[b genotype-phenotype relationship] of a living cell, providing comprehensive prediction and optimization for a particular function of interest [2]. In this project, we utilized the GEMs to simulate the cyanide production and metabolic flux analysis of #[i Chromobacterium violaceum] Wild-Type (WT) as well as the model if we knock out certain undesired genes. There are 3 main purposes of the GEMs analysis in this project; i.e., to generate the phenotypic phase plane, generate the production envelope, and analyze the flux of cyanide production in the metabolic map of #[i C. violaceum] WT and its mutant. The phenotypic phase plane aimed to determine the correlation between the biomass and cyanide production of #[i C. violaceum] WT, which then will be compared to the mutant #[i C. violaceum] which is analyzed using the production envelope model. Comprehensively, both of the cyanide metabolite flux of WT and mutant will be modeled. We use #[b Cameo] as the main tool to perform the knockout prediction and #[b Escher] for mapping the metabolic pathway.
+section#genome-scale-model-update
+  h4.display-4.text-primary #[i Chromobacterium violaceum] Genome Scale Metabolic Model & Map Update
+  p In our GEMs, we use BiGG Model database (http://bigg.ucsd.edu), KEGG metabolic pathway (https://www.genome.jp/kegg/pathway/), and Escher (https://escher.github.io/#/) to design and visualize the metabolic map. The first step to perform the GEMs is to find information related to the model and metabolic pathway map in C. violaceum. However, C. violaceum is not a common microorganism to be modeled. We also found some difficulties to find the metabolic model in the BiGG Model database [3]. There were no available publications related to the metabolic map of C. violaceum in Escher as well. Thus, we tried to check the metabolic pathway of C. violaceum in KEGG and converted it to Escher map (.json) using EscherConverter (https://github.com/draeger-lab/EscherConverter/releases/tag/v1.2.1), yet an error occurred when we imported it to Jupyter.
+  p After conducting literature search, we discovered a publication by Banerjee et al. (2019) who did the constraint-based modeling for C. violaceum [4]. From the supplementary of the journal, we found the .mat file for the GEMs of C. violaceum, iDB858 which can be used for our references. Besides, we also contacted the first author, Deepanwita Banerjee, and obtained the Escher map (.json) which is valid for the Jupyter platform.
+  #model-update
+    h5.display-5.text-primary Model Update
+    p Banerjee et al. (2019) used the MATLAB platform for all of the simulations by using the .mat file iDB858 for the GEMs for C. violaceum, which was different from the file format that we use for our modeling. Our GEMs used python, thus we needed to convert the .mat file iDB858 into SBML (iDB858_updated1.xml). Nevertheless, curation is still needed as the reaction and metabolite IDs do not match between the Escher map and the model. Looking at all of our reactions in the model (https://github.com/iGEM-UGM/2021-igem-ugm-model/blob/main/final/tables/all_reactions_in_model.csv) (../tables/all_reactions_in_model.csv), we found that there are 32 reactions with some IDs mismatch between the Escher map and the model (Table 1), three ‘double’ reactions (Table 2), and two metabolites which should be curated (Table 3).
+    figure.text-center
+      table.table.table-bordered.table-hover.table-condensed
+        thead
+          tr
+            th(title='Field #1')
+            th(title='Field #2') name
+            th(title='Field #3') bigg_id
+            th(title='Field #4') gene_reaction_rule
+            th(title='Field #5') genes
+            th(title='Field #6') metabolites
+        tbody
+          tr
+            td(align='right') 0
+            td Phosphoglycerate kinase
+            td PGK
+            td b2926
+            td [{&apos;bigg_id&apos;: &apos;b2926&apos;, &apos;name&apos;: &apos;pgk&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;3pg_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;13dpg_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;atp_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;adp_c&apos;}]
+          tr
+            td(align='right') 1
+            td Phosphogluconate dehydrogenase
+            td GND
+            td b2029
+            td [{&apos;bigg_id&apos;: &apos;b2029&apos;, &apos;name&apos;: &apos;gnd&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;ru5p__D_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;nadph_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;co2_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;nadp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;6pgc_c&apos;}]
+          tr
+            td(align='right') 2
+            td Isocitrate dehydrogenase (NADP)
+            td ICDHyr
+            td b1136
+            td [{&apos;bigg_id&apos;: &apos;b1136&apos;, &apos;name&apos;: &apos;icd&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;nadph_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;akg_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;co2_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;nadp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;icit_c&apos;}]
+          tr
+            td(align='right') 3
+            td Fructose-bisphosphatase
+            td FBP
+            td b3925 or b4232
+            td [{&apos;bigg_id&apos;: &apos;b4232&apos;, &apos;name&apos;: &apos;fbp&apos;}, {&apos;bigg_id&apos;: &apos;b3925&apos;, &apos;name&apos;: &apos;glpX&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;fdp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;h2o_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;pi_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;f6p_c&apos;}]
+          tr
+            td(align='right') 4
+            td Pyruvate kinase
+            td PYK
+            td b1854 or b1676
+            td [{&apos;bigg_id&apos;: &apos;b1854&apos;, &apos;name&apos;: &apos;pykA&apos;}, {&apos;bigg_id&apos;: &apos;b1676&apos;, &apos;name&apos;: &apos;pykF&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;pep_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;adp_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;pyr_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;atp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;h_c&apos;}]
+          tr
+            td(align='right') 5
+            td Phosphofructokinase
+            td PFK
+            td b3916 or b1723
+            td [{&apos;bigg_id&apos;: &apos;b1723&apos;, &apos;name&apos;: &apos;pfkB&apos;}, {&apos;bigg_id&apos;: &apos;b3916&apos;, &apos;name&apos;: &apos;pfkA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;h_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;adp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;f6p_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;atp_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;fdp_c&apos;}]
+          tr
+            td(align='right') 6
+            td Phosphoenolpyruvate carboxykinase
+            td PPCK
+            td b3403
+            td [{&apos;bigg_id&apos;: &apos;b3403&apos;, &apos;name&apos;: &apos;pck&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;pep_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;atp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;oaa_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;co2_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;adp_c&apos;}]
+          tr
+            td(align='right') 7
+            td Phosphotransacetylase
+            td PTAr
+            td b2297 or b2458
+            td [{&apos;bigg_id&apos;: &apos;b2297&apos;, &apos;name&apos;: &apos;pta&apos;}, {&apos;bigg_id&apos;: &apos;b2458&apos;, &apos;name&apos;: &apos;eutD&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;accoa_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;actp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;pi_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;coa_c&apos;}]
+          tr
+            td(align='right') 8
+            td Malic enzyme (NAD)
+            td ME1
+            td b1479
+            td [{&apos;bigg_id&apos;: &apos;b1479&apos;, &apos;name&apos;: &apos;maeA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;mal__L_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;pyr_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;co2_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;nad_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;nadh_c&apos;}]
+          tr
+            td(align='right') 9
+            td Acetate kinase
+            td ACKr
+            td b3115 or b2296 or b1849
+            td
+              | [{&apos;bigg_id&apos;: &apos;b2296&apos;, &apos;name&apos;: &apos;ackA&apos;}, {&apos;bigg_id&apos;: &apos;b3115&apos;, &apos;name&apos;: &apos;tdcD&apos;}, {&apos;bigg_id&apos;: &apos;b1849&apos;, &apos;name&apos;: &apos;purT&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;adp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;ac_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;actp_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;atp_c&apos;}]
+          tr
+            td(align='right') 10
+            td Fumarate transport via proton symport  2 H 
+            td FUMt2_2
+            td b3528
+            td [{&apos;bigg_id&apos;: &apos;b3528&apos;, &apos;name&apos;: &apos;dctA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;fum_c&apos;}, {&apos;coefficient&apos;: 2, &apos;bigg_id&apos;: &apos;h_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;fum_e&apos;}, {&apos;coefficient&apos;: -2, &apos;bigg_id&apos;: &apos;h_e&apos;}]
+          tr
+            td(align='right') 11
+            td Succinate transport out via proton antiport
+            td SUCCt3
+            td  
+            td []
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;succ_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;succ_e&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;h_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;h_e&apos;}]
+          tr
+            td(align='right') 12
+            td Glyceraldehyde-3-phosphate dehydrogenase
+            td GAPD
+            td b1779
+            td [{&apos;bigg_id&apos;: &apos;b1779&apos;, &apos;name&apos;: &apos;gapA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;13dpg_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;g3p_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;nadh_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;h_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;nad_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;pi_c&apos;}]
+          tr
+            td(align='right') 13
+            td Succinate transport via proton symport  2 H 
+            td SUCCt2_2
+            td b3528
+            td [{&apos;bigg_id&apos;: &apos;b3528&apos;, &apos;name&apos;: &apos;dctA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;succ_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;succ_e&apos;}, {&apos;coefficient&apos;: 2, &apos;bigg_id&apos;: &apos;h_c&apos;}, {&apos;coefficient&apos;: -2, &apos;bigg_id&apos;: &apos;h_e&apos;}]
+          tr
+            td(align='right') 14
+            td Glutamate dehydrogenase (NADP)
+            td GLUDy
+            td b1761
+            td [{&apos;bigg_id&apos;: &apos;b1761&apos;, &apos;name&apos;: &apos;gdhA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;glu__L_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;nadp_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;nh4_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;h_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;nadph_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;akg_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;h2o_c&apos;}]
+          tr
+            td(align='right') 15
+            td Formate transport via diffusion
+            td FORti
+            td b0904 or b2492
+            td [{&apos;bigg_id&apos;: &apos;b2492&apos;, &apos;name&apos;: &apos;focB&apos;}, {&apos;bigg_id&apos;: &apos;b0904&apos;, &apos;name&apos;: &apos;focA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;for_e&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;for_c&apos;}]
+          tr
+            td(align='right') 16
+            td Fructose transport via PEPPyr PTS  f6p generating 
+            td FRUpts2
+            td b1817 and b1818 and b1819 and b2415 and b2416
+            td
+              | [{&apos;bigg_id&apos;: &apos;b1819&apos;, &apos;name&apos;: &apos;manZ&apos;}, {&apos;bigg_id&apos;: &apos;b1817&apos;, &apos;name&apos;: &apos;manX&apos;}, {&apos;bigg_id&apos;: &apos;b2415&apos;, &apos;name&apos;: &apos;ptsH&apos;}, {&apos;bigg_id&apos;: &apos;b2416&apos;, &apos;name&apos;: &apos;ptsI&apos;}, {&apos;bigg_id&apos;: &apos;b1818&apos;, &apos;name&apos;: &apos;manY&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;pep_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;f6p_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;fru_e&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;pyr_c&apos;}]
+          tr
+            td(align='right') 17
+            td succinate dehydrogenase irreversible
+            td SUCDi
+            td b0721 and b0722 and b0723 and b0724
+            td
+              | [{&apos;bigg_id&apos;: &apos;b0724&apos;, &apos;name&apos;: &apos;sdhB&apos;}, {&apos;bigg_id&apos;: &apos;b0721&apos;, &apos;name&apos;: &apos;sdhC&apos;}, {&apos;bigg_id&apos;: &apos;b0722&apos;, &apos;name&apos;: &apos;sdhD&apos;}, {&apos;bigg_id&apos;: &apos;b0723&apos;, &apos;name&apos;: &apos;sdhA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;succ_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;fum_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;q8_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;q8h2_c&apos;}]
+          tr
+            td(align='right') 18
+            td D lactate transport via proton symport
+            td D_LACt2
+            td b2975 or b3603
+            td [{&apos;bigg_id&apos;: &apos;b3603&apos;, &apos;name&apos;: &apos;lldP&apos;}, {&apos;bigg_id&apos;: &apos;b2975&apos;, &apos;name&apos;: &apos;glcA&apos;}]
+            td
+              | [{&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;lac__D_e&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;h_c&apos;}, {&apos;coefficient&apos;: 1, &apos;bigg_id&apos;: &apos;lac__D_c&apos;}, {&apos;coefficient&apos;: -1, &apos;bigg_id&apos;: &apos;h_e&apos;}]
+          tr
+            td(align='right') 19
+            td Biomass Objective Function with GAM
+            td BIOMASS_Ecoli_core_w_GAM
+            td  
+            td []
+            td
+              | [{&apos;coefficient&apos;: 3.7478, &apos;bigg_id&apos;: &apos;coa_c&apos;}, {&apos;coefficient&apos;: -0.8977, &apos;bigg_id&apos;: &apos;r5p_c&apos;}, {&apos;coefficient&apos;: -1.496, &apos;bigg_id&apos;: &apos;3pg_c&apos;}, {&apos;coefficient&apos;: -0.361, &apos;bigg_id&apos;: &apos;e4p_c&apos;}, {&apos;coefficient&apos;: -0.2557, &apos;bigg_id&apos;: &apos;gln__L_c&apos;}, {&apos;coefficient&apos;: 3.547, &apos;bigg_id&apos;: &apos;nadh_c&apos;}, {&apos;coefficient&apos;: -2.8328, &apos;bigg_id&apos;: &apos;pyr_c&apos;}, {&apos;coefficient&apos;: -0.0709, &apos;bigg_id&apos;: &apos;f6p_c&apos;}, {&apos;coefficient&apos;: -13.0279, &apos;bigg_id&apos;: &apos;nadph_c&apos;}, {&apos;coefficient&apos;: -3.7478, &apos;bigg_id&apos;: &apos;accoa_c&apos;}, {&apos;coefficient&apos;: -1.7867, &apos;bigg_id&apos;: &apos;oaa_c&apos;}, {&apos;coefficient&apos;: -0.129, &apos;bigg_id&apos;: &apos;g3p_c&apos;}, {&apos;coefficient&apos;: -3.547, &apos;bigg_id&apos;: &apos;nad_c&apos;}, {&apos;coefficient&apos;: 59.81, &apos;bigg_id&apos;: &apos;pi_c&apos;}, {&apos;coefficient&apos;: -0.205, &apos;bigg_id&apos;: &apos;g6p_c&apos;}, {&apos;coefficient&apos;: 4.1182, &apos;bigg_id&apos;: &apos;akg_c&apos;}, {&apos;coefficient&apos;: -0.5191, &apos;bigg_id&apos;: &apos;pep_c&apos;}, {&apos;coefficient&apos;: -4.9414, &apos;bigg_id&apos;: &apos;glu__L_c&apos;}, {&apos;coefficient&apos;: -59.81, &apos;bigg_id&apos;: &apos;atp_c&apos;}, {&apos;coefficient&apos;: 59.81, &apos;bigg_id&apos;: &apos;adp_c&apos;}, {&apos;coefficient&apos;: 59.81, &apos;bigg_id&apos;: &apos;h_c&apos;}, {&apos;coefficient&apos;: -59.81, &apos;bigg_id&apos;: &apos;h2o_c&apos;}, {&apos;coefficient&apos;: 13.0279, &apos;bigg_id&apos;: &apos;nadp_c&apos;}]
+          tr
+            td(align='right') 20
+            td DDPA
+            td DDPA
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;pep_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;e4p_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;pi_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;2dda7p_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;h2o_c&apos;, &apos;coefficient&apos;: -1}]
+          tr
+            td(align='right') 21
+            td DHQS
+            td DHQS
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;3dhq_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;pi_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;2dda7p_c&apos;, &apos;coefficient&apos;: -1}]
+          tr
+            td(align='right') 22
+            td SHKK
+            td SHKK
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;atp_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;skm_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;skm5p_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;adp_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;h_c&apos;, &apos;coefficient&apos;: 1}]
+          tr
+            td(align='right') 23
+            td PSCVT
+            td PSCVT
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;pep_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;pi_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;skm5p_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;3psme_c&apos;, &apos;coefficient&apos;: 1}]
+          tr
+            td(align='right') 24
+            td CHORS
+            td CHORS
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;chor_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;pi_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;3psme_c&apos;, &apos;coefficient&apos;: -1}]
+          tr
+            td(align='right') 25
+            td PHEt2r
+            td PHEt2r
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;phe__L_e&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;h_e&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;h_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;phe__L_c&apos;, &apos;coefficient&apos;: 1}]
+          tr
+            td(align='right') 26
+            td rxnvio6
+            td rxnvio6
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;mDB_2i3ip_c&apos;, &apos;coefficient&apos;: -2}, {&apos;bigg_id&apos;: &apos;chpy_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;nh4_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;h_c&apos;, &apos;coefficient&apos;: 1}]
+          tr
+            td(align='right') 27
+            td DF_chpy
+            td DF_chpy
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;chpy_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;chpy_e&apos;, &apos;coefficient&apos;: 1}]
+          tr
+            td(align='right') 28
+            td Ex_chpy[e]
+            td Ex_chpy_e
+            td  
+            td []
+            td [{&apos;bigg_id&apos;: &apos;chpy_e&apos;, &apos;coefficient&apos;: -1}]
+          tr
+            td(align='right') 29
+            td Ex_chpy[e]
+            td Ex_chpy_e
+            td  
+            td []
+            td [{&apos;bigg_id&apos;: &apos;chpy_e&apos;, &apos;coefficient&apos;: -1}]
+          tr
+            td(align='right') 30
+            td DF_dvio
+            td DF_dvio
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;mDB_dvio_e&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;mDB_dvio_c&apos;, &apos;coefficient&apos;: -1}]
+          tr
+            td(align='right') 31
+            td rxnvio9
+            td rxnvio9
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;o2_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;h2o_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;mDB_prodvio_c&apos;, &apos;coefficient&apos;: 1}, {&apos;bigg_id&apos;: &apos;mDB_pvnate_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;h_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;co2_c&apos;, &apos;coefficient&apos;: 1}]
+          tr
+            td(align='right') 32
+            td DF_vio
+            td DF_vio
+            td  
+            td []
+            td
+              | [{&apos;bigg_id&apos;: &apos;mDB_vio_c&apos;, &apos;coefficient&apos;: -1}, {&apos;bigg_id&apos;: &apos;mDB_vio_e&apos;, &apos;coefficient&apos;: 1}]
+      figcaption #[b Table 1.] Reaction and metabolite IDs that do not match between Escher map and the model
+    figure.text-center
+      table.table.table-bordered.table-hover.table-condensed
+        thead
+          tr
+            th(title='Field #1') 
+            th(title='Field #2') map_id
+            th(title='Field #3') map_name
+            th(title='Field #4') map_metabolites
+            th(title='Field #5') map_node
+            th(title='Field #6') model_id
+            th(title='Field #7') model_name
+            th(title='Field #8') model_metabolites
+        tbody
+          tr
+            td(align='right') 43
+            td FUMt2_2
+            td Fumarate transport via proton symport  2 H 
+            td [&apos;fum_c&apos;, &apos;h_c&apos;, &apos;fum_e&apos;, &apos;h_e&apos;]
+            td(align='right') 1576763
+            td rxn05561_c
+            td fumarate transport in/out via proton symport
+            td [&apos;h_e&apos;, &apos;fum_e&apos;, &apos;h_c&apos;, &apos;fum_c&apos;]
+          tr
+            td(align='right') 44
+            td FUMt2_2
+            td Fumarate transport via proton symport  2 H 
+            td [&apos;fum_c&apos;, &apos;h_c&apos;, &apos;fum_e&apos;, &apos;h_e&apos;]
+            td(align='right') 1576763
+            td rxn10152_c
+            td Fumarate transport via proton symport 2 H
+            td [&apos;h_e&apos;, &apos;fum_e&apos;, &apos;h_c&apos;, &apos;fum_c&apos;]
+          tr
+            td(align='right') 47
+            td SUCCt3
+            td Succinate transport out via proton antiport
+            td [&apos;succ_c&apos;, &apos;succ_e&apos;, &apos;h_c&apos;, &apos;h_e&apos;]
+            td(align='right') 1576766
+            td rxn10154_c
+            td succinate transport via proton symport 2 H
+            td [&apos;h_e&apos;, &apos;succ_e&apos;, &apos;h_c&apos;, &apos;succ_c&apos;]
+          tr
+            td(align='right') 48
+            td SUCCt3
+            td Succinate transport out via proton antiport
+            td [&apos;succ_c&apos;, &apos;succ_e&apos;, &apos;h_c&apos;, &apos;h_e&apos;]
+            td(align='right') 1576766
+            td rxn05654_c
+            td succinate transporter in/out via proton symport
+            td [&apos;h_e&apos;, &apos;succ_e&apos;, &apos;h_c&apos;, &apos;succ_c&apos;]
+          tr
+            td(align='right') 50
+            td SUCCt2_2
+            td Succinate transport via proton symport  2 H 
+            td [&apos;succ_c&apos;, &apos;succ_e&apos;, &apos;h_c&apos;, &apos;h_e&apos;]
+            td(align='right') 1576771
+            td rxn10154_c
+            td succinate transport via proton symport 2 H
+            td [&apos;h_e&apos;, &apos;succ_e&apos;, &apos;h_c&apos;, &apos;succ_c&apos;]
+          tr
+            td(align='right') 51
+            td SUCCt2_2
+            td Succinate transport via proton symport  2 H 
+            td [&apos;succ_c&apos;, &apos;succ_e&apos;, &apos;h_c&apos;, &apos;h_e&apos;]
+            td(align='right') 1576771
+            td rxn05654_c
+            td succinate transporter in/out via proton symport
+            td [&apos;h_e&apos;, &apos;succ_e&apos;, &apos;h_c&apos;, &apos;succ_c&apos;]
+      figcaption #[b Table 2.] Double reactions found in the model
+    figure.text-center
+      table.table.table-bordered.table-hover.table-condensed
+        thead
+          tr
+            th(title='Field #1') map_id
+            th(title='Field #2') map_name
+            th(title='Field #3') model_id
+            th(title='Field #4') model_name
+        tbody
+          tr
+            td 2i3ip_c
+            td 2i3ip[c]
+            td mDB_2i3ip_c
+            td 2 - imino - 3- (indol-3-yl)propanoate
+          tr
+            td 34hpp_c
+            td 34hpp[c]
+            td 2h34hppr_c
+            td p-hydroxyphenylpyruvate
+          tr
+            td chpy_c
+            td chpy[c]
+            td  
+            td  
+          tr
+            td chpy_e
+            td chpy[e]
+            td  
+            td  
+          tr
+            td dvio_c
+            td dvio[c]
+            td mDB_dvio_c
+            td Deoxyviolacein
+          tr
+            td dvio_e
+            td dvio[e]
+            td mDB_dvio_e
+            td Deoxyviolacein
+          tr
+            td dvnate_c
+            td dvnate[c]
+            td mDB_dvnate_c
+            td Deoxyviolaceinate
+          tr
+            td gln_DASH_L_c
+            td L-Glutamine
+            td gln__L_c
+            td L-Glutamine
+          tr
+            td glu_DASH_L_c
+            td L-Glutamate
+            td glu__L_c
+            td L-Glutamate
+          tr
+            td pdvnate_c
+            td pdvnate[c]
+            td mDB_pdvnate_c
+            td Protodeoxyviolaceinate
+          tr
+            td phe_DASH_L_c
+            td phe-L[c]
+            td phe__L_c
+            td L-Phenylalanine
+          tr
+            td phe_DASH_L_e
+            td phe-L[e]
+            td phe__L_e
+            td L-Phenylalanine
+          tr
+            td provio_c
+            td provio[c]
+            td mDB_prodvio_c
+            td Prodeoxyviolacein
+          tr
+            td provio_e
+            td provio[e]
+            td mDB_prodvio_e
+            td Prodeoxyviolacein
+          tr
+            td pvnate_c
+            td pvnate[c]
+            td mDB_pvnate_c
+            td Protoviolaceinate
+          tr
+            td ser_DASH_L_c
+            td ser-L[c]
+            td ser__L_c
+            td L-Serine
+          tr
+            td trp_DASH_L_c
+            td trp-L[c]
+            td trp__L_c
+            td L-Tryptophan
+          tr
+            td trp_DASH_L_e
+            td trp-L[e]
+            td trp__L_e
+            td L-Tryptophan
+          tr
+            td tyr_DASH_L_c
+            td tyr-L[c]
+            td tyr__L_c
+            td L-Tyrosine
+          tr
+            td tyr_DASH_L_e
+            td tyr-L[e]
+            td tyr__L_e
+            td L-Tyrosine
+          tr
+            td vio_c
+            td vio[c]
+            td mDB_vio_c
+            td Violacein
+          tr
+            td vio_e
+            td vio[e]
+            td mDB_vio_e
+            td Violacein
+          tr
+            td vnate_c
+            td vnate[c]
+            td mDB_vnate_c
+            td Violaceinate
+          tr
+            td  
+            td  
+            td  
+            td  
+      figcaption #[b Table 3.] Metabolites found in Escher map but unavailable in the model
+    p After we identified the reactions and metabolites that were needed for curation, we started to fix the IDs in the model. Following that, we had our discussion with our instructor, Mr. Matin Nuhamunada who helped us to evaluate and fix the model. From this curation process, we got iDB858_updated2.xml.
+    p Kindly check the fixed model (iDB858_updated2.xml) that we used in this project in our github (https://github.com/iGEM-UGM/2021-igem-ugm-model/blob/main/final/models/iDB858_updated2.xml) (../models/iDB858_updated2.xml)
+  #map-update
+    h5.display-5.text-primary Escher map update
+    p The Escher map published by Banerjee et al. (2019) still lacks the cyanide production pathway [4]. Therefore, we manually added some reactions cyanide production (Table 4) based on pathways presented by Tay et al. (2013) using Escher after we created the fixed model (iDB858_updated2.xml).[5]
+    figure.text-center
+      table.table.table-bordered.table-hover.table-condensed
+        thead
+          tr
+            th(title='Field #1') name
+            th(title='Field #2') bigg_id
+        tbody
+          tr
+            td 3-Phospho-D-glycerate NAD 2-oxidoreductase
+            td rxn01101_c
+          tr
+            td 3-Phosphoserine 2-oxoglutarate aminotransferase
+            td rxn02914_c
+          tr
+            td L-O-Phosphoserine phosphohydrolase
+            td rxn00420_c
+          tr
+            td 5 10-Methylenetetrahydrofolate glycine hydroxymethyltransferase
+            td rxn00692_c
+          tr
+            td glycine:acceptor oxidoreductase
+            td rDB00166_c
+      figcaption #[b Table 4.] Reaction added to map (updated from Banerjee et al. (2019))[4]
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-genome-scale-figure-1.png" style="max-width:50%; width:50%")
+      figcaption #[b Figure 1.] C. violaceum metabolic map from Banerjee et al. (2019) 
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-genome-scale-figure-2.png" style="max-width:50%; width:50%")
+      figcaption #[b Figure 2.] C. violaceum metabolic map with cyanide production pathway used in this project. We added some cyanide production pathways marked in yellow based on pathways presented by Tay et al. (2013). 
+  #gene-knockout
+    h5.display-5.text-primary Gene knockout for enhancing HCN production and flux analysis
+    p We tried to optimize the cyanide production by knocking out certain genes which were expected to level up the metabolic flux to the cyanide production pathway. The knockout strategies utilized the OptGene and OptKnock which is provided in Cameo library (https://cameo.bio/05-predict-gene-knockout-strategies.html).
+    p Basically, we were trying to find out whether or not we can optimize a certain pathway by knocking the other genes in the model. We could predict gene knockout strategies with two algorithms:
+    ul
+      li evolutionary algorithms (OptGene) 
+      li linear programming (OptKnock)
+    p
+      | As there are some parts that have not yet been updated with Escher API, we rewrote the tutorial from Cameo. All the notebook is recorded here (
+      |
+      a(href="/assets/others/genome-scale-modelling-data.zip" target="_blank") zip
+      |
+      | ).
+section#phenotypic
+  h4.display-4.text-primary Phenotypic phase plane
+  p The phenotypic phase plane showed us a trade-off between our target (in this case cyanide production) and the biomass. We used Chromobacterium violaceum Manually Curated Biomass (biomass1.12 in the model) to define growth, and reaction glycine:acceptor oxidoreductase (rDB00166_c) to define the objective of cyanide production. Based on the phenotypic phase plane, we could imply that rewiring the flux to produce cyanide will deteriorate the growth of C. violaceum (Figure 3).
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-phenotypic-figure-3.png" style="max-width:50%; width:50%")
+    figcaption #[b Figure 3.] Phenotypic phase plane of the C. violaceum biomass (biomass1.12) and cyanide production reaction (rDB00166) (WT: Wild Type - C. violaceum without knockout gene). 
+section#optgene-optknock
+  h4.display-4.text-primary OptGene and OptKnock Simulation
+  p We implemented the OptGene and OptKnock approaches from Cameo to predict the gene or reaction knockouts for enhancing the cyanide production in C. violaceum. The OptGene simulation relies on evolutionary algorithms[6], while OptKnock is based on a bi-level mixed integer linear programming [7a].
+  p We performed the knockout predictions that targets cyanide production reaction; i.e. glycine:acceptor oxidoreductase (rDB00166_c). In the cyanide biosynthesis pathway, the presence of glycine act as the main substrate which directly influences the process, however, in this simulation we use an exchange glucose reaction (EX_glc_D_e) as the initial reaction and assess its effect through cyanide production flux. We use the exchange glucose reaction because when we run the glycine (gly_c or gly_e) in OptGene an error occurs which makes the solutions unidentified by the system. Besides, the ‘substrate’ parameter in OptGene is actually identified as the main carbon source, meanwhile, we assumed that glycine is not the main carbon source for C. violaceum.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-4a.png" style="max-width:50%; width:50%")
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-4b.png" style="max-width:50%; width:50%")
+    figcaption #[b Figure 4.] Production envelope resulted from knockout prediction using OptGene between the C. violaceum biomass (biomass1.12) and cyanide production reaction (rDB00166) (WT: wild type - C. violaceum without knockout gene, MT: mutant knockout).
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-5a.png" style="max-width:50%; width:50%")
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-5b.png" style="max-width:50%; width:50%")
+    figcaption #[b Figure 5.] Production envelope resulted from knockout prediction using OptKnock between the C. violaceum biomass (biomass1.12) and cyanide production reaction (rDB00166) (WT: wild type - C. violaceum without knockout gene, MT: mutant knockout)
+  p There were 3 main knockout schemes that we formulate from the result of OptGene: 0 (reaction NH4t (ammonia transport via diffusion)), 1 (reaction rxn00346_c (L-Aspartate 1-carboxy-lyase)), 2 (rxn00346_c, ACALD (acetaldehyde NAD oxidoreductase CoA-acetylating)). Aside from that,  2 schemes were also obtained from knockout prediction using PotKnock; (reactions NH4t (ammonia transport via diffusion)), 1 (EX_nh4_e (NH4+ exchange)).
+  p Based on the simulation result, the production envelope graph from the knockout prediction using OptGene (Fig 2) was the same as the result which was formulated with OptKnock (Fig 3). The production envelope graph depicts that cyanide production will directly affect the biomass of C. violaceum, given that the cyanide production requires glycine as the substrate. Meanwhile, glycine can be obtained from the conversion of 3-phosphoglycerate (3pg) which is an intermediate product of glycolysis (Fig x) [5]. Therefore, the increment of cyanide production will probably decrease the biomass cell. Based on Fig 2, the plummet of biomass cells might probably be influenced by the substrate conversion, especially 3gp in glycolysis, from the core metabolic pathway which later inclined towards cyanide biogenesis rather than to produce biomass [5].
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-6.jpg")
+    figcaption #[b Figure 6.] The relation of 3-phospho-glycerate (3pg) with cyanogenesis pathway. Adapted from  Tay et al., 2013
+  #flux-analysis
+    h5.display-5.text-primary Flux Analysis of cyanide production pathway based on result gene knockout prediction using OptGene dan OptKnock
+    p Based on the OptGene and OptKnock gene knockout simulations result, we also compared the reaction flux between the wild type and mutant C. violaceum metabolic maps, especially in cyanide production pathway. Figure 6 depicts reaction flux in the wild type metabolic pathway. Note that the model has only low fluxes towards cyanide production.
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-7.png")
+      figcaption #[b Figure 7.] Escher metabolic map of C. violaceum wild type. Adapted from Banerjee et al. (2019) with additional cyanide production pathways.
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-8.png")
+      figcaption #[b Figure 8.] Escher metabolic map resulting from OptGene scheme_0 (reaction NH4t)). Additional cyanide production pathways are marked in yellow.
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-9.png")
+      figcaption #[b Figure 9.] Escher metabolic map resulting from OptGene scheme_1 (reaction rxn00346_c). Additional cyanide production pathways are marked in yellow.
+    p The metabolic map resulting from OptGene scheme_2 (reaction rxn00346_c and ACALD) is similar to the scheme_1 depicted in Figure 8.
+    figure.text-center
+      img.figure-img.img-fluid.rounded(src="/assets/img/model-optgene-optknock-figure-10.png")
+      figcaption #[b Figure 10.] Escher metabolic map resulting from OptKnock scheme_0 (reaction NH4t). Additional cyanide production pathways are marked in yellow.
+    p The metabolic map resulting from OptKnock scheme_1 (reaction EX_nh4_e) is similar to the scheme_0 depicted in Figure 9.
+    p The targeted reaction, glycine:acceptor oxidoreductase (rDB00166_c) experienced flux increment from 0.275 (WT) to 5.58 (knockout result). This increment is followed by several flux changes in other reactions such as flux increments in rxn01101_c (3.54 → 8.72), rxn02914_c (-3.54 → -8.72), rxn00420_c (3.54 → 8.72), and rxn00692_c (-0.460 → -5.68) which overall leads to the rDB00166_c reaction flux increment. In addition, the flux increment of rxn01101_c reaction resulted in a flux reduction in PGM (-9.80 → -4.94) and ENO (9.80 → 4.94) reactions due to the 3pg shift to the rxn01101_c reaction. This 3pg shift may also be related to the plummet of biomass cells since the 3pg is shifted to the rxn01101_c as one of the cyanide production reactions. In addition, Tay et al. (2013) mentioned that the cyanide production pathway branches from the conversion of 3pg which is an intermediate in glycolysis [4]. Click here (https://github.com/iGEM-UGM/2021-igem-ugm-model/blob/main/final/results/flux_alteration_detail.pdf) (../results/flux_alteration_detail.pdf) for the details of flux changes between wild type and mutant metabolic maps.
+    p Both the knockout prediction using OptGene and OptKnock provide the top solution in the form of knockout gene in the ammonia transport via diffusion (NH4t) reaction. Based on flux analysis, it was seen that there was a similarity between the fluxes in the cyanide production reaction from the metabolic map of the OptGene scheme_0 (Fig 7) mutant and the 0 & 1 OptKnock scheme mutants (Fig 9). Based on the results of the comparison with wildtype (WT), it was seen that there was an increase in flux towards cyanide production in the OptGene and OptKnock mutants.
+    p The target reaction, namely glycine:acceptor oxidoreductase (rDB00166_c) experienced an increase in flux from 0.275 (WT) to 5.58 (knockout result). In the knockout results, this was followed by a number of flux changes in other reactions compared to the wildtype such as an increase in flux in reactions rxn01101_c (3.54 → 8.72), rxn02914_c (-3.54 → -8.72), rxn00420_c (3.54 → 8.72), and rxn00692_c (-0.460 → -5.68) which overall leads to an increase in flux in the rDB00166_c reaction. The increase in reaction flux rxn01101_c also resulted in a decrease in PGM (-9.80 → -4.94) and ENO (9.80 → 4.94) reactions due to 3pg being transferred to reaction rxn01101_c.
+    p For details on flux changes from the metabolic map between wildtype and OptGene scheme_0 mutants, see the list here. In contrast to the flux in the metabolic map of the OptGene scheme_0 (Fig 7) mutant and the 0 & 1 OptKnock scheme (Fig 9) mutant, the OptGene scheme_1 knockout simulation results are similar to scheme_2 (Fig 8), and do not give much increase in flux in the cyanide production pathway, especially the rDB00166_c reaction, there was only an increase from 0.275 (WT) to 0.383 (knockout result) in both schemes_1 and 2.
+    p We assume that the increased flux to the cyanide production pathway especially in the metabolic map of the OptGene scheme_0 (Fig 7) mutant and the 0 & 1 OptKnock scheme_0 (Fig 9) mutants may be related to why the production envelope yield graph for maximizing cyanide production is associated with decreased biomass, because 3pg here is shifted to increased flux in the cyanide production pathway over to maximize biomass. As noted in Tay et al. (2013) that the cyanide production pathway branches from the conversion of 3pg which is an intermediate in glycolysis [5].
+    p
+      | All notebooks, escher maps, and data regarding the genome scale metabolic model can be accessed here (
+      |
+      a(href="/assets/others/genome-scale-modelling-data.zip" target="_blank") zip
+      |
+      | ).
+
+
+
+
+
+    
+  
+
+
+
+
+
+
+
