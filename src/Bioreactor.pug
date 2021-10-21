@@ -1,0 +1,223 @@
+---
+layout: layouts/default.njk
+title: Bioreactor
+heroImage: /assets/img/hero-bioreactor.jpg
+dataSidebar: [
+    {"href" : "#bioreactor", "name" : "Bioreactor"}
+]
+dataReferences: [
+    {
+      "reference" : "Shuler, M.L., Kargi, F., DeLisa, M., 2017, <i>Bioprocess Engineering: Basic Concepts</i>, Pearson Education.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Jones, C. A. and Kelly, D. P., 1983, Growth of <i>Thiobacillus ferrooxidans</i> on ferrous iron in chemostat culture: influence of product and substrate inhibition, <i>J. Chem. Tech. Biotechnology</i>, vol. 33B, pp. 241-261.",
+      "online" : "false",
+      "link" : "https://doi.org/10.1002/jctb.280330407 "
+    },
+    {
+      "reference" : "Li, X., 2015, <i>Engineering and Characterization of Acidithiobacillus ferrooxidans for Biotechnology Applications</i>, Columbia University.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Michaels, R. and Corpe, W. A., 1965, Cyanide Formation by <i>Chromobacterium violaceum</i>, <i>American Society for Microbiology</i>, vol. 89, no. 1.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Pramuwijoyo, P., Idrus, A., Warmada, I.W., Yonezu, K., 2017, Geology, Geochemistry and Hydrothermal Fluid Characteristics of Low Sulﬁdation Epithermal Deposit in the Sangon Area, Kokap, Special Region of Yogyakarta, <i>Journal of Applied Geology</i>, vol. 2, np. 1, pp. 48-58.",
+      "online" : "false",
+      "link" : "https://doi.org/10.22146/jag.42442"
+    }
+]
+---
+
+p.my4
+  | We determined the design of the bioreactor based on two types of gold ore: refractory and non-refractory. Refractory gold is a type of ores that is naturally resistant to extract by standard cyanidation process, while the non-refractory one is the opposite. 
+p
+  | The refractory gold ores were obtained from Kulonprogo, Yogyakarta which can be reached for 1 hour from Universitas Gadjah Mada. Meanwhile, the non-refractory ones were obtained from Sumbawa, West Nusa Tenggara. The gold ores from Kulonprogo were trapped between pyrite, \(FeS_2\), in which #[i Thiobacillus ferrooxidans] could be used to oxidize the pyrite and collect the gold elements.
+p
+  | In this project, we used two types of bioreactor, one that harbors #[i Chromobacterium violaceum] for gold cyanidation, and the other one utilized #[i T. ferrooxidans] for pyrite dissolution. The non-refractory gold ore only uses 1 bioreactor that utilizes#[i C. violaceum] for gold cyanidation. Meanwhile, the refractory one uses 2 bioreactors (#[b Figure 1]).
+figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/bioreactor-figure-1.jpg" alt='Bioreactor used for a non-refractory gold ore b refractory gold ore.')
+    figcaption.figure-caption
+      b Figure 1.
+      |  Bioreactor used for (#[b a]) non-refractory gold ore (#[b b]) refractory gold ore.
+section#pyrite
+  h4.display-4.text-primary
+    | Pyrite Dissolutions Bioreactor
+  p In this reactor, we used wild-type #[i T. ferrooxidans] kinetics to the bioreactor.
+  p These are the mass balance of semi-batch bioreactor
+    a(href='#reference-1')
+      sup 1
+    | :
+  p 
+    | \[\begin{align*} \frac{d(XV)}{dt} & = V r_c(X,S) \\ \frac{d(PV)}{dt} & = V r_P(X,S) \\ \frac{d(SV)}{dt} & = F S_0 - \frac{1}{Y_{X/S}}V r_c(X,S) \end{align*}\]
+  p The change of volume per time (hour) is defined as
+    a(href='#reference-1')
+      sup 1
+    | :
+  p 
+    | \[\frac{dV}{dt} = F(t)\]
+  p The cell growth is expressed as
+    a(href='#reference-1')
+      sup 1
+    | :
+  p 
+    | \[\frac{dV}{dt} = F(t)\]
+  p Monod model provides this equation to define cell specific growth rate as a function of substrate concentration
+    a(href='#reference-1')
+      sup 1
+    | :
+  p \[ \mu(S) = \mu_{max}\frac{S}{K_S + S} \]
+  p The rate of product formation is assumed to be a fraction of cell growth by-product:
+    a(href='#reference-1')
+      sup 1
+    | :
+  p \[ r_P(X,S) = Y_{P/X}r_g(X,S) \]
+  p Where \(Y_{P/X} \) is a product yield coefficient that serves as a ratio of product formation versus cell growth.
+    a(href='#reference-1')
+      sup 1
+    | :
+  p \[ Y_{P/X} = \frac{\mbox{product mass}}{\mbox{new cells mass}} \]
+  p The mass of new cells from cell growth is assumed to have a constant ratio with mass of substrate consumed, thus
+    a(href='#reference-1')
+      sup 1
+    | :
+  p \[ Y_{X/S} = \frac{\mbox{new cells mass}}{\mbox{substrate consumed}} \]
+  table.table.table-bordered.text-center
+    caption.text-center #[b Table 1.] Reaction variables used for bioreactor modelling.
+    thead 
+    tbody
+      tr
+        td \( X \)
+        th(scope="row") Cell concentration (grams/liter)
+      tr
+        td \( P \)
+        th(scope="row") Product concentration (grams/liter)
+      tr
+        td \( S \)
+        th(scope="row") Substrate concentration (grams/liter)
+      tr
+        td \( S_0 \)
+        th(scope="row") Feed substrate concentration (grams/liter)
+      tr
+        td \( r_c \)
+        th(scope="row") Rate of cell or biomass growth (grams/liter/hr)
+      tr
+        td \( r_P \)
+        th(scope="row") Rate of product formation (grams/liter/hr)
+      tr
+        td \( Y_(P/X) \)
+        th(scope="row") Product yield coefficient
+      tr
+        td \( Y_(X/S) \)
+        th(scope="row") Cell growth coefficient
+      tr
+        td \( F(t) \)
+        th(scope="row") Flowrate (liter/hr)
+      tr
+        td \( \mu(S) \)
+        th(scope="row") Cell specific growth rate
+      tr
+        td \( \mu_{max} \)
+        th(scope="row") Maximum cell specific growth rate
+      tr
+        td \( K_S \)
+        th(scope="row") Half saturation constant
+  p  In the semi-batch model, the volume is not constant. Thus, the dilution effect is affecting cell, product, and substrate concentrations. The differential equation for \(X\), \(P\), and \(S\) mass balance is extended according to chain rule
+    a(href='#reference-1')
+      sup 1
+    | :
+  p \[ \begin{align*} \frac{d(XV)}{dt} & = V\frac{dX}{dt} + X\frac{dV}{dt} = V\frac{dX}{dt} + F(t)X \\ \frac{d(PV)}{dt} & = V\frac{dP}{dt} + P\frac{dV}{dt} = V\frac{dP}{dt} + F(t)P \\ \frac{d(SV)}{dt} & = V\frac{dS}{dt} + S\frac{dV}{dt} = V\frac{dS}{dt} + F(t)S \end{align*} \]
+  p  Rearranging this mass balance equation with the previous equations gives
+    a(href='#reference-1')
+      sup 1
+    | :
+  p \[ \begin{align*}  \frac{dX}{dt} & = - \frac{F(t)}{V}X + r_g(X,S)  \\ \frac{dP}{dt} & = - \frac{F(t)}{V}P + r_P(X,S) \\ \frac{dS}{dt} & = \frac{F(t)}{V}(S_f - S) - \frac{1}{Y_{X/S}}r_g(X,S) \\ \frac{dV}{dt} & = F(t)  \end{align*} \]
+  p We used an assumption that states \(Fe^{3+}\) is a product that also acts as a competitive inhibitor for pyrite dissolution reaction.  This assumption is based on the engineering cycle – design, build, test, and learn – that has been done on various possible inhibition schemes (competitive, uncompetitive, non-competitive) and various possible inhibition components ( \(Fe^{3+}\) and regulation by #[i T. Ferrooxidans] cells). The best scheme would be the one which gives the shortest reactor residence time.
+  p The \(Fe^{3+}\) as competitive inhibitor assumption gives the following value for bioreactor-related variables mentioned in #[b Table 2].
+  table.table.table-bordered.text-center
+    caption.text-center #[b Table 2.] Kinetic variables used for bioreactor modelling.
+    thead
+      th(scope="col" colspan="2") Kinetic Variable
+      th(scope="col") Source
+    tbody
+      tr
+        td \( \mu_max \)
+        td \( 1.25 hr^{-1} \)
+        td
+          a(href='#reference-2') 2
+      tr
+        td \( K_S \)
+        td \( 0.048 gram/liter \)
+        td
+          a(href='#reference-2') 2
+      tr
+        td \( K_P \)
+        td \( 0.06 gram/liter \)
+        td
+          a(href='#reference-2') 2
+      tr
+        td \( Y_{X/S} \)
+        td \( 0.324 gram/gram \)
+        td
+          a(href='#reference-3') 3
+      tr
+        td \( Y_{P/X} \)
+        td \( 0.4348 gram/gram \)
+        td
+          a(href='#reference-4') 4
+      tr
+        td \( S_0 \)
+        td \( 606.6225 gram/liter \)
+        td
+          a(href='#reference-5') 5
+      tr
+        th(scope="row" colspan="3") Bioreactor Operating Condition
+      tr
+        td \( pH \)
+        td \( 1.6 \)
+        td
+          a(href='#reference-2') 2
+      tr
+        td \( \mbox{Temperature} \)
+        td \( 30^{\circ} C \)
+        td
+          a(href='#reference-2') 2
+  p In this model, it is assumed that the operating conditions are maintained from the beginning until the end of the process batch. Then, the reaction was modelled via Jupyter Notebook.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/bioreactor-figure-2.png" alt='Concentration of cell, product, substrate, and total volume versus time.')
+    figcaption.figure-caption
+      b Figure 2.
+      | Concentration of cell, product, substrate, and total volume versus time.
+  p These are the results of cell concentration (\( X \)), product concentration (\( P \)), substrate concentration (\( S \)), and total volume (\( V \)) in 4 hours batch time:
+  table.table.table-bordered.text-center
+    caption.text-center #[b Table 3.] Initial and final concentration of each variable.
+    thead
+      th(scope="col") Variable
+      th(scope="col") Initial (time = \( 0 s\))
+      th(scope="col") End of Batch (time = \(14400 s\))
+      th(scope="col") Unit
+    tbody
+      tr
+        td \( X \)
+        td \( 0.05 \)
+        td \( 1.95728572 \times 10^{2} \)
+        td Gram/liter
+      tr
+        td \( P \)
+        td \( 0 \)
+        td \(85.08121549\)
+        td Gram/liter
+      tr
+        td \( S \)
+        td \( 606.6225 \)
+        td \( 2.67506643 \)
+        td Gram/liter
+      tr
+        td \( V \)
+        td \( 25 \)
+        td \( 25.2 \)
+        td Liter
+  p To determine the volume of the bioreactor, we implemented 20% overdesign to prevent reactor flooding. Thus, based on the final total volume of one batch:
+  p \[ 25.2\ \mbox{Liter} \times 120\% = 30.24\ \mbox{Liter} \]

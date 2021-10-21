@@ -95,16 +95,17 @@ footer#footer {
         p {
             font-family: "Montserrat Regular";
             font-size: 0.75rem;
-            color: $gray-400;
+            color: $gray-500;
 
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
+            width: -moz-fit-content;
             width: fit-content;
             margin-bottom: 0;
             padding: 1rem 2rem;
 
             a {
-                color: $white;
+                color: $gray-400;
                 padding: 0;
 
                 &:hover {

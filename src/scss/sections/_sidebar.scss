@@ -2,12 +2,41 @@
 @use '../components/typography' as *;
 @use '../components/mixins' as *;
 
-.sticky-sidebar .sticky-offset {
-    top: 100px;
-    margin-top: 100px;
+#sidebar.sticky-sidebar .sticky-offset {
+    background-color: $white;
+    top: 94px;
+    margin-top: 94px;
 
-    a {
-        font-family: "Montserrat Regular";
-        color: $gray-600;
+    li {
+        margin: 0;
+        a {
+            font-family: "Montserrat Regular";
+            color: $gray-600;
+        }
+    }
+
+    ul {
+      list-style: none;
+
+      >li>a {
+          font-size: 1.0rem;
+      }
+      >li>ul>li>a {
+          font-size: 0.875rem;
+      }
+    }
+
+    >ul {
+      padding: 0;
+    }
+
+    ul ul {
+      padding-left: 1rem;
+    }
+
+    .nav-link.active, .show > .nav-link {
+      font-family: "Montserrat Medium";
+      color: $white;
+      background-color: $primary;
     }
 }

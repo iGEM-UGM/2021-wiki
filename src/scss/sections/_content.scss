@@ -2,28 +2,25 @@
 @use '../components/typography' as *;
 @use '../components/mixins' as *;
 
-section#main-content  {
+section#main-content {
     margin-bottom: 4rem;
 
     a[href ^="https://"] {
         padding-right: 0;
     }
 
-    section.content-references h4.display-4{
-        font-family: "Montserrat Bold";
-        margin-bottom: 2rem;
-        clear: right;
-    }
+    section:not(.content-references){
+      overflow: visible;
 
-    section:not(.content-references) h4.display-4{
+      h4.display-4{
         font-family: "Montserrat Bold";
-        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        margin-bottom: 3.5rem;
         clear: right;
 
         &::before{
-            float: right;
-            transform: translateY(50%);
-            margin-left: 2rem;
+            position: absolute;
+            transform: translateY(50%) translateX(-125%);
     
             content: "";
             width: 217px;
@@ -37,6 +34,21 @@ section#main-content  {
                 display: none;
             }
         }
+      }
+    }
+
+    table {
+      margin: 4rem 0;
+
+      th, td, caption {
+        font-family: "Montserrat Regular";
+      }
+
+      caption {
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+      }
     }
 }
 
@@ -47,7 +59,7 @@ section#main-content p, section#main-content li {
     margin: 1rem 0;
 }
 
-section#main-content section:not(.content-references)>ol{
+section#main-content section:not(.content-references)>ol.styled{
     margin: 0;
     padding-left: 4rem;
 
@@ -56,6 +68,10 @@ section#main-content section:not(.content-references)>ol{
     }
 
     >li{
+        &:first-child {
+            margin-top: 2rem;
+        }
+
         &::marker{
             font-family: "Montserrat Bold";
             font-size: 2.5rem;
@@ -66,23 +82,45 @@ section#main-content section:not(.content-references)>ol{
             }
         }
 
-        & h5 {
+        h5 {
             font-family: "Montserrat Bold";
             font-size: 1.5rem;
+            color: $white;
+        }
+
+        a {
             color: $white;
         }
     
         color: $white;
         background-color: $primary;
-        padding: 0 2rem 2rem 2rem;
+        padding: 0 2rem 1rem 2rem;
         border-radius: 1rem;
     }
+
+
 }
 
 section#main-content h5 {
-    font-family: "Montserrat Medium";
+    font-family: "Montserrat SemiBold";
     text-align: left;
     margin: 1rem 0;
+}
+
+section#main-content h5.display-5 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+section#main-content section>div {
+  &::before{
+    display: block; 
+    content: " "; 
+    margin-top: -94px; 
+    height: 94px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
 }
 
 section#main-content h6 {
@@ -90,20 +128,6 @@ section#main-content h6 {
     font-weight: 600;
     text-align: left;
     margin: 0.875rem 0;
-}
-
-section#main-content .content-references li {
-    font-size: .75rem;
-    line-height: 1.5; 
-    word-break: break-all;
-}
-
-section#main-content .content-references {
-    & h4 {
-        border-top: 0.1rem solid $gray-400;
-        font-size: 2.5rem; 
-        word-break: break-all;
-    }
 }
 
 
@@ -117,21 +141,34 @@ section#main-content blockquote {
     }
 }
 
-section#main-content figure figcaption {
-    font-family: "Montserrat Regular";
-    align-self: center;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
+section#main-content figure{
+    margin-bottom: 3rem;
+    figcaption {
+        font-family: "Montserrat Regular";
+        align-self: center;
+        margin-top: 0.5rem;
+    }
 }
-
 section#main-content figure img {
-    margin-top: 2.5rem;
+    margin: 1.5rem 1rem 0 1rem;
 }
 
-section#main-content section::before{
-    height: 100px;
-    content: "";
-    display: block;
+section#main-content section{
+    &:first-child{
+      margin: 94px 0 4rem 0;
+    }
+    &:not(:first-child){
+      margin: 6rem 0;
+    }
+
+    &::before{
+        display: block; 
+        content: " "; 
+        margin-top: -110px; 
+        height: 110px; 
+        visibility: hidden; 
+        pointer-events: none;
+    }
 }
 
 section#main-content div.scrollspy{

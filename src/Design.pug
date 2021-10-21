@@ -1,0 +1,183 @@
+---
+layout: layouts/default.njk
+title: Design
+heroImage: /assets/img/hero-design.jpg
+dataSidebar: [
+    {"href" : "#overview", "name" : "Overview of <i>Chromobacterium violaceum</i>"},
+    {"href" : "#auviola", "name" : "Auviola: The Engineered <i>Chromobacterium violaceum</i>"},
+    {"href" : "#utilization", "name" : "The Practical Utilization of The Auviola System"},
+    {"href" : "#demonstration", "name" : "Demonstration of Auviola System"},
+    {"href" : "#references", "name" : "References"}
+]
+dataReferences: [
+    {
+      "reference" : "McGivney, E., Gao, X., Liu, Y., Lowry, G.V., Casman, E., et al., 2019, Biogenic Cyanide Production Promotes Dissolution of Gold Nanoparticles in Soil, <i>Environmental Science & Technology</i>, vol. 53, pp. 1287-1295.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Rodgers, P.B., Knowles, C.J., 1978, Cyanide Production and Degradation During Growth of <i>Chromobacterium violaceum</i>, <i>Journal of General Microbiology</i>, vol. 108, pp. 261-267.",
+      "online" : "false"
+    },
+    {
+      "reference" : "KEGG, ENZYME: <i>1.4.99.5</i>",
+      "online" : "true",
+      "link" : "https://www.genome.jp/dbget-bin/www_bget?ec:1.4.99.5",
+      "accessed" : "July 28, 2021 at 09:06 WIT"
+    },
+    {
+      "reference" : "Blumer, C, Haas, D., 2000, Mechanism, regulation, and ecological role of bacterial cyanide biosynthesis, <i>Archives of Microbiology</i>, vol. 173, pp. 170-177.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Machingura, M., Salomon, E., Jez, J.M., Ebbs, S.D., 2016, The β-cyanoalanine synthase pathway: beyond cyanide detoxification, <i>Plant, Cell and Environment</i>, vol. 39, no. 10, pp. 2329-41.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Cipollone, R., Ascenzi, P., Tomao, P., Imperi, F., Visca, P., 2008, Enzymatic Detoxification of Cyanide: Clues from <i>Pseudomonas aeruginosa</i> Rhodanese, <i>Journal of Molecular Microbiology and Biotechnology</i>, vol 15, pp. 199-211.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Rodgers, P.B., Knowles, C.J., 1978, Cyanide Production and Degradation During Growth of <i>Chromobacterium violaceum</i>, <i>Journal of General Microbiology</i>, vol. 108, pp. 261-267.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Lobell, R.B., Schleif, R.F., 1990, DNA looping and unlooping by AraC protein, <i>Science</i>, vol. 250, no. 4980, pp. 528-532.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Schleif, R., 2003, AraC protein: a love-hate relationship, <i>Bioessays</i>, vol. 25, pp. 274-282.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Brazilian National Genome Project Consortium, 2003, The complete genome sequence of Chromobacterium violaceum reveals remarkable and exploitable bacterial adaptability, <i>Proceedings of the National Academy of Sciences of the United States of America</i>, vol. 100, no. 20, pp. 11660–11665.",
+      "online" : "false",
+      "link" : "https://doi.org/10.1073/pnas.1832124100"
+    },
+    {
+      "reference" : "Cuthbertson, L., Nodwell, J.R., 2013, The TetR family of regulators, <i>Microbiology and molecular biology reviews: MMBR</i>, vol. 77, no. 3, pp. 440–475. ",
+      "online" : "false",
+      "link" : "https://doi.org/10.1128/MMBR.00018-13"
+    },
+    {
+      "reference" : "Uniprot, 2021, <i>UniProtKB - P08202 (ARAA_ECOLI)</i>",
+      "online" : "true",
+      "link" : "https://www.uniprot.org/uniprot/P08202",
+      "accessed" : "August 17, 2021 at 12:25 WIT"
+    },
+]
+---
+
+section#overview
+  h4.display-4.text-primary
+    | Overview of 
+    i Chromobacterium violaceum 
+  p
+    | #[i Chromobacterium violaceum] is a bacterium able to regulate cyanide according to the presence of cyanide-producing and degrading enzymes in the wild-type ones. These enzymes are encoded by some genes, such as #[b hcnABC] for cyanide production and #[b rhodanese] for cyanide degradation.
+    a(href='#reference-1')
+      sup 1
+    sup ,
+    a(href='#reference-2')
+      sup 2
+  p
+    | The #[b hcnABC] is an operon that consists of a cluster of three genes; i.e., hcnA, hcnB, and hcnC. This operon encodes HCN synthase that facilitates the conversion of an amino acid glycine into cyanide
+    a(href='#reference-3')
+      sup 3
+    |  This enzyme belongs to the oxidoreductase class as it oxidizes the amine (\(CH-NH_2\)) functional group into imine (\(C=NH\)) and consecutively cleaves the molecule into HCN and carbon dioxide (\(CO_2\)) (Figure 1).
+    a(href='#reference-4')
+      sup 4
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/design-figure-1.jpg" alt='HCN synthesis pathway')
+    figcaption.figure-caption
+      b Figure 1.
+      |  HCN synthesis pathway (Blumer & Haas, 2000).
+  p
+    | #[b Rhodanese] is one of the cyanide degrading enzymes found in #[i C. violaceum]. This enzyme is also known as #[b sulfurtransferase], as it catalyzes sulfur transfer from thiosulfate to cyanide and leads to the formation of the less toxic thiocyanate (Figure 2).
+    a(href='#reference-5')
+      sup 5
+    sup ,
+    a(href='#reference-6')
+      sup 6
+    |  Compared to the other enzymes, the regulation of rhodanese expression is not affected by the presence of glycine and methionine, so that seems to be easily controlled.
+    a(href='#reference-7')
+      sup 7
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/design-figure-2.jpg" alt='Cyanide degradation pathway')
+    figcaption.figure-caption
+      b Figure 2.
+      |  Cyanide degradation pathway (Machingura et al., 2016).
+section#auviola
+  h4.display-4.text-primary
+    | Auviola: The Engineered
+    i  Chromobacterium violaceum
+  p
+    | With the concepts of synthetic biology, we developed an engineered #[i C. violaceum] to create an on-off system for cyanide regulation in the gold bioleaching process. Compared to the wild-type, the new #[i C. violaceum] was engineered to have more cyanide-regulating genes, resulting in a better gold dissolution and cyanide waste treatment.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/design-figure-3.jpg" alt='The circuitry design of cyanide-regulating on-off system')
+    figcaption.figure-caption
+      b Figure 3.
+      |  The circuitry design of cyanide-regulating on-off system (L-AI: L-Arabinose Isomerase)
+  p
+    | Our #[b Auviola] on-off system involved a regulator gene of #[b araC] since it exists on the plasmid. This regulator works dependably to arabinose level which acts as both an activator in the presence of arabinose and a repressor in the absence of arabinose.
+    a(href='#reference-8')
+      sup 8
+    |  An #[b inducible promoter of pBAD] was utilized for the on-off mechanism regulated by the araC.
+    a(href='#reference-9')
+      sup 9
+    |  In addition, this system also involved #[b tetR regulator] and #[b pTet inducible promoter]. These genes are presented in the wild-type of #[i C. violaceum] that acts as a #[b repressor] and normally play a role in tetracycline resistance.
+    a(href='#reference-10')
+      sup 10
+    sup ,
+    a(href='#reference-11')
+      sup 11
+  p
+    | Our circuitry design consisted of three expression systems explained below (Figure 3):
+  ol.styled
+    li
+      h5 Cyanide-producing system
+      p This system consists of an operon hcnABC as HCN synthase-encoding genes, pBAD promoter, and araC regulator.
+    li
+      h5 Cyanide-degrading system
+      p
+        | This rhodanese expression system involved not only araC regulator and pBAD promoter but also #[b tetR regulator] and #[b pTet inducible promoter]. The system was designed so that araC regulates the tetR expression as well as tetR regulates rhodanese expression.
+    li
+      h5 L-arabinose isomerase (L-AI) expression system
+      p
+        | The L-AI is an enzyme that catalyzes the conversion of L-arabinose into L-ribulose.
+        a(href='#reference-12')
+          sup 12
+        |  This system was utilized for our on-off system since #[i C. violaceum] is not able to ferment arabinose. Through utilizing #[b a constitutive weak promoter J23106], the L-AIs were slowly expressed to convert arabinose into the inactive form.
+section#utilization
+  h4.display-4.text-primary
+    | The Practical Utilization of The Auviola System
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/design-figure-4.jpg" alt='The on-off mechanism (a) in the presence of arabinose (b) after L-AI converts the arabinose into its inactive form')
+    figcaption.figure-caption
+      b Figure 4.
+      |  The on-off mechanism (#[b a]) in the presence of arabinose (#[b b]) after L-AI converts the arabinose into its inactive form.
+  p
+    | #[b Figure 4] summarizes the on-off mechanism of the Auviola system. The use of our #[b Auviola] system was conducted in a closed compartment and depended on the level of glucose and arabinose.
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/design-figure-5.jpg" alt='The on-off mechanism (a) in the presence of arabinose (b) after L-AI converts the arabinose into its inactive form')
+    figcaption.figure-caption
+      b Figure 5.
+      |  Auviola system in the condition with low level of glucose and high level of arabinose
+  p
+    | In the condition with #[b low level of glucose] and #[b high level of arabinose], the #[b HCN production will be turned on] and the #[b HCN degradation will not]. The added arabinose regulates the expression through binding of AraC protein. This complex activates pBAD to express HCN synthase. pBAD in the HCN degradation system is also activated by this complex to express TetR that represses rhodanese expression. The L-AI expression which involves the constitutive promoter is not altered by this condition.
+  p
+    | This condition by adding the arabinose into the bioreactor is suitable for the #[b gold bioleaching process], knowing that the HCN synthases will be expressed while the rhodanese enzymes will not (#[b Figure 5]).
+  figure.text-center
+    img.figure-img.img-fluid.rounded(src="/assets/img/design-figure-6.jpg" alt='The on-off mechanism (a) in the presence of arabinose (b) after L-AI converts the arabinose into its inactive form')
+    figcaption.figure-caption
+      b Figure 6.
+      |  Auviola system in the condition with high level of glucose and low level of arabinose
+  p
+    | In the condition with #[b high level of glucose] and #[b low level of arabinose], the #[b HCN synthase will be switched off] meanwhile the #[b HCN degradation will be turned on]. The glucose used by the cells for metabolism will also control the on-off system through suppressing pBAD activation via cAMP-CAP pathway, so the HCN synthase will not be expressed. On the other hand, this pBAD repression will activate the pTET that subsequently activates the rhodanese expression. The L-AI expression is also not altered by this condition.
+  p
+    | This condition is achieved by the L-AI activity that #[b converts the arabinose] in a considerable amount. This condition is suitable for the #[b cyanide waste treatment] as the rhodanese enzymes start being produced while the HCN synthase expression will be stopped (#[b Figure 6]).
+section#demonstration
+  h4.display-4.text-primary
+    | Demonstration of Auviola System
+  p
+    | The demonstration was conducted by analytical procedure to determine the #[b cyanide concentration] in several defined points. This procedure gave results that cyanide presents in a high concentration after adding the arabinose that represents the gold bioleaching process. Afterward, the cyanide concentration started to decrease as the L-AIs were slowly produced to convert the arabinose and subsequently the rhodanese enzymes were expressed to degrade the cyanide.
+  p
+    | In addition, #[b fluorometry] was also conducted to demonstrate the Auviola system. Firstly, the genes of interest were replaced by some fluorescent protein-encoded ones. After that, some samples were taken in several defined points then the intensities were read by the spectrofluorometer. The results showed that the protein presents in a high concentration at the point that represents the gold bioleaching process. Afterward, the protein level started to decrease as long as the rhodanese enzymes were expressed to degrade the cyanide.

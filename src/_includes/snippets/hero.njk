@@ -1,12 +1,14 @@
 <style>
-    .hero {
+    #hero.hero .hero-image {
         background-image: url("{{ heroImage | url }}");
     }
 </style>
 
 <section id="hero" class="hero">
     <div class="container-fluid">
-        <div class="row d-flex flex-column justify-content-center align-items-center">
+        <div class="row hero-image">
+        </div>
+        <div class="row hero-content d-flex flex-column justify-content-center align-items-center">
             <h1 class="hero-decorative decorative-right">
                 {{ title }}
             </h1>

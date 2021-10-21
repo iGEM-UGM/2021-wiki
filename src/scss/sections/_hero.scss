@@ -12,92 +12,109 @@
 // }
 
 #hero.hero{
-    background-color: $primary;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
-    overflow: hidden;
-
-    box-shadow: inset 0 0 0 4000px rgba($primary, 0.7);
-
-
-    h1{
-        margin-bottom: 0;
-    }
-
-    .hero-decorative {
-        user-select: none;
-        font-family: "Montserrat Bold";
-        font-size: calc(12rem);
-        color: rgba($white, 0.15);
-
-        &.decorative-right {
-            text-align: left;
-            width: fit-content;
-            display: block;
-            position: absolute;
-            top: 5%;
-            right: 0;
-            transform: translateX(50%);
-        }
-
-        &.decorative-left {
-            direction: rtl;
-            text-align: right;
-            width: fit-content;
-            display: block;
-            position: absolute;
-            bottom: 5%;
-            left: 0;
-            transform: translateX(-50%);
-        }
-
-        @include media-breakpoint-down(xl){
-            font-size: calc(6rem + 1.0vw);
-        }
-    }
 
     .row {
         min-height: 100vh;
     }
 
-    .hero-typography {
-        width: fit-content;
-        display: block;
-        color: $white;
-        filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
-        border-bottom: 10px solid $secondary;
+    .hero-image {
+        background-color: $primary;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
 
-        font-family: "Montserrat Bold";
-        font-size: 7rem;
+        position: absolute;
 
-        @include media-breakpoint-down(xl) {
-            font-size: calc(1.625rem + 4.5vw);
-        }
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
     }
 
-    .scroll-content-button {
-        display: block;
-        margin-top: 1rem;
-        width: fit-content;
-        filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
+    .hero-content {
+        background: rgba($primary, 0.7);
+        z-index: 2;
+        position: relative;
+        overflow: hidden;
+
+        h1 {
+            margin-bottom: 0;
+        }
     
-        font-family: "Montserrat Regular";
-        color: $white;
-        background-color: rgba($white, 0.0);
-        border-color: rgba($white, 1.0);
+        .hero-decorative {
+            user-select: none;
+            font-family: "Montserrat Bold";
+            white-space: nowrap;
+            font-size: calc(12rem);
+            color: rgba($white, 0.15);
 
-        transition: 0.4s;
-
-        &:hover{
-            color: $primary;
-            background-color: rgba($white, 1.0);
-            border-color: rgba($white, 1.0);
+            width: -moz-fit-content;
+            width: fit-content;
+            display: block;
+            position: absolute;
+    
+            &.decorative-right {
+                text-align: left;
+                top: 5%;
+                right: 0;
+                transform: translateX(50%);
+            }
+    
+            &.decorative-left {
+                direction: rtl;
+                text-align: right;
+                bottom: 5%;
+                left: 0;
+                transform: translateX(-50%);
+            }
+    
+            @include media-breakpoint-down(xl){
+                font-size: calc(6rem + 1.0vw);
+            }
         }
 
-        @include media-breakpoint-down(xl) {
-            font-size: calc(0.675rem + 0.5vw);
+    
+        .hero-typography {
+            text-align: center;
+            width: -moz-fit-content;
+            width: fit-content;
+            display: block;
+            color: $white;
+            filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
+            border-bottom: 10px solid $secondary;
+    
+            font-family: "Montserrat Bold";
+            font-size: 7rem;
+    
+            @include media-breakpoint-down(xl) {
+                font-size: calc(1.625rem + 4.5vw);
+            }
+        }
+    
+        .scroll-content-button {
+            display: block;
+            margin-top: 1rem;
+            width: -moz-fit-content;
+            width: fit-content;
+            filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
+        
+            font-family: "Montserrat Regular";
+            color: $white;
+            background-color: rgba($white, 0.0);
+            border-color: rgba($white, 1.0);
+    
+            transition: 0.4s;
+    
+            &:hover{
+                color: $primary;
+                background-color: rgba($white, 1.0);
+                border-color: rgba($white, 1.0);
+            }
+    
+            @include media-breakpoint-down(xl) {
+                font-size: calc(0.675rem + 0.5vw);
+            }
         }
     }
 }

@@ -1,0 +1,21 @@
+    <section id="references" class="content-references">
+        <h4 class="display-4 text-primary mb-4">
+            References
+        </h4>
+        <ol>
+           {% for reference in dataReferences %}
+            <li id="reference-{{ loop.index }}">
+                {{ reference.reference | safe}}
+                {% if reference.online === "true" %}
+                    [Online]
+                {% endif %}
+                {% if reference.link %}
+                    <a href="{{ reference.link }}" target="_blank">{{ reference.link }}</a>
+                {% endif %}
+                {% if reference.accessed %}
+                    [accessed on {{ reference.accessed }}]
+                {% endif %}
+            </li>
+           {% endfor %}
+        <ol>
+    </section>

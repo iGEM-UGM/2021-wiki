@@ -1,7 +1,20 @@
 <nav id="sidebar" class="navbar navbar-light flex-column align-items-stretch col-3 p-1 d-none d-lg-block sticky-sidebar">
     <nav class="nav nav-pills flex-column sticky-top sticky-offset">
-    {% for sidemenu in dataSidebar %}
-        <a class="nav-link" href="{{ sidemenu.href }}">{{ sidemenu.name | safe }}</a>
-    {% endfor %}
+        <ul>
+        {% for sidemenu in dataSidebar %}
+            <li>
+                <a class="nav-link" href="{{ sidemenu.href }}">{{ sidemenu.name | safe }}</a>
+                {% if sidemenu.subnav%}
+                <ul>
+                    {% for subnav in sidemenu.subnav %}
+                    <li>
+                        <a class="nav-link" href="{{ subnav.href }}">{{ subnav.name | safe }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
     </nav>
 </nav>

@@ -1,0 +1,165 @@
+---
+layout: layouts/default.njk
+title: Experiments
+heroImage: /assets/img/hero-experiments.jpg
+dataSidebar: [
+    {"href" : "#experiments", "name" : "Experiments"}
+]
+---
+
+p
+  | Our project was designed to engineer bacteria into a cyanide-regulating system then analyze its protein expression profiles. These protocols below are our ways to obtain results from our lab works.
+section#competent
+  h4.display-4.text-primary
+    | Competent Cell Preparation
+  p
+    | We made 3 competent cells at once: E. coli BL21, E. coli TOP10, and C. violaceum ATCC 14772 with the Sambrook protocol:
+  ol
+    li prepare overnight pre culture taken from the streak plate of each strain.
+    li inoculate 1% of overnight pre-culture to 50mL LB medium.
+    li incubate in room temperature ~2.5h up to the OD600 reaches 0.5 - 0.6.
+    li divide the broth culture into 2 falcon tubes.
+    li centrifuge in 4oC, 7000rpm in 5 mins.
+    li discard the supernatant and keep the pellet in an ice box.
+    li add 25mL of pre-chilled 0.1M CaCl2 solution and resuspend the cell.
+    li incubate for 15 mins in the ice box.
+    li centrifuge 4oC, 7000rpm in 5 mins. discard the supernatant and keep the pellet on ice.
+    li add 15mL pre-chilled CaCl2 solution and resuspend the pellet.
+    li incubate on ice for 15 mins.
+    li centrifuge in 4oC, 7000rpm in 5 min, discard the supernatant and keep the pellet on ice.
+    li add 1mL CaCl2 + glycerol solution. Resuspend the pellet. Better work in LAF/ BSC.
+    li divide the culture into 1.5mL microtube, 60uL each.
+    li freeze all tubes using liquid nitrogen.
+    li keep in -80oC.
+section#heat-shock
+  h4.display-4.text-primary
+    | Heat Shock Transformation Protocol for E. coli
+  ol
+    li Thaw competent cells on ice.
+    li Add 2 μL of the chilled assembly product to the competent cells. Mix gently by pipetting up and down or by flicking the tube 4–5 times. Do not vortex.
+    li Place the mixture on ice for 30 minutes. Do not mix.
+    li Heat shock at 42°C for 45 seconds. Do not mix.
+    li Transfer tubes to ice for 5 minutes.
+    li Add 950 μL of room-temperature SOC media to the tube.
+    li Incubate the tube at 37°C for 60 minutes. Shake vigorously (250 rpm) or rotate.
+    li Warm selection plates to 37°C.
+    li Spread 100 μl of the cells onto the selection plates.
+    li Centrifuge the remaining 800 μL of the cells --> 6800 xg for 3 minutes.
+    li Remove 700 μL of supernatant, and mix the remaining 100 μl supernatant with the pellet.
+    li Spread 100 μL of the "9x concentration" cells onto the selection plates
+    li Incubate overnight at 37°C.
+section#genome
+  h4.display-4.text-primary
+    | Genome Isolation
+  p
+    | Kit used: Presto mini gDNA bacteria kit
+  p
+    | Protocol for gram negative
+  ol.styled
+    li
+      h5 Sample preparation
+      p
+        | Transfer bacterial cells (up to 1 x 109) to a 1.5 mL microcentrifuge tube. Centrifuge for 1 minute at 14,000-16,000 x g then discard the supernatant. Add 180 µl of GT Buffer then re-suspend the cell pellet by vortex or pipette. Add 20 µL of Proteinase K (make sure ddH2O was added). Incubate at 60ºC for at least 10 minutes. During incubation, invert the tube every 3 minutes. Proceed with step 2 (Lysis).
+    li
+      h5 Lysis
+      p
+        | Add 200 µl of GB Buffer to the sample and mix by vortex for 10 seconds. Incubate at 70ºC for at least 10 minutes to ensure the sample lysate is clear. During incubation, invert the tube every 3 minutes. At this time, pre-heat the required Elution Buffer (200 μL per sample) to 70ºC (for step 5 DNA Elution).
+    li
+      h5 DNA binding
+      p
+        | Add 200 µL of absolute ethanol to the sample lysate and mix IMMEDIATELY by shaking vigorously. If precipitate appears, break it up as much as possible with a pipette. Place a GD Column in a 2 ml Collection Tube. Transfer mixture (including any insoluble precipitate) to the GD Column then centrifuge at 14,000-16,000 x g for 2 minutes. Discard the 2 ml Collection Tube containing the flow-through then place the GD Column in a new 2 ml Collection Tube.
+    li
+      h5 Wash
+      p
+        | Add 400 µL of W1 Buffer to the GD Column. Centrifuge at 14,000-16,000 x g for 30 seconds then discard the flow-through. Place the GD Column back in the 2 ml Collection Tube. Add 600 µL of Wash Buffer (make sure ethanol was added) to the GD Column. Centrifuge at 14,000-16,000 x g for 30 seconds then discard the flow-through. Place the GD Column back in the 2 mL Collection Tube. Centrifuge again for 3 minutes at 14,000-16,000 x g to dry the column matrix.
+    li
+      h5 Elution
+      p
+        | Transfer the dried GD Column to a clean 1.5 mL microcentrifuge tube. Add 100 μL of pre-heated Elution Buffer1, TE Buffer or water into the CENTER of the column matrix. Let stand for at least 3 minutes to allow the Elution Buffer, TE Buffer or water to be completely absorbed. Centrifuge at 14,000-16,000 x g for 30 seconds to elute the purified DNA.
+section#gel
+  h4.display-4.text-primary
+    | Gel extraction protocol (Geneaid) 
+  p
+    | abc
+  ol.styled
+    li
+      h5 Gell dissociation
+      p
+        | Cut the agarose gel slice containing relevant DNA fragments and remove any extra agarose to minimize the size of the gel slice. Transfer up to 300 mg of the gel slice to a 1.5 mL microcentrifuge tube. Add 500 µL of Gel/PCR Buffer to the sample then mix by vortex. Incubate at 55-60ºC for 10-15 minutes or until the gel slice is completely dissolved. During incubation, invert the tube every 2-3 minutes. If the color of the mixture has turned from yellow to purple, add 10 µL of 3M Sodium Acetate (pH5.0) and mix thoroughly. This will adjust pH and the color will return to yellow. Cool the dissolved sample mixture to room temperature.
+    li
+      h5 DNA Binding
+      p
+        | Place a DFH Column in a 2 mL Collection Tube. Transfer 800 µl of the sample mixture to the DFH Column. Centrifuge at 14,000-16,000 x g for 30 seconds. Discard the flow-through then place the DFH Column back in the 2 mL Collection Tube.
+    li
+      h5 Wash
+      p
+        | Add 400 µL of W1 Buffer into the DFH Column. Centrifuge at 14,000-16,000 x g for 30 seconds then discard the flow-through. Place the DFH Column back in the 2 mL Collection Tube. Add 600 µL of Wash Buffer (make sure absolute ethanol was added) into the DFH Column and let it stand for 1 minute. Centrifuge at 14,000-16,000 x g for 30 seconds then discard the flow-through. Place the DFH Column back in the 2 mL Collection Tube. Centrifuge at 14,000-16,000 x g for 3 minutes to dry the column matrix.
+    li
+      h5 Elution
+      p
+        | Transfer the dried DFH Column to a new 1.5 ml microcentrifuge tube. Add 20-50 µL of Elution Buffer1, TE2 or water3 into the CENTER of the column matrix. Let stand for at least 2 minutes to allow the Elution Buffer, TE or water to be completely absorbed. Centrifuge at 14,000-16,000 x g for 2 minutes at room temperature to elute the purified DNA.
+section#pcr
+  h4.display-4.text-primary
+    | PCR Cleanup Protocol Procedure
+  p
+    | abc
+  ol.styled
+    li
+      h5 Sample preparation
+      p
+        | Cut the agarose gel slice containing relevant DNA fragments and remove any extra agarose to minimize the size of the gel slice. Transfer up to 300 mg of the gel slice to a 1.5 mL microcentrifuge tube. Add 500 µL of Gel/PCR Buffer to the sample then mix by vortex. Incubate at 55-60ºC for 10-15 minutes or until the gel slice is completely dissolved. During incubation, invert the tube every 2-3 minutes. If the color of the mixture has turned from yellow to purple, add 10 µL of 3M Sodium Acetate (pH5.0) and mix thoroughly. This will adjust pH and the color will return to yellow. Cool the dissolved sample mixture to room temperature.
+    li
+      h5 DNA Binding
+      p
+        | Place a DFH Column in a 2 mL Collection Tube. Transfer the sample mixture to the DFH Column. Centrifuge at 14,000-16,000 x g for 30 seconds. Discard the flow-through and place the DFH Column back in the 2 ml Collection Tube.
+    li
+      h5 Wash
+      p
+        | Add 600 µL of Wash Buffer (make sure absolute ethanol was added) into the DFH Column and let it stand for 1 minute. Centrifuge at 14,000-16,000 x g for 30 seconds then discard the flow-through. Place the DFH Column back in the 2 ml Collection Tube. Centrifuge at 14,000-16,000 x g for 3 minutes to dry the column matrix.
+    li
+      h5 Elution
+      p
+        | Transfer the dried DFH Column to a new 1.5 mL microcentrifuge tube. Add 20-50 µL of Elution Buffer1, TE2 or water3 into the CENTER of the column matrix. Let stand for at least 2 minutes to allow the Elution Buffer, TE or water to be completely absorbed. Centrifuge at 14,000-16,000 x g for 2 minutes at room temperature to elute the purified DNA.
+section#gibson
+  h4.display-4.text-primary
+    | Gibson Assembly Protocol
+  p
+    | abc
+  ol.styled
+    li
+      h5 Design the Plasmid
+      p
+        | For the plasmid design, users should consider the adjacent segments which have identical sequences with the inserts on the end. The identical sequence can be obtained with PCR using a specific primer. The adjacent/overhang sequence should be at least 12 - 30bp.
+    li
+      h5 Generate DNA Segments by PCR
+      p
+        | DNA segments with identical adjacent sequences on the end of the sequences are amplified with PCR and run it to agarose electrophoresis gel to check the size and yield. If more than one band is found, it is necessary to cut and purify the sequences from the electrophoresis gel. Otherwise, PCR product purification can proceed if a single clear band is obtained from the electrophoresis.
+    li
+      h5 Gibson Assembly Reaction
+      p
+        | Mix the DNA segments and the backbone in one tube. Yield will be the best if each DNA fragment has equimolar concentration. Mix the DNA fragment and add the Gibson Cloning Master Mix. Incubate for 1 hour in 50ºC.
+    li
+      h5 Elution
+      p
+        | Transfer the dried DFH Column to a new 1.5 mL microcentrifuge tube. Add 20-50 µL of Elution Buffer1, TE2 or water3 into the CENTER of the column matrix. Let stand for at least 2 minutes to allow the Elution Buffer, TE or water to be completely absorbed. Centrifuge at 14,000-16,000 x g for 2 minutes at room temperature to elute the purified DNA.
+section#picric
+  h4.display-4.text-primary
+    | Picric Acid Method for HCN Measurement
+  ol
+    li A filter paper is being immersed in the mixture of 0.5% of picric acid (C6H3N3O7) and 2% of sodium carbonate solution.
+    li The immersed filter paper is placed at the top of the erlenmeyer flask and incubated with the culture for ~72 hours.
+    li The presence of HCN is indicated with the colour transformation of the immersed filter paper from bright yellow to brown.
+section#fluorometry
+  h4.display-4.text-primary
+    | Fluorometry for Green Fluorescent Protein (GFP) Measurement
+  ol
+    li 3mL of cells are collected in every 15 minutes interval within 6 hours of incubation.
+    li The samples are transferred into the fluorometer cuvette.
+    li The fluorescence intensity of samples are measured by fluorometry in excitation and emission wavelengths of 504 and 515 nm, respectively. Luria Bertani Broth (LB) medium was used as the blank solution. The resulting intensity values indicate the fluorescence occurrences by the expressed GFPs.
+section#spectrophotometer
+  h4.display-4.text-primary
+    | Spectrophotometer for Cell Growth Measurement
+  ol
+    li 3mL of cells are collected in every 15 minutes interval within 6 hours of incubation.
+    li The samples are transferred into the spectrophotometer cuvette.
+    li The cell growth are measured by the optical density (OD600).

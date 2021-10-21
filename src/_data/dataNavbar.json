@@ -5,10 +5,8 @@
       { "name": "Description", "href": "/Description" },
       { "name": "Design", "href": "/Design" },
       { "name": "Engineering", "href": "/Engineering" },
-      { "name": "Implementation", "href": "/Implementation" },
       { "name": "Safety", "href": "/Safety" },
-      { "name": "Contribution", "href": "/Contribution" },
-      { "name": "Notebook", "href": "/Notebook" }
+      { "name": "Contribution", "href": "/Contribution" }
     ]
   },
   {
@@ -16,7 +14,8 @@
     "submenu": [
       { "name": "Parts", "href": "/Parts" },
       { "name": "Experiments", "href": "/Experiments" },
-      { "name": "Results", "href": "/Results" }
+      { "name": "Results", "href": "/Results" },
+      { "name": "Notebook", "href": "/Notebook" }
     ]
   },
   {
@@ -31,8 +30,12 @@
     "name": "Human Practices",
     "submenu": [
       { "name": "Human Practices", "href": "/Human_Practices" },
+      { "name": "Integrated Human Practices", "href": "/IHP" },
+      { "name": "Proposed Implementation", "href": "/Implementation" },
       { "name": "Education and Communication", "href": "/Communication" },
-      { "name": "Entrepreneurship", "href": "/Entrepreneurship" }
+      { "name": "Education and Public Engagement", "href": "/Education" },
+      { "name": "Entrepreneurship", "href": "/Entrepreneurship" },
+      { "name": "Sustainable Development Impact", "href": "/Sustainable" }
     ]
   },
   {

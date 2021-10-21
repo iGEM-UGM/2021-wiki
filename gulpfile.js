@@ -18,6 +18,7 @@ var paths = cfg.paths;
 
 gulp.task("dist-assets", function (done) {
   gulp.src("./src/assets/js/**.*").pipe(gulp.dest("./dev/js"));
+  gulp.src("./src/assets/js/**/*.*").pipe(gulp.dest("./dev/js"));
   gulp.src("./src/assets/img/**.*").pipe(gulp.dest("./dev/assets/img"));
   gulp.src("./src/assets/font/**.*").pipe(gulp.dest("./dev/assets/font"));
   done();
@@ -123,12 +124,16 @@ gulp.task("copy-assets", function (done) {
   // Copy all JS files
   var stream = gulp
     .src(paths.node + "/bootstrap/dist/js/**/*.*")
-    .pipe(gulp.dest(paths.dev + "assets/js"));
+    .pipe(gulp.dest(paths.dev + "/assets/js"));
 
   // Copy all Bootstrap SCSS files
-  gulp
+  var stream2 = gulp
     .src(paths.node + "/bootstrap/scss/**/*.scss")
     .pipe(gulp.dest(paths.dev + "/scss/assets/bootstrap"));
+
+ var stream3 = gulp
+    .src(paths.node + "/mathjax/es5/**/*.*")
+    .pipe(gulp.dest(paths.dev + "/assets/js/mathjax"));
 
   ////////////////// End Bootstrap 4 Assets /////////////////////////
 

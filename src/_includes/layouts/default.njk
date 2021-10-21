@@ -14,7 +14,12 @@
         <div class="container">
           <div class="row">
             {% include 'snippets/sidebar.njk' %}
-            {{ content | safe }}
+            <div class="col-12 col-lg-9">
+              {{ content | safe }}
+              {% if dataReferences %}
+                {% include 'snippets/references.njk' %}
+              {% endif %}
+            </div>
           </div>
         </div>
       </section>
