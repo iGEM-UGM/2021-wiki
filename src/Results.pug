@@ -8,6 +8,20 @@ dataSidebar: [
     {"href" : "#transformation", "name" : "Genetic Transformation"},
     {"href" : "#future", "name" : "Future Work"},
 ]
+dataReferences: [
+    {
+      "reference" : "Liow, L.T., Go, M.K., Chang, M.W., Yew, W.S., 2020, Toolkit development for cyanogenic and gold biorecovery chassis <i>Chromobacterium violaceum</i>, <i>ACS Synth. Biol</i>, vol. 9, pp. 953 – 961.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Loke, W.K. and Saud, H.M., 2020. Electrotransformation on selected plant growth-promoting Rhizobacteria (PGPR) and <i>Chromobacterium violaceum</i>. <i>Journal of Agrotechnology</i>, vol. 11, no. 1, pp. 63 – 69.",
+      "online" : "false"
+    },
+    {
+      "reference" : "Drochiou, G., Pui, A., Danac, R., Basu, C., Murariu, M., 2003, Improved spectrophotometric assay of cyanide with picric acid, <i>Revue Roumaine de Chimie</i>, vol. 48, no. 8, pp. 601 – 606.",
+      "online" : "false"
+    },
+]
 ---
 
 p 
@@ -38,9 +52,6 @@ section#geneconstruct
   
   //- masukin table 1
 
-  figure.text-center
-    img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-3.jpg" style="max-width:80%; width:80%;")
-    figcaption.figure-caption #[b Figure 3.] Electrophoresis result of all needed parts.
   p 
     | Gel purification was performed for sample 1, 2, 5, 6, 8, 9, 10, and 11. The rest samples were purified using PCR clean-up purification protocol.
   table.table.table-bordered.text-center
@@ -102,7 +113,7 @@ section#transformation
   h4.display-4.text-primary
     | Genetic Transformation
   p 
-    | We transformed the construct to #[i E. coli] \(BL21(DE3)\) and \(DH5α\) using a strandard heat shock transformation protocol. LB agar plate supplemented with chloramphenicole was used to select the transformants. After an overnight incubation, we did the colony PCR, using VF2 VR primers (#[b Table 3]), to the randomly picked the colonies and directly subcultured the colonies and subcultured them in the LB broth with antibiotic. The following figure (#[b Figure 4]) depicts the results.
+    | We transformed the construct to #[i E. coli] \(BL21(DE3)\) and \(DH5α\) using a strandard heat shock transformation protocol. LB agar plate supplemented with chloramphenicole was used to select the transformants. After an overnight incubation, we did the colony PCR, using VF2 VR primers (#[b Table 3]), to the randomly picked the colonies and directly subcultured the colonies and subcultured them in the LB broth with antibiotic. The following figure (#[b Figure 3]) depicts the results.
   table.table.table-bordered.text-center
     caption.text-center #[b Table 3.] The Sequence of VF2 and VR Primer.
     thead
@@ -117,17 +128,32 @@ section#transformation
         td GCTCACTCAAAGGCGGTAAT
   figure.text-center
     img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-4.jpg" style="max-width:80%; width:80%;")
-    figcaption.figure-caption #[b Figure 4.] Colony PCR Result of the Random-picked Transformants.
+    figcaption.figure-caption #[b Figure 3.] Colony PCR Result of the Random-picked Transformants.
   p 
     | The elctropherogram showed that the DNA size were merely under 1500 bp, however, there were some bands appears with the size of arround 4600 bp. We suspected that the PCR mix was not robust to amplify our construct. Therefore, we directly subcultured the first colony (ColA) for plasmid extraction, obtaining the concentration of #[b ColA: 146.20 ng/uL].
   p 
-    | Another PCR cycle was conducted using hcnABC primers to confirm whether the construct is fully inserted to the vector (#[b Figure 5]).
+    | Another PCR cycle was conducted using hcnABC primers to confirm whether the construct is fully inserted to the vector (#[b Figure 4]).
   figure.text-center
-    img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-5.jpg" style="max-width:80%; width:80%;")
-    figcaption.figure-caption #[b Figure 5.] Electrophoresis Result for ColA.
+    img.figure-img.img-fluid.rounded(src="/assets/img/results-figure-6.jpg" style="max-width:80%; width:80%;")
+    figcaption.figure-caption #[b Figure 4.] Electrophoresis Result for ColA.
   p 
     | Additional bands were shown on the gel electrophoresis result with the size of around 5000 bp and 1500 bp. Although the desired band (~4600s bp) have been obtained, further investigation is necessary in order to confirm that the construct is correct. Therefore, we send the extracted plasmid and some primers for Sanger sequencing analysis.
   p
     | This time we still waiting for the sequenced plasmid. The sequencing result will be reported soon.
 
 section#future
+  h4.display-4.text-primary
+    | Future Work
+  p 
+    | By the time we receive the sequencing result, we will directly assess the construct and measure the accumulation of cyanide production in #[i E. coli] \(BL21(DE3)\) expression system. In contrast, the assembly and reconstruction will be conducted when the result were not as we expected. Besides, we also plan to change the ORI from pBBR1-MCS2 plasmid because this ORI is compatible for both #[i E. coli] and #[i C. violaceum].
+    a(href='#reference-1')
+      sup 1 
+    | Next, we will transform the plasmid to competent cell #[i C. violaceum] using some methods such as heat shock, optimized electroporation,
+    a(href='#reference-2')
+      sup 2
+    | and freeze thawing method. Transformation optimization is necessary for this step because #[i C. violaceum] \(ATCC 12472\) is a non-model chassis, which makes it more challenging engineer. 
+  p
+    | Following that, we plan to measure the cyaide production of the engineered #[i C. violaceum] \(ATCC 14272\) using picric acid method,
+    a(href='#reference-3')
+      sup 3 
+    | confirm and re-assess our Genome Scale Model and kinetic models, and compare the cyanide production with the Wild Type. If the result found out that the average cyanide production is higher, it will be the first step for further improvement, i.e., pH optimization, given that the bioleaching process by cyanide is a pH-dependent process.
