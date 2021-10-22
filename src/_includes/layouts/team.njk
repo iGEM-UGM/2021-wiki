@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+
+  <head>
+  {% include 'snippets/head.njk' %}
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="360">
+    {% include 'snippets/navbar.njk' %}
+
+    <main>
+      {% include 'snippets/hero.njk' %}
+      <section id="main-content" class="main-content team-container">
+        <div class="container-fluid">
+          <div class="row team-intro">
+            <div class="col-8 d-flex">
+              <img class="img-fluid rounded" src="/assets/img/team-intro-1.png" />
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid rounded" src="/assets/img/team-intro-logo.png" />
+            </div>
+            <div class="col-12 py-4">
+              <h1>
+                About
+              </h1>
+              <p>
+                The UGM iGEM Team of 2021 is the first team from Universitas Gadjah Mada who will participate in this iGEM event. This team consists of students from several study programs (Biology, Microbiology, Medicine, Chemistry Engineering, Information Technology, and Economics) and supervised by a principal investigator and instructors from Faculty of Biology and Faculty of Agriculture.
+              </p>
+            </div>  
+          </div>
+          <div class="team-content">
+
+            {% for teams in dataTeams %}
+               <div class="row mt-5 mb-2">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                  <h2>
+                    {{ teams.name }}
+                  </h2>
+                </div>
+              </div>
+
+              <div class="row d-flex flex-row align-content-between justify-content-center align-items-center flex-wrap p-4">
+                {% for people in teams.peoples %}
+                <div class="card mx-2 my-2" style="width: 25rem;">
+                  <img class="card-img-top" src="{{ people.photo | url }}" alt="Card image cap">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title text-center">{{ people.name }}</h5>
+                    <div class="mt-2 mb-4 border-top border-primary">
+                      <p class="card-text text-center mb-0">{{ people.unitrole }}</p>
+                      <p class="card-text text-center mt-0">{{ people.unit }}</p>
+                    </div>
+                    <p class="btn btn-primary text-center shadow">{{ people.role }}</a>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+
+            {% endfor %}
+
+          </div>
+          <div class="row">
+            {% include 'snippets/sidebar.njk' %}
+            <div class="col-12 col-lg-9">
+              {{ content | safe }}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="container-fluid">
+        {% include 'snippets/footer.njk' %}
+    </footer>
+
+  </body>
+
+</html>

@@ -7,13 +7,50 @@ section#main-content {
     padding-top: 4rem;
     margin-bottom: 4rem;
 
+    &.team-container{
+      padding-top: 0 !important;
+
+      .team-intro {
+        min-height: 120vh;
+        background-color: $primary;
+        padding: 4rem 10rem;
+  
+        h1 {
+          font-family: "Montserrat Bold";
+          font-size: 4rem;
+          color: $white;
+        }
+        p {
+          font-family: "Montserrat Regular";
+          font-size: 1.5rem;
+          color: $white;
+        }
+      }
+
+      .team-content{
+        padding-top: 6rem;
+        h2 {
+          font-family: "Montserrat Bold";
+          text-align: center;
+          color: $white;
+          padding: 0.5rem 1.5rem;
+          
+          width: -moz-fit-content;
+          width: fit-content;
+
+          border-radius: 100px;
+          background-color: $primary;
+        }
+      }
+    }
+
     a[href ^="https://"] {
         padding-right: 0;
     }
 
     h3.display-3 {
       font-family: "Montserrat Bold";
-      font-size: 3.5rem;
+      font-size: 5rem;
       margin-bottom: 3.5rem;
       color: $secondary !important;
     }
@@ -64,6 +101,8 @@ section#main-content {
         margin-bottom: 2rem;
       }
     }
+
+
 }
 
 section#main-content p, section#main-content li {

@@ -1,0 +1,190 @@
+[
+  {
+    "name": "Supervisors",
+    "peoples": [
+      { 
+        "name" : "Yekti Asih Purwestri", 
+        "role" : "Primary Principal Investigator",
+        "unit" : "Research Center for Biotechnology",
+        "unitrole" : "Associate Professor",
+        "photo" : "/assets/img/team-photo-bu-yekti.jpg"
+      },
+      { 
+        "name" : "Saifur Rohman", 
+        "role" : "Secondary Principal Investigator",
+        "unit" : "Departement of Microbiology, Faculty of Agriculture",
+        "unitrole" : "Assistant Professor",
+        "photo" : "/assets/img/team-photo-pak-saifur.jpg"
+      },
+      { 
+        "name" : "Widhi Dyah Sawitri", 
+        "role" : "Secondary Principal Investigator",
+        "unit" : "Research Center for Biotechnology",
+        "unitrole" : "Assistant Professor",
+        "photo" : "/assets/img/team-photo-bu-widhi.png"
+      }
+    ]
+  },
+  {
+    "name": "Instructors",
+    "peoples": [
+      { 
+        "name" : "Matin Nuhamunada", 
+        "role" : "Instructors",
+        "unit" : "Novonordisk Foundation Center for Bio-sustainability, DTU Denmark",
+        "unitrole" : "Doctoral Student",
+        "photo" : "/assets/img/team-photo-mas-matin.jpg"
+      },
+      { 
+        "name" : "Afif Pranaya Jati", 
+        "role" : "Instructors",
+        "unit" : "Research Center for Biotechnology",
+        "unitrole" : "Senior Researcher",
+        "photo" : "/assets/img/team-photo-mas-afif.jpg"
+      },
+      { 
+        "name" : "Imam Bagus Nugroho", 
+        "role" : "Instructors",
+        "unit" : "Research Center for Biotechnology",
+        "unitrole" : "Senior Researcher",
+        "photo" : "/assets/img/team-photo-mas-imam.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Advisors",
+    "peoples": [
+      { 
+        "name" : "Aries Bagus Sasongko", 
+        "role" : "Advisors",
+        "unit" : "Faculty of Biology",
+        "unitrole" : "Lecturer",
+        "photo" : "/assets/img/team-photo-pak-bagus.jpg"
+      },
+      { 
+        "name" : "Irfan Dwidya Prijambada", 
+        "role" : "Advisors",
+        "unit" : "Departement of Microbiology, Faculty of Agriculture",
+        "unitrole" : "Professor",
+        "photo" : "/assets/img/team-photo-pak-irfan.jpg"
+      },
+      { 
+        "name" : "Ahmad Ardi", 
+        "role" : "Advisors",
+        "unit" : "Departement of Microbiology, North Dakota State University",
+        "unitrole" : "Master Student",
+        "photo" : "/assets/img/team-photo-mas-ardi.jpg"
+      },
+      { 
+        "name" : "Lisna Hidayati", 
+        "role" : "Advisors",
+        "unit" : "Faculty of Biology",
+        "unitrole" : "Lecturer",
+        "photo" : "/assets/img/team-photo-bu-lisna.jpg"
+      },
+      { 
+        "name" : "Agus Prasetya", 
+        "role" : "Advisors",
+        "unit" : "Departement of Chemical Engineering, Faculty of Engineering",
+        "unitrole" : "Lecturer",
+        "photo" : "/assets/img/team-photo-pak-agus.jpg"
+      },
+      { 
+        "name" : "Himawan Tri Bayu Murti Petrus", 
+        "role" : "Advisors",
+        "unit" : "Departement of Chemical Engineering, Faculty of Engineering",
+        "unitrole" : "Lecturer",
+        "photo" : "/assets/img/team-photo-pak-bayu.png"
+      }
+    ]
+  },
+  {
+    "name": "Students",
+    "peoples": [
+      { 
+        "name" : "Yustika Sari", 
+        "role" : "Team Leader",
+        "unit" : "Faculty of Biology",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-yustika.png"
+      },
+      { 
+        "name" : "Ridwan Fathoni", 
+        "role" : "Human Practice Coordinator",
+        "unit" : "Faculty of Agriculture",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-ridwan.png"
+      },
+      { 
+        "name" : "Dennaya Kumara", 
+        "role" : "Secretary",
+        "unit" : "Faculty of Pharmacy",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-dennaya.png"
+      },
+      { 
+        "name" : "Wilda Asyrina Maris", 
+        "role" : "Design Coordinator",
+        "unit" : "Faculty of Agriculture",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-wilda.png"
+      },
+      { 
+        "name" : "I Gusti Agung Arvin Nanda Pratama", 
+        "role" : "Dry Lab Coordinator",
+        "unit" : "Faculty of Engineering",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-arvin.png"
+      },
+      { 
+        "name" : "Setianing Wikanthi", 
+        "role" : "Wet Lab Coordinator",
+        "unit" : "Faculty of Agriculture",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-thea.png"
+      },
+      { 
+        "name" : "Azzahra Asysyifa", 
+        "role" : "Human Practice",
+        "unit" : "Faculty of Medicine",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-syifa.png"
+      },
+      { 
+        "name" : "Farhan Wali Bachtier", 
+        "role" : "Fundraising",
+        "unit" : "Faculty of Biology",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-farhan.png"
+      },
+      { 
+        "name" : "Shina Aulia", 
+        "role" : "Treasure",
+        "unit" : "Faculty of Economics and Business",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-shina.png"
+      },
+      { 
+        "name" : "Ahmad Zidan", 
+        "role" : "Wiki",
+        "unit" : "Faculty of Engineering",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-zidan.png"
+      },
+      { 
+        "name" : "Yafi Surya Permana", 
+        "role" : "Content & Dry Lab",
+        "unit" : "Faculty of Pharmacy",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-yafi.png"
+      },
+      { 
+        "name" : "Waffiq Maaroja", 
+        "role" : "Dry Lab",
+        "unit" : "Faculty of Mathematics and Natural Sciences",
+        "unitrole" : "Student",
+        "photo" : "/assets/img/team-photo-waffiq.png"
+      }
+    ]
+  }
+]

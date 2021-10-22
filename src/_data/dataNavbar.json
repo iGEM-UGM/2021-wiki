@@ -22,8 +22,7 @@
     "name": "Dry Lab",
     "submenu": [
       { "name": "Model", "href": "/Model" },
-      { "name": "Bioreactor", "href": "/Bioreactor" },
-      { "name": "Measurement", "href": "/Measurement" }
+      { "name": "Bioreactor", "href": "/Bioreactor"}
     ]
   },
   {
