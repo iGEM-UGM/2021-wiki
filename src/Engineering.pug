@@ -260,49 +260,57 @@ section#hcn-production
                     td Product concentration (grams/liter)
                     td 1 x 10-5
                     td M
-                    td a(href='#reference-9') [9]
+                    td
+                      a(href='#reference-9') [9]
                   tr
                     td A1
                     td Substrate concentration (grams/liter)
                     td 1 x 10-5
                     td M
-                    td a(href='#reference-10') [10]
+                    td 
+                      a(href='#reference-10') [10]
                   tr
                     td kdiff
                     td Feed substrate concentration (grams/liter)
                     td 7 x 10-18
                     td Mole/cell/30 mins
-                    td a(href='#reference-10') [10]
+                    td
+                      a(href='#reference-10') [10]
                   tr
                     td k1
                     td Rate of cell or biomass growth (grams/liter/hr)
                     td 1.2 x 10-4
                     td s-1
-                    td a(href='#reference-11') [11]
+                    td
+                      a(href='#reference-11') [11]
                   tr
                     td k2
                     td Rate of product formation (grams/liter/hr)
                     td 1.2 x 10-4
                     td s-1
-                    td a(href='#reference-11') [11]
+                    td
+                      a(href='#reference-11') [11]
                   tr
                     td \gamma_1
                     td Product yield coefficient
                     td 1.49 x 10-3
                     td min-1
-                    td a(href='#reference-12') [12]
+                    td
+                      a(href='#reference-12') [12]
                   tr
                     td \gamma_m
                     td Rate of mRNA degradation (in general)
                     td 1.7 x 10-3
                     td s-1
-                    td a(href='#reference-13') [13]
+                    td
+                      a(href='#reference-13') [13]
                   tr
                     td \gamma_p , \gamma_E
                     td Rate of large organic molecule degradation (assumed to have the same value)
                     td 5.6 x 10-5
                     td s-1
-                    td a(href='#reference-13') [13]
+                    td
+                      a(href='#reference-13') [13]
                   tr
                     td , \gamma_A1
                     td  
@@ -311,13 +319,15 @@ section#hcn-production
                     td  
                   tr
                     td kA1
-                    td A1.AraC forward reaction rate
+                    td
+                      A1.AraC forward reaction rate
                     td 1.2 x 10-4
                     td s-1
                     td  
                   tr
                     td kA2
-                    td A1AraC reverse reaction rate
+                    td
+                      A1AraC reverse reaction rate
                     td 1.2 x 10-4
                     td s-1
                     td  
@@ -326,31 +336,36 @@ section#hcn-production
                     td Rate of Rhodanese-S2O3 complex synthesis
                     td 48
                     td s-1
-                    td a(href='#reference-14') [14]
+                    td
+                      a(href='#reference-14') [14]
                   tr
                     td kcat2
                     td Rate of thiocyanate (SCN) biosynthesis
                     td 55&nbsp;
                     td s-1
-                    td a(href='#reference-14') [14]
+                    td
+                      a(href='#reference-14') [14]
                   tr
                     td kf1
                     td Rate of Li-A1 &ndash; Arabinose complex formation
                     td 1.2 x 10-4
                     td s-1
-                    td a(href='#reference-15') [15]
+                    td
+                      a(href='#reference-15') [15]
                   tr
                     td kr1
                     td Rate of Li-A1 &ndash; Arabinose complex degradation
                     td 1.2 x 10-4
                     td s-1
-                    td a(href='#reference-15') [15]
+                    td
+                      a(href='#reference-15') [15]
                   tr
                     td kcatR
                     td Rate of L-ribulose catalytic formation
                     td 8.167&nbsp;
                     td s-1
-                    td a(href='#reference-15') [15]
+                    td
+                      a(href='#reference-15') [15]
             p 
               | Some of the kinetic constant cannot be found on any research paper or open source database that is available on the internet. Thus, we used the value of similar parameter(s).
     .accordion-item
@@ -382,11 +397,13 @@ section#hcn-production
       #hcn-production-learn.accordion-collapse.collapse(aria-labelledby='hcn-production-learn-heading')
         .accordion-body
           div
-            | Wetlab work: HCN Production
+            h6
+              | Wetlab work: HCN Production
             p
               | It was such a challenge for us to construct the whole operon with the size over 4000 bp with high GC content. A more robust PCR method such as an adjustable KOD with high-fidelity PCR master mix kit is necessary to increase the PCR product and avoid point mutation that might happen in the amplified product.
           div 
-            | Drylab work: Kinetic Modelling
+            h6
+              | Drylab work: Kinetic Modelling
             p 
               | We can learn that rhodanese was produced instantly, then the concentration of HCN decreased rapidly. The maximum speed of gold cyanidation only lasts briefly, less than 5 minutes.
               | Biohydrometallurgy method is favored in mineral processing field due to their ability to extract low-concentrated ore. With this kind of trend, it is almost impossible to gain a feasible gold extraction yield. In lab experiments, most bioleaching processes managed to attain large mineral yield in laboratory experiments. This modelling might be not reflecting the real conditions of the bioleaching process.
@@ -398,7 +415,8 @@ section#hcn-production
       #hcn-production-design-2.accordion-collapse.collapse(aria-labelledby='hcn-production-design-2-heading')
         .accordion-body
           div
-            | Drylab work: Kinetic Modelling
+            h6
+              | Drylab work: Kinetic Modelling
             p
               | We need to reconsider some of the parameters, especially those based on assumption. Rate of large organic molecule degradation is one of the main examples. There are 2 large organic molecules that are involved in this modelling, protein (enzyme) and monosaccharide. We need to separate the decay rate of protein and monosaccharide.
               | SCN formation constant also needs to be changed. Due to larger scale use and relatively dynamic environment, we assumed that the collision rate would be significantly slower. Therefore, the constant also becomes lower. 
@@ -410,7 +428,8 @@ section#hcn-production
       #hcn-production-build-2.accordion-collapse.collapse(aria-labelledby='hcn-production-build-2-heading')
         .accordion-body
           div
-            | Drylab work: Kinetic Modelling
+            h6  
+              | Drylab work: Kinetic Modelling
             p
               | The parameter that we consider to be revised are:
             table.table.table-bordered.table-hover.table-condensed
@@ -427,7 +446,8 @@ section#hcn-production
                   td Rate of L-arabinose degradation
                   td 3.46e x 10-5
                   td s-1
-                  td a(href='#reference-16') [16]
+                  td
+                    a(href='#reference-16') [16]
                 tr
                   td p
                   td Rhodanese synthesis starting point
@@ -447,7 +467,8 @@ section#hcn-production
       #hcn-production-test-2.accordion-collapse.collapse(aria-labelledby='hcn-production-test-2-heading')
         .accordion-body
           div
-            | Drylab work: Kinetic Modelling
+            h6  
+              | Drylab work: Kinetic Modelling
             p
               | The results of modelling using those parameters are:
             figure.text-center
@@ -459,7 +480,8 @@ section#hcn-production
       #hcn-production-learn-2.accordion-collapse.collapse(aria-labelledby='hcn-production-learn-2-heading')
         .accordion-body
           div
-            | Drylab work: Kinetic Modelling
+            h6
+              | Drylab work: Kinetic Modelling
             p 
               | The HCN concentration reduction becomes less steep, thus gold cyanidation could be more efficient. It will prolong the almost optimum gold leaching period and surely increase the potential gold yield. Although we achieved desirable results through modelling, further laboratory experiments also needed to verify our model and obtain more realistic results. Large scale and pilot testing are also required for industrial application.
 section#genome-scale
@@ -516,6 +538,7 @@ section#genome-scale
             sup ,
               a(href="#reference-23")
               sup 23
+            p 
               | These approaches were recommended to us by our instructor, Mr. Matin Nuhamunada. The results of this model were expected to illustrate the metabolic flux shiftment to cyanide production through gene knockout process.
     .accordion-item
       h5#genome-scale-build-heading.accordion-header.my-0
@@ -559,6 +582,7 @@ section#genome-scale
             sup ,
               a(href="#reference-23")
               sup 23
+            p   
               | in fact we did not use exchange reaction in our model. Thus, we did the consultation with our instructor and they suggested us to use the exchange reaction because it can represent the knockout prediction for the accumulation of targeted extracellular metabolic. However, in our knockout model we solely try the cyanide production reaction (glycine:acceptor oxidoreductase)  as the main target. Therefore, it is necessary to improve and add the cyanide exchange reaction to our model and transform the target in the knockout prediction into the cyanide exchange reaction.
 section#pyrite
   h4.display-4.text-primary
@@ -599,11 +623,11 @@ section#pyrite
             p  
               | The specific cell growth rate expressed as follows:
             p 
-              | \mu_{S} = \mu_{max}\frac{S}{K_S + S}
+              | \[\mu_{S} = \mu_{max}\frac{S}{K_S + S}\]
             p 
               | However, that equation doesn’t include the inhibitor variable. Based on ferrous iron oxidation in #[i T. Ferrooxidans periplasm], we hypothesized that the cell regulates itself to inhibit the oxidation process with competitive inhibition. Thus, the µs equation with competitive inhibition would be:
             p
-              | \mu_{S} = \mu_{max}\frac{S}{K_S(1+ \frac{S_0-S}{K_P})+S}\\
+              | \[\mu_{S} = \mu_{max}\frac{S}{K_S(1+ \frac{S_0-S}{K_P})+S}\\\]
             table.table.table-bordered.table-hover.table-condensed
               thead
                 tr
@@ -850,7 +874,7 @@ section#pyrite
             p
               | The third theory is by assuming Fe3+ to inhibit the reaction by non-competitive inhibition mechanism. For non-competitive inhibition, the value of cell specific growth rate would be described as:
             p 
-              | \mu_{S} = \mu_{max}\frac{S}{K_S+S(1+ \frac{S_0-S}{K_P})}\\
+              | \[\mu_{S} = \mu_{max}\frac{S}{K_S+S(1+ \frac{S_0-S}{K_P})}\\\]
             p 
               | This theory gives the following value for bioreactor-related variables:
             table.table.table-bordered.table-hover.table-condensed
@@ -860,22 +884,22 @@ section#pyrite
                   th(title='Field #2') FIELD2
               tbody
                 tr
-                  td \mu_{max}&nbsp; &nbsp;&micro;max
+                  td \(\mu_{max}\)&nbsp; &nbsp;&micro;max
                   td 1.33 hr^{-1}
                 tr
-                  td K_S &nbsp; KS
+                  td \(K_S\) &nbsp; KS
                   td 0.04 gram/liter
                 tr
-                  td K_P &nbsp; KP
+                  td \(K_P\) &nbsp; KP
                   td 0.06 gram/liter
                 tr
-                  td Y_{S/X} &nbsp; YS/X
+                  td \(Y_{S/X}\) &nbsp; YS/X
                   td 0.324 gram/gram
                 tr
-                  td Y_{P/X} &nbsp; YP/X
+                  td \(Y_{P/X}\) &nbsp; YP/X
                   td 0.4348 gram/gram
                 tr
-                  td S_0 &nbsp; S0
+                  td \(S_0\) &nbsp; S0
                   td 606.6225 gram/liter
                 tr
                   td Bioreactor Operating Condition
@@ -885,7 +909,7 @@ section#pyrite
                   td 1.6
                 tr
                   td Temperature
-                  td 30oC
+                  td 30 #[sup o]C
             p 
               | Jones et al, 1983
     .accordion-item
@@ -943,10 +967,10 @@ section#pyrite
     .accordion-item
       h5#pyrite-conclusion-heading.accordion-header.my-0
         button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#pyrite-conclusion' aria-expanded='true' aria-controls='pyrite-conclusion')
-          | Learn
+          | Final Conclusion
       #pyrite-conclusion.accordion-collapse.collapse(aria-labelledby='pyrite-conclusion-heading')
         .accordion-body
           div
             p
-              | Thus, the best inhibition mechanism to determine bioreactor for artisanal & small scale gold mining (ASGM) is competitive inhibition by Fe#[sup 3].
+              | Thus, the best inhibition mechanism to determine bioreactor for artisanal & small scale gold mining (ASGM) is competitive inhibition by Fe#[sup 3+].
 

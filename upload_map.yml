@@ -951,6 +951,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/e/e3/T--UGM_Indonesia--others--kinetic-modelling-UGM.zip
     md5: fab5f71d33938a9ed0df3871cadc5cf1
     upload_filename: T--UGM_Indonesia--others--kinetic-modelling-UGM.zip
+  assets/others/notebook-lab-work.pdf:
+    link_URL: https://2021.igem.org/wiki/images/8/89/T--UGM_Indonesia--others--notebook-lab-work.pdf
+    md5: 80ce7cef25810859e19f2fe8ccbef3e7
+    upload_filename: T--UGM_Indonesia--others--notebook-lab-work.pdf
   assets\font\T--UGM_Indonesia--Montserrat-Black.ttf:
     link_URL: https://2021.igem.org/wiki/images/2/27/T--UGM_Indonesia--Montserrat-Black.ttf
     md5: 27e3649bab7c62fa21b8837c4842e40e
@@ -1640,25 +1644,25 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Attributions
-    md5: 2fb9351afe672da99a35a661e446d4ba
+    md5: 47bc0ec7cfff79f7541c5312fc81bbe4
   Attributions\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Attributions
     md5: 55daed75104b5520c4b290627207b58a
   Awards/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Awards
-    md5: b3273d3275e3d47aaad4c55fc215aecf
+    md5: fecc85810fc0ea2f9eed025675587b39
   Awards\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Awards
     md5: bb92b2b690004d766087c65cdc406002
   Bioreactor/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Bioreactor
-    md5: b51730a240ed190f3aeed75bdee627b7
+    md5: 27c8c4ea3016a1a744a83b2b3965e71f
   Bioreactor\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Bioreactor
     md5: ''
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Collaborations
-    md5: 7b34778893a7d1c9a20349cf5729ffec
+    md5: 211604728d6e5dc8911a124d746fd5d1
   Collaborations\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Collaborations
     md5: 62270df2e7f5023cd9f3ebc7123d8a8a
@@ -1676,7 +1680,7 @@ html:
     md5: 6d4cc4a7a485e5abd31b07fd946a1e62
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Description
-    md5: 389852329525bc3ececc4244686de25d
+    md5: 9b32e4b1f492d8ea5bb4a7f60f44c37b
   Description\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Description
     md5: 66b4ba5e38c7449750a7c09eee8116ba
@@ -1694,7 +1698,7 @@ html:
     md5: ''
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Engineering
-    md5: 658df2c30b805b0c79ae5a97b063cab0
+    md5: 52d3288fb8c5654939434004c82bf8f1
   Engineering\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Engineering
     md5: f9b02fb301203c376c37b5bb8c0025ee
@@ -1706,7 +1710,7 @@ html:
     md5: ''
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Experiments
-    md5: 370436ce660d5e6d7daa38df293701e3
+    md5: 46ddb382ba90aed42d643c5c815d44d3
   Experiments\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Experiments
     md5: 5b6fa5376e866f14b187fb52bcdd793e
@@ -1718,13 +1722,13 @@ html:
     md5: f3097dda65610f01fb308eff71275ad8
   IHP/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/IHP
-    md5: 916270acac985a643d02dcd706fba3af
+    md5: 27fb63df50cd35e24d698e1c6c3b1744
   IHP\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/IHP
     md5: c245f517591aee967c7a9123a5afa2ee
   Implementation/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Implementation
-    md5: dd6c2b549f98fff57e3a93541325a8cb
+    md5: 7f691d7529ca3a5d1103ae26ce07be1e
   Implementation\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Implementation
     md5: f05c48f2cc1f6d4bbf778d208f8a5f39
@@ -1736,19 +1740,19 @@ html:
     md5: 0c7bd0e727f23eb9b486ebc4d89213b2
   Medals/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Medals
-    md5: 8dd32564d548cb1b3333c7697f222d6c
+    md5: 3537262121f4ec8d0556c46494e78a36
   Medals\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Medals
     md5: b176bbae0412551cc060839f9fa94551
   Model/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Model
-    md5: d690bcd5a3139216344e2b0f8c4f8f82
+    md5: 995aedf75d78569e5f9ffebae0c8f38b
   Model\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Model
     md5: 1a8cfa31e15740dce50a7e94269cde31
   Notebook/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Notebook
-    md5: 14f7831a8eeae083823d0f72bea9ef9c
+    md5: 7782b24105a04209ffbaf87cf138f291
   Notebook\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Notebook
     md5: 3a1d83af538a9a6002281ab0da5814ab
@@ -1781,7 +1785,7 @@ html:
     md5: 53b82c529309c9c2a59dde7f5c336e1e
   Sustainable/index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Sustainable
-    md5: bd31744a040e091e3041f1870a6a49e4
+    md5: 42d25473583063e4fd4ff66280e32088
   Sustainable\index.html:
     link_URL: https://2021.igem.org/Team:UGM_Indonesia/Sustainable
     md5: ''
