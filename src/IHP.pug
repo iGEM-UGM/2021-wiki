@@ -3,7 +3,15 @@ layout: layouts/default.njk
 title: Integrated Human Practices
 heroImage: /assets/img/hero-human_practice.jpg
 dataSidebar: [
-    {"href" : "#design", "name" : "Integrated Human Practice Design"}
+    {"href" : "#ihp-design", "name" : "Integrated Human Practice Design"},
+    {
+      "href" : "#framework", 
+      "name" : "Our Integrated Human Practices Framework"
+      "subnav" : [
+            {"href" : "#formulating-solution", "name" : "Formulating the solution"},
+            {"href" : "#building-solution", "name" : "Building the Solution"}
+        ]
+    }
 ]
 
 dataReferences: [
@@ -86,45 +94,45 @@ section#framework
       li Making sure our solution is #[b financially feasible]
       p 
         | To be realistic, we should ensure that our solution is scalable and financially feasible. This way, we can make #[b financial planning] and decide what kind of realistic implementation that can be organized.
-    #formulating-solution
-      h5.display-5.text-primary
-        | Building the Solution
-        h6.display-6.text-primary
-          | Wet Lab Expert (each specific scope) e.g. building and testing
-        ol
-          li #[b Design the gene construct]
-          p 
-            | Our project aimed to optimize the cyanide production of #[i C. violaceum] with synthetic biology as the main approach. Our wet lab team has consulted to many experts in order to get the best and feasible solution to construct or modify the organism, resulting in cyanide overproduction. #[b Prof. Ir. Irfan Dwidya Prijambada, M.Eng., Ph.D.] suggested the approach of blocking certain metabolic pathways to restrict the conversion of glycine, the cyanide precursor, to become the other metabolic product. Thus, glycine will be fully utilized by the bacteria as the precursor to produce cyanide. However, this method was too difficult to work with because it needs deeper understanding with metabolomics methods which are still poorly well known in Indonesia.
-          p 
-            | Aware of the limitations and difficulties, #[b Imam Bagus Nugroho, S.Si., M.Sc.] suggested us to make a simpler approach by coupling the cyanide production operon, namely hcnABC into the chassis, so that the #[i C. violaceum] will have double HCN production operons which are expected to overproduce the cyanide. The on-off systems will be used to switch on the cyanide production and switch off when the desirable time and concentration of cyanide have been reached, followed with the activation of cyanide degradation gene.
-          p 
-            | With further discussion with #[b Afif Pranaya Jati, S.P., M.Sc.], he suggested that the arabinose will be a suitable inducer for the gene construct because #[i C. violaceum] are unable to produce/ ferment the arabinose. The usage of arabinose as an inducer will minimize the bias and leakage of our gene construct. In order to standardize our experiment, #[b Matin Nuhamunada, S.Si., M.Sc.] as our instructor suggested that we use standard strains from #[i C. violaceum] based on similar-filed journals. Thus, we use #[i C. violaceum] \(ATCC 12472\) as our main chassis aside from #[i E. coli] \(BL21(DE3)\) and #[i E. coli] \(DH5α\).
-        h6.display-6.text-primary
-          | Dry Lab Expert
-          p 
-            | There are lots of literature that can be used to model gold bioleaching systems with #[i Chromobacterium violaceum]. However, the complexity of our novel genetically-engineered #[i C. violaceum], variations of gold ore across Indonesia, and limited access for some physical data hinder our team to complete the modelling instantly.
-        ol
-          li #[b Kinetic Modelling]
-          p
-            | The model for intracellular reaction such HCN production, HCN degradation, and arabinose conversion were modelled with Tellurium, an open source python modelling environment by #[b Jayit B, Tottle K, Matthias K, and other 12 contributors] with help from external contributors. Our instructors and advisor, #[b Matin Nuhamunada, Afif Pranaya Jati, Imam Bagus Nugroho, and Ahmad Ardi] helped us to set the assumption, determine the kinetics equation, and search for kinetic constant.
-          p 
-            | For the gold cyanidation equation, we got help from other advisors, #[b Himawan Tri Bayu Murti Petrus] and #[b Agus Prasetya] from sustainable mineral processing research group UGM (SMinPro UGM) who have expertise in mineral processing, especially hydrometallurgy.
-            li #[b Genome Scale Modelling]
-          p
-            | We decided to map #[i Chromobacterium violaceum] metabolic pathways with Escher on Jupyter. Escher itself is an open source python package developed by #[b Zachary AK, Andreas D, Ali E, Nikolaus S, Nathan EL, and Bernhard OP] to create metabolic pathways and modelled flux balance analysis.
-          p 
-            | The model for #[i C. violaceum] is not available on the website. However, we came across a paper titled "A scalable metabolite supplementation strategy against antibiotic resistant pathogen Chromobacterium violaceum induced by NAD
-            sup +
-            | /NADH
-            sup + 
-            | imbalance". We suspected that the author used escher in one of the metabolite maps. Hence, we asked #[b Deepanwita Banerjee] as one of the authors for the json file of #[i C. violaceum] pathway and then sent it to us.
-          p 
-            | For the flux balance analysis, our advisor #[b Matin Nuhamunada] coached and helped us to build the metabolite model.
-          li #[b Bioreactor]
-          p 
-            | The gold bioleaching reactor design is based on the content of the gold ore. Our advisor, #[b Himawan Tri Bayu Murti Petrus], divided it into two categories: non-refractory gold and refractory gold. For the refractory gold, there will be 2 reactors, one for mineral dissolution and one for gold cyanidation. The refractory gold is based on gold ore from Kulonprogo, where the gold atoms are trapped in pyrite. Thus, we designed the pyrite dissolution bioreactor from #[i Thiobacillus ferrooxidans] based on his advice too.
-          p
-            | We designed the gold cyanidation bioreactor based on out meetings with #[b Dewi Baiq Krisnayanti] from GOLD-ISMIA and the current technology in Kulonprogo gold cyanidation facility from GOLD-ISMIA, UNDP, Agency for the Assessment and Application of Technology, and Ministry of Environment and Forestry.
+  #building-solution
+    h5.display-5.text-primary
+      | Building the Solution
+      h6.display-6.text-primary
+        | Wet Lab Expert (each specific scope) e.g. building and testing
+      ol
+        li #[b Design the gene construct]
+        p 
+          | Our project aimed to optimize the cyanide production of #[i C. violaceum] with synthetic biology as the main approach. Our wet lab team has consulted to many experts in order to get the best and feasible solution to construct or modify the organism, resulting in cyanide overproduction. #[b Prof. Ir. Irfan Dwidya Prijambada, M.Eng., Ph.D.] suggested the approach of blocking certain metabolic pathways to restrict the conversion of glycine, the cyanide precursor, to become the other metabolic product. Thus, glycine will be fully utilized by the bacteria as the precursor to produce cyanide. However, this method was too difficult to work with because it needs deeper understanding with metabolomics methods which are still poorly well known in Indonesia.
+        p 
+          | Aware of the limitations and difficulties, #[b Imam Bagus Nugroho, S.Si., M.Sc.] suggested us to make a simpler approach by coupling the cyanide production operon, namely hcnABC into the chassis, so that the #[i C. violaceum] will have double HCN production operons which are expected to overproduce the cyanide. The on-off systems will be used to switch on the cyanide production and switch off when the desirable time and concentration of cyanide have been reached, followed with the activation of cyanide degradation gene.
+        p 
+          | With further discussion with #[b Afif Pranaya Jati, S.P., M.Sc.], he suggested that the arabinose will be a suitable inducer for the gene construct because #[i C. violaceum] are unable to produce/ ferment the arabinose. The usage of arabinose as an inducer will minimize the bias and leakage of our gene construct. In order to standardize our experiment, #[b Matin Nuhamunada, S.Si., M.Sc.] as our instructor suggested that we use standard strains from #[i C. violaceum] based on similar-filed journals. Thus, we use #[i C. violaceum] \(ATCC 12472\) as our main chassis aside from #[i E. coli] \(BL21(DE3)\) and #[i E. coli] \(DH5α\).
+      h6.display-6.text-primary
+        | Dry Lab Expert
+        p 
+          | There are lots of literature that can be used to model gold bioleaching systems with #[i Chromobacterium violaceum]. However, the complexity of our novel genetically-engineered #[i C. violaceum], variations of gold ore across Indonesia, and limited access for some physical data hinder our team to complete the modelling instantly.
+      ol
+        li #[b Kinetic Modelling]
+        p
+          | The model for intracellular reaction such HCN production, HCN degradation, and arabinose conversion were modelled with Tellurium, an open source python modelling environment by #[b Jayit B, Tottle K, Matthias K, and other 12 contributors] with help from external contributors. Our instructors and advisor, #[b Matin Nuhamunada, Afif Pranaya Jati, Imam Bagus Nugroho, and Ahmad Ardi] helped us to set the assumption, determine the kinetics equation, and search for kinetic constant.
+        p 
+          | For the gold cyanidation equation, we got help from other advisors, #[b Himawan Tri Bayu Murti Petrus] and #[b Agus Prasetya] from sustainable mineral processing research group UGM (SMinPro UGM) who have expertise in mineral processing, especially hydrometallurgy.
+          li #[b Genome Scale Modelling]
+        p
+          | We decided to map #[i Chromobacterium violaceum] metabolic pathways with Escher on Jupyter. Escher itself is an open source python package developed by #[b Zachary AK, Andreas D, Ali E, Nikolaus S, Nathan EL, and Bernhard OP] to create metabolic pathways and modelled flux balance analysis.
+        p 
+          | The model for #[i C. violaceum] is not available on the website. However, we came across a paper titled "A scalable metabolite supplementation strategy against antibiotic resistant pathogen Chromobacterium violaceum induced by NAD
+          sup +
+          | /NADH
+          sup + 
+          | imbalance". We suspected that the author used escher in one of the metabolite maps. Hence, we asked #[b Deepanwita Banerjee] as one of the authors for the json file of #[i C. violaceum] pathway and then sent it to us.
+        p 
+          | For the flux balance analysis, our advisor #[b Matin Nuhamunada] coached and helped us to build the metabolite model.
+        li #[b Bioreactor]
+        p 
+          | The gold bioleaching reactor design is based on the content of the gold ore. Our advisor, #[b Himawan Tri Bayu Murti Petrus], divided it into two categories: non-refractory gold and refractory gold. For the refractory gold, there will be 2 reactors, one for mineral dissolution and one for gold cyanidation. The refractory gold is based on gold ore from Kulonprogo, where the gold atoms are trapped in pyrite. Thus, we designed the pyrite dissolution bioreactor from #[i Thiobacillus ferrooxidans] based on his advice too.
+        p
+          | We designed the gold cyanidation bioreactor based on out meetings with #[b Dewi Baiq Krisnayanti] from GOLD-ISMIA and the current technology in Kulonprogo gold cyanidation facility from GOLD-ISMIA, UNDP, Agency for the Assessment and Application of Technology, and Ministry of Environment and Forestry.
 
 
 

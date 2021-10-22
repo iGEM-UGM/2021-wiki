@@ -3,7 +3,27 @@ layout: layouts/default.njk
 title: Model
 heroImage: /assets/img/hero-model.jpg
 dataSidebar: [
-    {"href" : "#model", "name" : "Model"}
+    {
+      "href" : "#kinetic-modelling", 
+      "name" : "Kinetic Modelling",
+      "subnav" : [
+        {"href" : "#hcn-production", "name" : "HCN Production with insert arabinose-regulated hcnABC operone"},
+        {"href" : "#hcn-degradation", "name" : "HCN Degradation by Rhodanese"},
+        {"href" : "#arabinose-conversion", "name" : "Arabinose conversion by L-AI (L-Arabinose Isomerase), regulated by weak Anderson promoter J23106"},
+        {"href" : "#au-extraction", "name" : "Au Extraction with HCN"}
+      ]
+    }
+    {
+      "href" : "#genome-scale-modelling", 
+      "name" : "Genome Scale Modelling",
+      "subnav" : [
+        {"href" : "#summary-genome", "name" : "Summary"},
+        {"href" : "#genome-scale-model-update", "name" : "<i> Chromobacterium violaceum</i> Genome Scale Metabolic Model & Map Update"},
+        {"href" : "#phenotypic", "name" : "Phenotypic phase plane"},
+        {"href" : "#optgene-optknock", "name" : "OptGene and OptKnock Simulation"}
+      ]
+      
+    }
 ]
 ---
 

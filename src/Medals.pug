@@ -3,7 +3,36 @@ layout: layouts/default.njk
 title: Medals
 heroImage: /assets/img/hero-medals.jpg
 dataSidebar: [
-    {"href" : "#medals", "name" : "Medals"}
+    {
+        "href" : "#bronze", 
+        "name" : "Bronze Medal",
+        "subnav" : [
+            {"href" : "#competition-deliverables", "name" : "Competition Deliverables"},
+            {"href" : "#attributions", "name" : "Attributions"},
+            {"href" : "#project-description", "name" : "Project Description"},
+            {"href" : "#contribution", "name" : "Contribution"}
+        ]
+    },
+    {
+        "href" : "#silver", 
+        "name" : "Silver Medal",
+        "subnav" : [
+            {"href" : "#engineering", "name" : "Engineering Success"},
+            {"href" : "#collaborations", "name" : "Collaborations"},
+            {"href" : "#human-practices", "name" : "Human Practices"},
+            {"href" : "#proposed-implementation", "name" : "Proposed Implementation"}
+        ]
+    }
+        {
+        "href" : "#gold", 
+        "name" : "Gold Medal",
+        "subnav" : [
+            {"href" : "#ihp", "name" : "Integrated Human Practices"},
+            {"href" : "#model", "name" : "Project Modeling"},
+            {"href" : "#partnership", "name" : "Partnership"},
+            {"href" : "#excellent", "name" : "Excellent in another area"}
+        ]
+    },
 ]
 ---
 
@@ -64,40 +93,40 @@ section#silver
       a(href="/Engineering") Engineering
       |
       | page for the details.
-  #collaboration
+  #collaborations
     h5.display-5.text-primary Collaborations 
     p 
-      | We luckily get various opportunities to meet other awesome iGEM teams for sharing our ideas and motivations as well as how to face our problems in conducting project. Kindly check our
+      | The UGM Indonesia iGEM team collaborated with many other iGEM teams throughout the year. It includes collaboration with iGEM Moscow City, iGEM Korea HS, iGEM UI Indonesia, and iGEM UB Indonesia that became our guests in the UGM Synbio Online Festival 2021, Collaboration with iGEM Duesseldorf in postcard challenge, iGEM Manchester in Codeathon event. We have created a
       |
       a(href="/Collaborations") Collaborations
       |
-      | page.
+      | page to outline these collaborations.
   #human-practices
     h5.display-5.text-primary Human Practices
     p 
-      | Visit our
+      | We constructed our human practice framework that consists of 4 steps, aimed to be able to collect as much information and consideration from many different points of view; community, stakeholders, environment, and scientific point of view. This way, we can get the bigger picture of what the community needs, the stakeholders want, and how science can close the gap. We also created an online webinar to raise awareness of synthetic biology and its potentials to the high school students, university students, and general public. Check out our
       |
       a(href="/Human_Practices") Human Practices
       |
-      | page for more details!
+      | page to learn more.
   #proposed-implementation
     h5.display-5.text-primary Proposed Implementation
     p 
-      | Take a look at our
+      | Implementing Auvola in the real world requires several considerations. To minimize any of the risks, our team plans to implement Auviola in a closed bioreactor. This enables us to have more control over the environment that the bacteria will live in, the growth, and also the proliferation of the bacteria. Considering operational costs, we also create an economic measurement model to ensure this method is profitable for Artisanal Small Scale Gold Mining. For further details please check our
       |
-      a(href="/Implementation") Implementation
+      a(href="/Implementation") Proposed implementation
       |
-      | page!
+      | page.
 section#gold
   h4.display-4.text-primary Gold Medal
   #ihp
     h5.display-5.text-primary Integrated Human Practices
     p 
-      | Kindly visit our
+      | Consultation with community, stakeholders and experts allowed us to shape and modify our project based on the values of their needs. In our integrated human practices work, we integrate the important values we get from various consultations from silver HP work, prioritize the things and make decisions that affect our projects. By consulting with experts and stakeholders, we were able to identify the issues in the direction of our project. We have created an
       |
       a(href="/IHP") Integrated Human Practices
       |
-      | page for more details!
+      | page to explain more about the values ​​we cover in our HP and lab work.
   #model
     h5.display-5.text-primary Project Modeling
     p 
@@ -109,16 +138,24 @@ section#gold
   #partnership
     h5.display-5.text-primary Partnership
     p 
-      | Kindly check our
+      | We have built a partnership with iGEM UBrawijaya Indonesia by exchanging parts and did some discussions about the research methods. Beside exchanging parts, this benefits both of the teams in terms of getting broader connection with the students and the professors, and creates a chance for future multidisciplinary collaboration. For further details please check our
       |
       a(href="/Partnership") Partnership
       |
-      | page!
+      | page.
   #education-communication
     h5.display-5.text-primary Education and Communication
     p 
-      | Check our  page for further details!
+      | We have conducted various events to educate students and the community about synthetic biology. In collaboration with the provincial government's education department, our team conducts a Synthetic Biology Seminar for high school students in our province. To reach a wider audience, we held an online event entitled UGM Synbio Online Festival 2021. This event consisted of three sessions; i.e., (1) Webinar Introducing Synthetic Biology and iGEM Competition (2) Discussion, Brainstorming, and Hands-on of in silico Plasmid Design, (3) Mini Talkshow: Meet the iGEM Teams. We also conducted a pre and post-test as a way to evaluate whether our events have increased the audience's knowledge of synthetic biology and iGEM competition. Check out our
       |
       a(href="/Communication") Education and Communication
       |
-      | page for further details!
+      | page to learn more.
+  #excellent
+    h5.display-5.text-primary Excellent in another area
+    p
+      | iGEM provides space to find a way out for problems that are still related to the project.  Our team dedicates this project to Artisanal and small-scale gold mining. We realize that the solutions we offer will be meaningless if they do not get profit. To be more realistic, we should ensure that our solution is scalable and financially viable, so we create an economic measurement model to ensure this method is profitable for ASGM. Moreover, to make it easier for ASGM to get financial support and protect them from trade exploitation, we think the best implementation for our project is through cooperatives. Check out our
+      |
+      a(href="/Communication") Entrepreneurship 
+      |
+      | page to learn more.
